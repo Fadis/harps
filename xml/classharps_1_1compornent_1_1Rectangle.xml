@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1compornent_1_1Rectangle" kind="class" prot="public">
+    <compoundname>harps::compornent::Rectangle</compoundname>
+    <includes refid="rectangle_8hpp" local="no">rectangle.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>ModuleType</declname>
+        <defname>ModuleType</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>DutyModuleType</declname>
+        <defname>DutyModuleType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1compornent_1_1Rectangle_11b765a63497b653c6d3ac33d47c57515" prot="private" static="no" mutable="no">
+        <type>ModuleType</type>
+        <definition>ModuleType harps::compornent::Rectangle&lt; ModuleType, DutyModuleType &gt;::source_module</definition>
+        <argsstring></argsstring>
+        <name>source_module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/rectangle.hpp" line="66" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/rectangle.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1compornent_1_1Rectangle_1b0a00020e48e2711e01837452d728aeb" prot="private" static="no" mutable="no">
+        <type>DutyModuleType</type>
+        <definition>DutyModuleType harps::compornent::Rectangle&lt; ModuleType, DutyModuleType &gt;::duty_module</definition>
+        <argsstring></argsstring>
+        <name>duty_module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/rectangle.hpp" line="67" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/rectangle.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1compornent_1_1Rectangle_1c3c3ccda9f7cb778b24f8038590141f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>SampleType</declname>
+            <defname>SampleType</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void harps::compornent::Rectangle&lt; ModuleType, DutyModuleType &gt;::operator()</definition>
+        <argsstring>(Buffer&lt; SampleType &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; SampleType &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/rectangle.hpp" line="55" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/rectangle.hpp" bodystart="55" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>指定されたデューティ比の矩形波を出力します。 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="113">
+        <label>harps::compornent::Rectangle&lt; ModuleType, DutyModuleType &gt;</label>
+        <link refid="classharps_1_1compornent_1_1Rectangle"/>
+        <childnode refid="114" relation="usage">
+          <edgelabel>duty_module</edgelabel>
+        </childnode>
+        <childnode refid="115" relation="usage">
+          <edgelabel>source_module</edgelabel>
+        </childnode>
+      </node>
+      <node id="114">
+        <label>DutyModuleType</label>
+      </node>
+      <node id="115">
+        <label>ModuleType</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/rectangle.hpp" line="52" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/rectangle.hpp" bodystart="52" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classharps_1_1compornent_1_1Rectangle_1b0a00020e48e2711e01837452d728aeb" prot="private" virt="non-virtual"><scope>harps::compornent::Rectangle</scope><name>duty_module</name></member>
+      <member refid="classharps_1_1compornent_1_1Rectangle_1c3c3ccda9f7cb778b24f8038590141f2" prot="public" virt="non-virtual"><scope>harps::compornent::Rectangle</scope><name>operator()</name></member>
+      <member refid="classharps_1_1compornent_1_1Rectangle_11b765a63497b653c6d3ac33d47c57515" prot="private" virt="non-virtual"><scope>harps::compornent::Rectangle</scope><name>source_module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

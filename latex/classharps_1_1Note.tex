@@ -1,0 +1,95 @@
+\section{harps::Note Class Reference}
+\label{classharps_1_1Note}\index{harps::Note@{harps::Note}}
+{\tt \#include $<$note.hpp$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \textbf{NoteState} \{ \textbf{NOTE\_\-ON} =  1, 
+\textbf{NOTE\_\-OFF} =  2, 
+\textbf{NOTE\_\-WAIT} =  3
+ \}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Note} ()
+\item 
+virtual {\bf $\sim$Note} ()
+\item 
+void {\bf noteOn} (float \_\-touch=1.0f)
+\item 
+void {\bf noteOff} ()
+\item 
+void {\bf noteWait} ()
+\item 
+NoteState {\bf getStatus} () const 
+\item 
+float {\bf getTouch} () const 
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+ノートは発音中の音の音階と鍵盤を押した強さ、鍵盤の現在の状態を保持します。 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{harps::Note@{harps::Note}!Note@{Note}}
+\index{Note@{Note}!harps::Note@{harps::Note}}
+\subsubsection[Note]{\setlength{\rightskip}{0pt plus 5cm}harps::Note::Note ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Note_e30d3c03bff9e694ce939e0e5c62212b}
+
+
+コンストラクタ \index{harps::Note@{harps::Note}!$\sim$Note@{$\sim$Note}}
+\index{$\sim$Note@{$\sim$Note}!harps::Note@{harps::Note}}
+\subsubsection[$\sim$Note]{\setlength{\rightskip}{0pt plus 5cm}virtual harps::Note::$\sim$Note ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classharps_1_1Note_9a7a81b989b96e47da4f32e49db991ba}
+
+
+デストラクタ 
+
+\subsection{Member Function Documentation}
+\index{harps::Note@{harps::Note}!noteOn@{noteOn}}
+\index{noteOn@{noteOn}!harps::Note@{harps::Note}}
+\subsubsection[noteOn]{\setlength{\rightskip}{0pt plus 5cm}void harps::Note::noteOn (float {\em \_\-touch} = {\tt 1.0f})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Note_f589da8cf6f57aa65d484909bb1eb61b}
+
+
+指定した強さで鍵盤を押します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-touch}]鍵盤を押す強さ \end{description}
+\end{Desc}
+
+
+Referenced by harps::DynamicMonophony::noteOn().\index{harps::Note@{harps::Note}!noteOff@{noteOff}}
+\index{noteOff@{noteOff}!harps::Note@{harps::Note}}
+\subsubsection[noteOff]{\setlength{\rightskip}{0pt plus 5cm}void harps::Note::noteOff ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Note_99f66a9ff92dd3ad30199816c455fa78}
+
+
+鍵盤から指を離します 
+
+Referenced by harps::DynamicMonophony::noteOff().\index{harps::Note@{harps::Note}!noteWait@{noteWait}}
+\index{noteWait@{noteWait}!harps::Note@{harps::Note}}
+\subsubsection[noteWait]{\setlength{\rightskip}{0pt plus 5cm}void harps::Note::noteWait ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Note_ae555fa8b846740ece16309eeb3aed89}
+
+
+発音を終了します 
+
+Referenced by harps::DynamicMonophony::noteWait().\index{harps::Note@{harps::Note}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!harps::Note@{harps::Note}}
+\subsubsection[getStatus]{\setlength{\rightskip}{0pt plus 5cm}NoteState harps::Note::getStatus () const\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Note_2e242ce9707561f3ff22f9d61ecf332a}
+
+
+現在の音の状態を取得します \begin{Desc}
+\item[Returns:]音の状態 \end{Desc}
+
+
+Referenced by harps::DynamicMonophony::getStatus().\index{harps::Note@{harps::Note}!getTouch@{getTouch}}
+\index{getTouch@{getTouch}!harps::Note@{harps::Note}}
+\subsubsection[getTouch]{\setlength{\rightskip}{0pt plus 5cm}float harps::Note::getTouch () const\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Note_4c5924cbd850f3221114a24872be5f83}
+
+
+現在発音中の音の鍵盤が押された時の強さを取得します \begin{Desc}
+\item[Returns:]鍵盤を押した強さ \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+rc/harps/include/harps/note.hpp\end{CompactItemize}

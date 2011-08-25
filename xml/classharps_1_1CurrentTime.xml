@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1CurrentTime" kind="class" prot="public">
+    <compoundname>harps::CurrentTime</compoundname>
+    <derivedcompoundref refid="classharps_1_1Clock" prot="public" virt="non-virtual">harps::Clock&lt; _sampling_rate, _sample_count &gt;</derivedcompoundref>
+    <includes refid="clock_8hpp" local="no">clock.hpp</includes>
+      <sectiondef kind="public-type">
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1CurrentTime_1995f736f4296b0c7e318bebfe7cf0c78" prot="private" static="no" mutable="no">
+        <type>Time</type>
+        <definition>Time harps::CurrentTime::global_time</definition>
+        <argsstring></argsstring>
+        <name>global_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="238" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1CurrentTime_1f735241e435361d96afe59f9dbde1ed1" prot="private" static="no" mutable="no">
+        <type>const Time</type>
+        <definition>const Time harps::CurrentTime::tick_length</definition>
+        <argsstring></argsstring>
+        <name>tick_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="239" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1CurrentTime_175272a04ce8d782545c036ec4227e3e5" prot="private" static="no" mutable="no">
+        <type>TimeMatrix</type>
+        <definition>TimeMatrix harps::CurrentTime::time_matrix[MATRIX_COUNT]</definition>
+        <argsstring>[MATRIX_COUNT]</argsstring>
+        <name>time_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="240" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1CurrentTime_10a98e8fc9798d25bb3b4bea2fca96baf" prot="private" static="no" mutable="no">
+        <type>TimeMatrix</type>
+        <definition>TimeMatrix harps::CurrentTime::matrix_cache[MATRIX_COUNT]</definition>
+        <argsstring>[MATRIX_COUNT]</argsstring>
+        <name>matrix_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="241" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1CurrentTime_129cc784338e3309ebdce62b3ee4f6f95" prot="private" static="no" mutable="no">
+        <type>Time</type>
+        <definition>Time harps::CurrentTime::clock_cache[MATRIX_COUNT]</definition>
+        <argsstring>[MATRIX_COUNT]</argsstring>
+        <name>clock_cache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="242" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1CurrentTime_1180c61e352326a8e6342f6057661b748" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int harps::CurrentTime::note</definition>
+        <argsstring></argsstring>
+        <name>note</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="243" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1CurrentTime_1c56ec210e008d47039d2b3b1ae0b512e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float harps::CurrentTime::pitch</definition>
+        <argsstring></argsstring>
+        <name>pitch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="244" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1CurrentTime_139f6d6159eb923cfdf5d92b9095d538b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float harps::CurrentTime::freq</definition>
+        <argsstring></argsstring>
+        <name>freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="245" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1CurrentTime_16a58e37c3b82280888f7d39e9387fda9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::CurrentTime::CurrentTime</definition>
+        <argsstring>(Time _tick_length)</argsstring>
+        <name>CurrentTime</name>
+        <param>
+          <type>Time</type>
+          <declname>_tick_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>コンストラクタ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_tick_lenght</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1クロックの時間 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="119" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="118" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1CurrentTime_102901d4094d29badc64b00c1d428e34b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual harps::CurrentTime::~CurrentTime</definition>
+        <argsstring>()</argsstring>
+        <name>~CurrentTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>デストラクタ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="130" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="130" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1CurrentTime_1b4e5c08585a7599b89db2dac14b9c4d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned int</type>
+            <declname>_which</declname>
+            <defname>_which</defname>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double harps::CurrentTime::getTime</definition>
+        <argsstring>(unsigned int _offset) const </argsstring>
+        <name>getTime</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>_offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>現在時刻から_offsetクロック先の時刻を指定した行列を通して取得します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>現在時刻からのずれ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>指定された条件での時刻 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="137" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="137" bodyend="141"/>
+        <referencedby refid="classharps_1_1DynamicMonophony_15891615a1418f7d7636469594c216f62" compoundref="instrument_8hpp" startline="129" endline="131">harps::DynamicMonophony::getGlobalTime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1CurrentTime_174647316ea9eed4d83fe899b18d110a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::CurrentTime::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>時刻をリセットします。 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="145" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="145" bodyend="153"/>
+        <referencedby refid="classharps_1_1DynamicPolyphony_1a719ce61a5f7c106a8bcc896b9a5c167" compoundref="instrument_8hpp" startline="246" endline="253">harps::DynamicPolyphony&lt; MonophonyType, max_polyphony &gt;::reset</referencedby>
+        <referencedby refid="classharps_1_1DynamicMonophony_19293fc3cfa3044994c65a06c0e5709dc" compoundref="instrument_8hpp" startline="115" endline="117">harps::DynamicMonophony::reset</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1CurrentTime_128f0470f31805494343847286d69694e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned int</type>
+            <declname>_which</declname>
+            <defname>_which</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void harps::CurrentTime::swapMatrix</definition>
+        <argsstring>(TimeMatrix &amp;_matrix)</argsstring>
+        <name>swapMatrix</name>
+        <param>
+          <type>TimeMatrix &amp;</type>
+          <declname>_matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>時刻変換行列を交換します。引数で渡された行列に古い行列が代入されます。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>新しい行列 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="159" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1CurrentTime_1b7d1435e1b3d59c6a71b6d85c3743d3c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>unsigned int</type>
+            <declname>_which</declname>
+            <defname>_which</defname>
+          </param>
+        </templateparamlist>
+        <type>const TimeMatrix &amp;</type>
+        <definition>const TimeMatrix&amp; harps::CurrentTime::getMatrix</definition>
+        <argsstring>() const </argsstring>
+        <name>getMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>時刻変換行列を取得します。 <simplesect kind="return"><para>時刻変換行列 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="168" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1CurrentTime_117506ab95e4f9dd773489478751f39d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::CurrentTime::noteOn</definition>
+        <argsstring>(int _note)</argsstring>
+        <name>noteOn</name>
+        <param>
+          <type>int</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>鍵盤が押されたことを通知します。ノートナンバーからトーンクロックの時刻変換行列が自動的に生成されます。また、ローカルクロックとキークロックが0をさすようになります。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ノートナンバー </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="175" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="175" bodyend="185"/>
+        <references refid="namespaceharps_14f7bddae87173a07222e7cd4b32519bb" compoundref="clock_8hpp" startline="48" endline="50">harps::noteToFrequency</references>
+        <referencedby refid="classharps_1_1DynamicMonophony_1183d62c092e5903c0e60b5ded5670290" compoundref="instrument_8hpp" startline="85" endline="89">harps::DynamicMonophony::noteOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1CurrentTime_1d4ba06019a3066b8aa29bb3a789d9e5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::CurrentTime::noteOff</definition>
+        <argsstring>()</argsstring>
+        <name>noteOff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>鍵盤が離されたことを通知します。また、キークロックが0をさすようになります。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ノートナンバー </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="190" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="190" bodyend="194"/>
+        <referencedby refid="classharps_1_1DynamicMonophony_146144634cfb0eefe21660fdf5ac3baef" compoundref="instrument_8hpp" startline="94" endline="97">harps::DynamicMonophony::noteOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1CurrentTime_11cf8a7b0fb4fde33e472acf9d086816d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::CurrentTime::setPitchBend</definition>
+        <argsstring>(float _pitch)</argsstring>
+        <name>setPitchBend</name>
+        <param>
+          <type>float</type>
+          <declname>_pitch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ピッチベンドします。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_pitch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ピッチベンド値 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="199" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="199" bodyend="208"/>
+        <references refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" compoundref="utils_8hpp" startline="45" endline="47">harps::loop</references>
+        <references refid="namespaceharps_14f7bddae87173a07222e7cd4b32519bb" compoundref="clock_8hpp" startline="48" endline="50">harps::noteToFrequency</references>
+        <referencedby refid="classharps_1_1DynamicMonophony_14d304ca1400cb443cdb57a17cdedb3db" compoundref="instrument_8hpp" startline="109" endline="111">harps::DynamicMonophony::setPitchBend</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1CurrentTime_13fbbd98cbd3c4517bbf49e62d86f2cc5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float harps::CurrentTime::getToneFrequency</definition>
+        <argsstring>() const </argsstring>
+        <name>getToneFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>現在の音の周波数を取得します。 <simplesect kind="return"><para>周波数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="213" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="213" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1CurrentTime_13f08fd579a5b04db6ceb2497984d237b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int harps::CurrentTime::getTone</definition>
+        <argsstring>() const </argsstring>
+        <name>getTone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>現在の音の音階を取得します。 <simplesect kind="return"><para>ノートナンバー </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="220" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="220" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1CurrentTime_14843be872283108748b222eebefec0c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float harps::CurrentTime::getPitchBend</definition>
+        <argsstring>() const </argsstring>
+        <name>getPitchBend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>現在のピッチベンド値を取得します。 <simplesect kind="return"><para>ピッチベンド値 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="227" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="227" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1CurrentTime_14997fde13ba0065725222565dedc6321" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::CurrentTime::tick</definition>
+        <argsstring>(unsigned int _sample_count)</argsstring>
+        <name>tick</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>_sample_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>時刻を指定したクロック数分進めます。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sample_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>クロック数 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="234" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="234" bodyend="236"/>
+        <referencedby refid="classharps_1_1DynamicPolyphony_13a2597029685d470e88e32a2ce3db94a" compoundref="instrument_8hpp" startline="169" endline="197">harps::DynamicPolyphony&lt; MonophonyType, max_polyphony &gt;::operator()</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>現在時刻を保持します。現在時刻は4つの時刻変換行列を通して取得することができます。 </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="28">
+        <label>harps::CurrentTime</label>
+        <link refid="classharps_1_1CurrentTime"/>
+      </node>
+      <node id="29">
+        <label>harps::Clock&lt; _sampling_rate, _sample_count &gt;</label>
+        <link refid="classharps_1_1Clock"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="109" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="109" bodyend="246"/>
+    <listofallmembers>
+      <member refid="classharps_1_1CurrentTime_129cc784338e3309ebdce62b3ee4f6f95" prot="private" virt="non-virtual"><scope>harps::CurrentTime</scope><name>clock_cache</name></member>
+      <member refid="classharps_1_1CurrentTime_16a58e37c3b82280888f7d39e9387fda9" prot="public" virt="non-virtual"><scope>harps::CurrentTime</scope><name>CurrentTime</name></member>
+      <member refid="classharps_1_1CurrentTime_139f6d6159eb923cfdf5d92b9095d538b" prot="private" virt="non-virtual"><scope>harps::CurrentTime</scope><name>freq</name></member>
+      <member refid="classharps_1_1CurrentTime_1b7d1435e1b3d59c6a71b6d85c3743d3c" prot="public" virt="non-virtual"><scope>harps::CurrentTime</scope><name>getMatrix</name></member>
+      <member refid="classharps_1_1CurrentTime_14843be872283108748b222eebefec0c2" prot="public" virt="non-virtual"><scope>harps::CurrentTime</scope><name>getPitchBend</name></member>
+      <member refid="classharps_1_1CurrentTime_1b4e5c08585a7599b89db2dac14b9c4d1" prot="public" virt="non-virtual"><scope>harps::CurrentTime</scope><name>getTime</name></member>
+      <member refid="classharps_1_1CurrentTime_13f08fd579a5b04db6ceb2497984d237b" prot="public" virt="non-virtual"><scope>harps::CurrentTime</scope><name>getTone</name></member>
+      <member refid="classharps_1_1CurrentTime_13fbbd98cbd3c4517bbf49e62d86f2cc5" prot="public" virt="non-virtual"><scope>harps::CurrentTime</scope><name>getToneFrequency</name></member>
+      <member refid="classharps_1_1CurrentTime_1995f736f4296b0c7e318bebfe7cf0c78" prot="private" virt="non-virtual"><scope>harps::CurrentTime</scope><name>global_time</name></member>
+      <member refid="classharps_1_1CurrentTime_10a98e8fc9798d25bb3b4bea2fca96baf" prot="private" virt="non-virtual"><scope>harps::CurrentTime</scope><name>matrix_cache</name></member>
+      <member refid="classharps_1_1CurrentTime_130223f190a94981c8c109e38cdf9fa11787e6b67fdd7a472232ecb17f64a3379" prot="public" virt="non-virtual"><scope>harps::CurrentTime</scope><name>MATRIX_COUNT</name></member>
+      <member refid="classharps_1_1CurrentTime_1180c61e352326a8e6342f6057661b748" prot="private" virt="non-virtual"><scope>harps::CurrentTime</scope><name>note</name></member>
+      <member refid="classharps_1_1CurrentTime_1d4ba06019a3066b8aa29bb3a789d9e5d" prot="public" virt="non-virtual"><scope>harps::CurrentTime</scope><name>noteOff</name></member>
+      <member refid="classharps_1_1CurrentTime_117506ab95e4f9dd773489478751f39d4" prot="public" virt="non-virtual"><scope>harps::CurrentTime</scope><name>noteOn</name></member>
+      <member refid="classharps_1_1CurrentTime_1c56ec210e008d47039d2b3b1ae0b512e" prot="private" virt="non-virtual"><scope>harps::CurrentTime</scope><name>pitch</name></member>
+      <member refid="classharps_1_1CurrentTime_174647316ea9eed4d83fe899b18d110a2" prot="public" virt="non-virtual"><scope>harps::CurrentTime</scope><name>reset</name></member>
+      <member refid="classharps_1_1CurrentTime_11cf8a7b0fb4fde33e472acf9d086816d" prot="public" virt="non-virtual"><scope>harps::CurrentTime</scope><name>setPitchBend</name></member>
+      <member refid="classharps_1_1CurrentTime_128f0470f31805494343847286d69694e" prot="public" virt="non-virtual"><scope>harps::CurrentTime</scope><name>swapMatrix</name></member>
+      <member refid="classharps_1_1CurrentTime_14997fde13ba0065725222565dedc6321" prot="public" virt="non-virtual"><scope>harps::CurrentTime</scope><name>tick</name></member>
+      <member refid="classharps_1_1CurrentTime_1f735241e435361d96afe59f9dbde1ed1" prot="private" virt="non-virtual"><scope>harps::CurrentTime</scope><name>tick_length</name></member>
+      <member refid="classharps_1_1CurrentTime_175272a04ce8d782545c036ec4227e3e5" prot="private" virt="non-virtual"><scope>harps::CurrentTime</scope><name>time_matrix</name></member>
+      <member refid="classharps_1_1CurrentTime_102901d4094d29badc64b00c1d428e34b" prot="public" virt="virtual"><scope>harps::CurrentTime</scope><name>~CurrentTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1compornent_1_1SwitchingEnvelope" kind="class" prot="public">
+    <compoundname>harps::compornent::SwitchingEnvelope</compoundname>
+    <includes refid="switching__envelope_8hpp" local="no">switching_envelope.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>AttackModuleType</declname>
+        <defname>AttackModuleType</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>_attack</declname>
+        <defname>_attack</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>SustainModuleType</declname>
+        <defname>SustainModuleType</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>ReleaseModuleType</declname>
+        <defname>ReleaseModuleType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1compornent_1_1SwitchingEnvelope_1f2a532ade1a9fe1c1f89fb5b37ac3d21" prot="private" static="no" mutable="no">
+        <type>AttackModuleType</type>
+        <definition>AttackModuleType harps::compornent::SwitchingEnvelope&lt; AttackModuleType, _attack, SustainModuleType, ReleaseModuleType &gt;::attack_module</definition>
+        <argsstring></argsstring>
+        <name>attack_module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/switching_envelope.hpp" line="73" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/switching_envelope.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1compornent_1_1SwitchingEnvelope_1ddd03f14742b0da31e671a15fb8ce408" prot="private" static="no" mutable="no">
+        <type>SustainModuleType</type>
+        <definition>SustainModuleType harps::compornent::SwitchingEnvelope&lt; AttackModuleType, _attack, SustainModuleType, ReleaseModuleType &gt;::sustain_module</definition>
+        <argsstring></argsstring>
+        <name>sustain_module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/switching_envelope.hpp" line="74" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/switching_envelope.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1compornent_1_1SwitchingEnvelope_159e64f3724437c5a01c38a55fb3b9aeb" prot="private" static="no" mutable="no">
+        <type>ReleaseModuleType</type>
+        <definition>ReleaseModuleType harps::compornent::SwitchingEnvelope&lt; AttackModuleType, _attack, SustainModuleType, ReleaseModuleType &gt;::release_module</definition>
+        <argsstring></argsstring>
+        <name>release_module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/switching_envelope.hpp" line="75" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/switching_envelope.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1compornent_1_1SwitchingEnvelope_1a034bebbc5d41d710d14242499a84203" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>SampleType</declname>
+            <defname>SampleType</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void harps::compornent::SwitchingEnvelope&lt; AttackModuleType, _attack, SustainModuleType, ReleaseModuleType &gt;::operator()</definition>
+        <argsstring>(Buffer&lt; SampleType &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; SampleType &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/switching_envelope.hpp" line="54" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/switching_envelope.hpp" bodystart="54" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>ノートの状態で分岐するだけのエンベロープです。 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="146">
+        <label>SustainModuleType</label>
+      </node>
+      <node id="147">
+        <label>ReleaseModuleType</label>
+      </node>
+      <node id="148">
+        <label>AttackModuleType</label>
+      </node>
+      <node id="145">
+        <label>harps::compornent::SwitchingEnvelope&lt; AttackModuleType, _attack, SustainModuleType, ReleaseModuleType &gt;</label>
+        <link refid="classharps_1_1compornent_1_1SwitchingEnvelope"/>
+        <childnode refid="146" relation="usage">
+          <edgelabel>sustain_module</edgelabel>
+        </childnode>
+        <childnode refid="147" relation="usage">
+          <edgelabel>release_module</edgelabel>
+        </childnode>
+        <childnode refid="148" relation="usage">
+          <edgelabel>attack_module</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/switching_envelope.hpp" line="51" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/switching_envelope.hpp" bodystart="51" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classharps_1_1compornent_1_1SwitchingEnvelope_1f2a532ade1a9fe1c1f89fb5b37ac3d21" prot="private" virt="non-virtual"><scope>harps::compornent::SwitchingEnvelope</scope><name>attack_module</name></member>
+      <member refid="classharps_1_1compornent_1_1SwitchingEnvelope_1a034bebbc5d41d710d14242499a84203" prot="public" virt="non-virtual"><scope>harps::compornent::SwitchingEnvelope</scope><name>operator()</name></member>
+      <member refid="classharps_1_1compornent_1_1SwitchingEnvelope_159e64f3724437c5a01c38a55fb3b9aeb" prot="private" virt="non-virtual"><scope>harps::compornent::SwitchingEnvelope</scope><name>release_module</name></member>
+      <member refid="classharps_1_1compornent_1_1SwitchingEnvelope_1ddd03f14742b0da31e671a15fb8ce408" prot="private" virt="non-virtual"><scope>harps::compornent::SwitchingEnvelope</scope><name>sustain_module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

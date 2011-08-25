@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1compornent_1_1Mul_3_01_01_4" kind="class" prot="public">
+    <compoundname>harps::compornent::Mul&lt;  &gt;</compoundname>
+    <includes refid="mul_8hpp" local="no">mul.hpp</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1compornent_1_1Mul_3_01_01_4_1f6a127fc62e00d7436705697f5d15c4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>SampleType</declname>
+            <defname>SampleType</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void harps::compornent::Mul&lt;  &gt;::operator()</definition>
+        <argsstring>(Buffer&lt; SampleType &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; SampleType &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/mul.hpp" line="109" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/mul.hpp" bodystart="109" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>複数のソースからの入力の積を出力します。 </para>    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/mul.hpp" line="106" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/mul.hpp" bodystart="104" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classharps_1_1compornent_1_1Mul_3_01_01_4_1f6a127fc62e00d7436705697f5d15c4a" prot="public" virt="non-virtual"><scope>harps::compornent::Mul&lt;  &gt;</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

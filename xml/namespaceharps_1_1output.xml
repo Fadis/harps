@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="namespaceharps_1_1output" kind="namespace">
+    <compoundname>harps::output</compoundname>
+    <innerclass refid="classharps_1_1output_1_1ALSA" prot="public">harps::output::ALSA</innerclass>
+    <innerclass refid="classharps_1_1output_1_1Wave" prot="public">harps::output::Wave</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>オーディオ出力に関するクラスはこの名前空間にまとめられています。 </para>    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/output/alsa.hpp" line="46"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1compornent_1_1Volume" kind="class" prot="public">
+    <compoundname>harps::compornent::Volume</compoundname>
+    <includes refid="volume_8hpp" local="no">volume.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>ModuleType</declname>
+        <defname>ModuleType</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>AmpType</declname>
+        <defname>AmpType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1compornent_1_1Volume_18d92b6618968795f274c8e1f33c1770a" prot="private" static="no" mutable="no">
+        <type>ModuleType</type>
+        <definition>ModuleType harps::compornent::Volume&lt; ModuleType, AmpType &gt;::module</definition>
+        <argsstring></argsstring>
+        <name>module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/volume.hpp" line="66" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/volume.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1compornent_1_1Volume_1a24f72d37cea4b4068351e2b6eb483c3" prot="private" static="no" mutable="no">
+        <type>AmpType</type>
+        <definition>AmpType harps::compornent::Volume&lt; ModuleType, AmpType &gt;::amp</definition>
+        <argsstring></argsstring>
+        <name>amp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/volume.hpp" line="67" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/volume.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1compornent_1_1Volume_17268469f57d241e7a8e0bedf98d7a0e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>SampleType</declname>
+            <defname>SampleType</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void harps::compornent::Volume&lt; ModuleType, AmpType &gt;::operator()</definition>
+        <argsstring>(Buffer&lt; SampleType &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; SampleType &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/volume.hpp" line="52" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/volume.hpp" bodystart="52" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>1つめのソースの音量を2つめのソースの入力に応じて調節します。 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="174">
+        <label>harps::compornent::Volume&lt; ModuleType, AmpType &gt;</label>
+        <link refid="classharps_1_1compornent_1_1Volume"/>
+        <childnode refid="175" relation="usage">
+          <edgelabel>amp</edgelabel>
+        </childnode>
+        <childnode refid="176" relation="usage">
+          <edgelabel>module</edgelabel>
+        </childnode>
+      </node>
+      <node id="175">
+        <label>AmpType</label>
+      </node>
+      <node id="176">
+        <label>ModuleType</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/volume.hpp" line="49" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/volume.hpp" bodystart="49" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classharps_1_1compornent_1_1Volume_1a24f72d37cea4b4068351e2b6eb483c3" prot="private" virt="non-virtual"><scope>harps::compornent::Volume</scope><name>amp</name></member>
+      <member refid="classharps_1_1compornent_1_1Volume_18d92b6618968795f274c8e1f33c1770a" prot="private" virt="non-virtual"><scope>harps::compornent::Volume</scope><name>module</name></member>
+      <member refid="classharps_1_1compornent_1_1Volume_17268469f57d241e7a8e0bedf98d7a0e8" prot="public" virt="non-virtual"><scope>harps::compornent::Volume</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

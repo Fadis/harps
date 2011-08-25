@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="namespaceharps_1_1input" kind="namespace">
+    <compoundname>harps::input</compoundname>
+    <innerclass refid="structharps_1_1input_1_1Score" prot="public">harps::input::Score</innerclass>
+    <innerclass refid="classharps_1_1input_1_1SimpleReader" prot="public">harps::input::SimpleReader</innerclass>
+    <innerclass refid="classharps_1_1input_1_1Tracks" prot="public">harps::input::Tracks</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>楽譜の入力に関するクラスはこの名前空間にまとめられています。 </para>    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="70"/>
+  </compounddef>
+</doxygen>

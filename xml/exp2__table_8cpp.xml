@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="exp2__table_8cpp" kind="file">
+    <compoundname>exp2_table.cpp</compoundname>
+    <includes refid="exp2_8hpp" local="no">harps/table/exp2.hpp</includes>
+    <incdepgraph>
+      <node id="709">
+        <label>rc/harps/src/exp2_table.cpp</label>
+        <link refid="exp2_table.cpp"/>
+        <childnode refid="710" relation="include">
+        </childnode>
+      </node>
+      <node id="710">
+        <label>harps/table/exp2.hpp</label>
+        <link refid="exp2_8hpp-source"/>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceharps">harps</innernamespace>
+    <innernamespace refid="namespaceharps_1_1table">harps::table</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>by<sp/>Naomasa<sp/>Matsubayashi<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>harps@quaternion.sakura.ne.jp<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/>are<sp/>met:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>distribution.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>&lt;ORGANIZATION&gt;<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/>OWNER<sp/>OR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/><sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/><sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>*</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/><sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.<sp/><sp/>*</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;harps/table/exp2.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">harps<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">table<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>exp2[<sp/>HARPS_EXP2_TABLE_SIZE<sp/>]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.000000f,<sp/>0.000006f,<sp/>0.000013f,<sp/>0.000020f,<sp/>0.000026f,<sp/>0.000033f,<sp/>0.000040f,<sp/>0.000047f,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.000054f,<sp/>0.000061f,<sp/>0.000068f,<sp/>0.000075f,<sp/>0.000082f,<sp/>0.000089f,<sp/>0.000097f,<sp/>0.000104f,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.000111f,<sp/>0.000119f,<sp/>0.000126f,<sp/>0.000134f,<sp/>0.000141f,<sp/>0.000149f,<sp/>0.000156f,<sp/>0.000164f,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.000172f,<sp/>0.000180f,<sp/>0.000187f,<sp/>0.000195f,<sp/>0.000203f,<sp/>0.000211f,<sp/>0.000219f,<sp/>0.000228f,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.000236f,<sp/>0.000244f,<sp/>0.000252f,<sp/>0.000261f,<sp/>0.000269f,<sp/>0.000277f,<sp/>0.000286f,<sp/>0.000295f,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.000303f,<sp/>0.000312f,<sp/>0.000321f,<sp/>0.000329f,<sp/>0.000338f,<sp/>0.000347f,<sp/>0.000356f,<sp/>0.000365f,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.000374f,<sp/>0.000384f,<sp/>0.000393f,<sp/>0.000402f,<sp/>0.000412f,<sp/>0.000421f,<sp/>0.000430f,<sp/>0.000440f,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.000450f,<sp/>0.000459f,<sp/>0.000469f,<sp/>0.000479f,<sp/>0.000489f,<sp/>0.000499f,<sp/>0.000509f,<sp/>0.000519f,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.000529f,<sp/>0.000539f,<sp/>0.000550f,<sp/>0.000560f,<sp/>0.000570f,<sp/>0.000581f,<sp/>0.000591f,<sp/>0.000602f,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.000613f,<sp/>0.000624f,<sp/>0.000635f,<sp/>0.000645f,<sp/>0.000657f,<sp/>0.000668f,<sp/>0.000679f,<sp/>0.000690f,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.000701f,<sp/>0.000713f,<sp/>0.000724f,<sp/>0.000736f,<sp/>0.000747f,<sp/>0.000759f,<sp/>0.000771f,<sp/>0.000783f,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.000795f,<sp/>0.000807f,<sp/>0.000819f,<sp/>0.000831f,<sp/>0.000843f,<sp/>0.000856f,<sp/>0.000868f,<sp/>0.000881f,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.000893f,<sp/>0.000906f,<sp/>0.000919f,<sp/>0.000932f,<sp/>0.000945f,<sp/>0.000958f,<sp/>0.000971f,<sp/>0.000984f,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.000997f,<sp/>0.001011f,<sp/>0.001024f,<sp/>0.001038f,<sp/>0.001052f,<sp/>0.001065f,<sp/>0.001079f,<sp/>0.001093f,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.001107f,<sp/>0.001121f,<sp/>0.001136f,<sp/>0.001150f,<sp/>0.001164f,<sp/>0.001179f,<sp/>0.001194f,<sp/>0.001208f,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.001223f,<sp/>0.001238f,<sp/>0.001253f,<sp/>0.001268f,<sp/>0.001284f,<sp/>0.001299f,<sp/>0.001314f,<sp/>0.001330f,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.001346f,<sp/>0.001361f,<sp/>0.001377f,<sp/>0.001393f,<sp/>0.001409f,<sp/>0.001426f,<sp/>0.001442f,<sp/>0.001458f,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.001475f,<sp/>0.001492f,<sp/>0.001508f,<sp/>0.001525f,<sp/>0.001542f,<sp/>0.001559f,<sp/>0.001577f,<sp/>0.001594f,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.001611f,<sp/>0.001629f,<sp/>0.001647f,<sp/>0.001664f,<sp/>0.001682f,<sp/>0.001700f,<sp/>0.001719f,<sp/>0.001737f,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.001755f,<sp/>0.001774f,<sp/>0.001793f,<sp/>0.001811f,<sp/>0.001830f,<sp/>0.001849f,<sp/>0.001869f,<sp/>0.001888f,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.001907f,<sp/>0.001927f,<sp/>0.001947f,<sp/>0.001967f,<sp/>0.001987f,<sp/>0.002007f,<sp/>0.002027f,<sp/>0.002047f,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.002068f,<sp/>0.002089f,<sp/>0.002109f,<sp/>0.002130f,<sp/>0.002152f,<sp/>0.002173f,<sp/>0.002194f,<sp/>0.002216f,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.002237f,<sp/>0.002259f,<sp/>0.002281f,<sp/>0.002303f,<sp/>0.002326f,<sp/>0.002348f,<sp/>0.002371f,<sp/>0.002393f,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.002416f,<sp/>0.002439f,<sp/>0.002462f,<sp/>0.002486f,<sp/>0.002509f,<sp/>0.002533f,<sp/>0.002557f,<sp/>0.002581f,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.002605f,<sp/>0.002629f,<sp/>0.002654f,<sp/>0.002679f,<sp/>0.002703f,<sp/>0.002728f,<sp/>0.002754f,<sp/>0.002779f,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.002804f,<sp/>0.002830f,<sp/>0.002856f,<sp/>0.002882f,<sp/>0.002908f,<sp/>0.002935f,<sp/>0.002961f,<sp/>0.002988f,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.003015f,<sp/>0.003042f,<sp/>0.003069f,<sp/>0.003097f,<sp/>0.003124f,<sp/>0.003152f,<sp/>0.003180f,<sp/>0.003208f,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.003237f,<sp/>0.003266f,<sp/>0.003294f,<sp/>0.003323f,<sp/>0.003353f,<sp/>0.003382f,<sp/>0.003412f,<sp/>0.003441f,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.003471f,<sp/>0.003502f,<sp/>0.003532f,<sp/>0.003563f,<sp/>0.003593f,<sp/>0.003625f,<sp/>0.003656f,<sp/>0.003687f,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.003719f,<sp/>0.003751f,<sp/>0.003783f,<sp/>0.003815f,<sp/>0.003848f,<sp/>0.003881f,<sp/>0.003914f,<sp/>0.003947f,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.003980f,<sp/>0.004014f,<sp/>0.004048f,<sp/>0.004082f,<sp/>0.004116f,<sp/>0.004151f,<sp/>0.004186f,<sp/>0.004221f,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.004256f,<sp/>0.004292f,<sp/>0.004327f,<sp/>0.004363f,<sp/>0.004400f,<sp/>0.004436f,<sp/>0.004473f,<sp/>0.004510f,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.004547f,<sp/>0.004585f,<sp/>0.004623f,<sp/>0.004661f,<sp/>0.004699f,<sp/>0.004737f,<sp/>0.004776f,<sp/>0.004815f,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.004855f,<sp/>0.004894f,<sp/>0.004934f,<sp/>0.004974f,<sp/>0.005015f,<sp/>0.005055f,<sp/>0.005096f,<sp/>0.005138f,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.005179f,<sp/>0.005221f,<sp/>0.005263f,<sp/>0.005305f,<sp/>0.005348f,<sp/>0.005391f,<sp/>0.005434f,<sp/>0.005478f,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.005522f,<sp/>0.005566f,<sp/>0.005610f,<sp/>0.005655f,<sp/>0.005700f,<sp/>0.005745f,<sp/>0.005791f,<sp/>0.005837f,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.005883f,<sp/>0.005930f,<sp/>0.005977f,<sp/>0.006024f,<sp/>0.006072f,<sp/>0.006120f,<sp/>0.006168f,<sp/>0.006216f,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.006265f,<sp/>0.006314f,<sp/>0.006364f,<sp/>0.006414f,<sp/>0.006464f,<sp/>0.006514f,<sp/>0.006565f,<sp/>0.006617f,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.006668f,<sp/>0.006720f,<sp/>0.006772f,<sp/>0.006825f,<sp/>0.006878f,<sp/>0.006931f,<sp/>0.006985f,<sp/>0.007039f,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.007094f,<sp/>0.007148f,<sp/>0.007204f,<sp/>0.007259f,<sp/>0.007315f,<sp/>0.007371f,<sp/>0.007428f,<sp/>0.007485f,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.007543f,<sp/>0.007600f,<sp/>0.007659f,<sp/>0.007717f,<sp/>0.007776f,<sp/>0.007836f,<sp/>0.007896f,<sp/>0.007956f,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.008017f,<sp/>0.008078f,<sp/>0.008139f,<sp/>0.008201f,<sp/>0.008264f,<sp/>0.008326f,<sp/>0.008389f,<sp/>0.008453f,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.008517f,<sp/>0.008582f,<sp/>0.008647f,<sp/>0.008712f,<sp/>0.008778f,<sp/>0.008844f,<sp/>0.008911f,<sp/>0.008978f,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.009045f,<sp/>0.009113f,<sp/>0.009182f,<sp/>0.009251f,<sp/>0.009320f,<sp/>0.009390f,<sp/>0.009461f,<sp/>0.009532f,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.009603f,<sp/>0.009675f,<sp/>0.009747f,<sp/>0.009820f,<sp/>0.009894f,<sp/>0.009967f,<sp/>0.010042f,<sp/>0.010117f,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.010192f,<sp/>0.010268f,<sp/>0.010344f,<sp/>0.010421f,<sp/>0.010498f,<sp/>0.010576f,<sp/>0.010655f,<sp/>0.010734f,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.010813f,<sp/>0.010893f,<sp/>0.010974f,<sp/>0.011055f,<sp/>0.011137f,<sp/>0.011219f,<sp/>0.011302f,<sp/>0.011385f,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.011469f,<sp/>0.011554f,<sp/>0.011639f,<sp/>0.011725f,<sp/>0.011811f,<sp/>0.011898f,<sp/>0.011985f,<sp/>0.012073f,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.012162f,<sp/>0.012251f,<sp/>0.012341f,<sp/>0.012432f,<sp/>0.012523f,<sp/>0.012614f,<sp/>0.012707f,<sp/>0.012800f,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.012893f,<sp/>0.012987f,<sp/>0.013082f,<sp/>0.013178f,<sp/>0.013274f,<sp/>0.013371f,<sp/>0.013468f,<sp/>0.013566f,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.013665f,<sp/>0.013764f,<sp/>0.013865f,<sp/>0.013965f,<sp/>0.014067f,<sp/>0.014169f,<sp/>0.014272f,<sp/>0.014375f,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.014480f,<sp/>0.014585f,<sp/>0.014690f,<sp/>0.014797f,<sp/>0.014904f,<sp/>0.015012f,<sp/>0.015120f,<sp/>0.015230f,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.015340f,<sp/>0.015451f,<sp/>0.015562f,<sp/>0.015675f,<sp/>0.015788f,<sp/>0.015901f,<sp/>0.016016f,<sp/>0.016132f,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.016248f,<sp/>0.016365f,<sp/>0.016483f,<sp/>0.016601f,<sp/>0.016720f,<sp/>0.016841f,<sp/>0.016962f,<sp/>0.017084f,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.017206f,<sp/>0.017330f,<sp/>0.017454f,<sp/>0.017579f,<sp/>0.017705f,<sp/>0.017832f,<sp/>0.017960f,<sp/>0.018089f,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.018218f,<sp/>0.018348f,<sp/>0.018480f,<sp/>0.018612f,<sp/>0.018745f,<sp/>0.018879f,<sp/>0.019014f,<sp/>0.019149f,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.019286f,<sp/>0.019424f,<sp/>0.019562f,<sp/>0.019702f,<sp/>0.019842f,<sp/>0.019984f,<sp/>0.020126f,<sp/>0.020269f,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.020414f,<sp/>0.020559f,<sp/>0.020705f,<sp/>0.020852f,<sp/>0.021001f,<sp/>0.021150f,<sp/>0.021300f,<sp/>0.021452f,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.021604f,<sp/>0.021757f,<sp/>0.021912f,<sp/>0.022067f,<sp/>0.022224f,<sp/>0.022381f,<sp/>0.022540f,<sp/>0.022700f,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.022860f,<sp/>0.023022f,<sp/>0.023185f,<sp/>0.023349f,<sp/>0.023515f,<sp/>0.023681f,<sp/>0.023849f,<sp/>0.024017f,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.024187f,<sp/>0.024358f,<sp/>0.024530f,<sp/>0.024703f,<sp/>0.024878f,<sp/>0.025053f,<sp/>0.025230f,<sp/>0.025408f,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.025587f,<sp/>0.025768f,<sp/>0.025949f,<sp/>0.026132f,<sp/>0.026316f,<sp/>0.026502f,<sp/>0.026688f,<sp/>0.026876f,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.027065f,<sp/>0.027256f,<sp/>0.027448f,<sp/>0.027641f,<sp/>0.027835f,<sp/>0.028031f,<sp/>0.028228f,<sp/>0.028426f,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.028626f,<sp/>0.028827f,<sp/>0.029029f,<sp/>0.029233f,<sp/>0.029438f,<sp/>0.029645f,<sp/>0.029853f,<sp/>0.030062f,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.030273f,<sp/>0.030485f,<sp/>0.030699f,<sp/>0.030914f,<sp/>0.031131f,<sp/>0.031349f,<sp/>0.031568f,<sp/>0.031789f,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.032012f,<sp/>0.032236f,<sp/>0.032462f,<sp/>0.032689f,<sp/>0.032917f,<sp/>0.033148f,<sp/>0.033379f,<sp/>0.033613f,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.033848f,<sp/>0.034084f,<sp/>0.034322f,<sp/>0.034562f,<sp/>0.034803f,<sp/>0.035046f,<sp/>0.035291f,<sp/>0.035537f,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.035785f,<sp/>0.036035f,<sp/>0.036286f,<sp/>0.036540f,<sp/>0.036794f,<sp/>0.037051f,<sp/>0.037309f,<sp/>0.037569f,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.037831f,<sp/>0.038095f,<sp/>0.038360f,<sp/>0.038627f,<sp/>0.038896f,<sp/>0.039167f,<sp/>0.039440f,<sp/>0.039714f,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.039991f,<sp/>0.040269f,<sp/>0.040549f,<sp/>0.040831f,<sp/>0.041115f,<sp/>0.041401f,<sp/>0.041689f,<sp/>0.041978f,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.042270f,<sp/>0.042564f,<sp/>0.042860f,<sp/>0.043157f,<sp/>0.043457f,<sp/>0.043759f,<sp/>0.044063f,<sp/>0.044369f,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.044677f,<sp/>0.044987f,<sp/>0.045299f,<sp/>0.045613f,<sp/>0.045930f,<sp/>0.046248f,<sp/>0.046569f,<sp/>0.046892f,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.047217f,<sp/>0.047544f,<sp/>0.047874f,<sp/>0.048206f,<sp/>0.048540f,<sp/>0.048876f,<sp/>0.049215f,<sp/>0.049556f,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.049899f,<sp/>0.050244f,<sp/>0.050592f,<sp/>0.050943f,<sp/>0.051295f,<sp/>0.051650f,<sp/>0.052008f,<sp/>0.052368f,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.052730f,<sp/>0.053095f,<sp/>0.053462f,<sp/>0.053832f,<sp/>0.054204f,<sp/>0.054579f,<sp/>0.054956f,<sp/>0.055336f,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.055718f,<sp/>0.056103f,<sp/>0.056491f,<sp/>0.056881f,<sp/>0.057274f,<sp/>0.057670f,<sp/>0.058068f,<sp/>0.058469f,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.058873f,<sp/>0.059280f,<sp/>0.059689f,<sp/>0.060101f,<sp/>0.060516f,<sp/>0.060934f,<sp/>0.061354f,<sp/>0.061777f,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.062204f,<sp/>0.062633f,<sp/>0.063065f,<sp/>0.063500f,<sp/>0.063938f,<sp/>0.064379f,<sp/>0.064822f,<sp/>0.065269f,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.065719f,<sp/>0.066172f,<sp/>0.066628f,<sp/>0.067088f,<sp/>0.067550f,<sp/>0.068015f,<sp/>0.068484f,<sp/>0.068956f,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.069431f,<sp/>0.069909f,<sp/>0.070390f,<sp/>0.070875f,<sp/>0.071363f,<sp/>0.071854f,<sp/>0.072349f,<sp/>0.072847f,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.073348f,<sp/>0.073853f,<sp/>0.074362f,<sp/>0.074873f,<sp/>0.075388f,<sp/>0.075907f,<sp/>0.076429f,<sp/>0.076955f,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.077484f,<sp/>0.078017f,<sp/>0.078554f,<sp/>0.079094f,<sp/>0.079638f,<sp/>0.080185f,<sp/>0.080737f,<sp/>0.081292f,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.081850f,<sp/>0.082413f,<sp/>0.082979f,<sp/>0.083549f,<sp/>0.084124f,<sp/>0.084702f,<sp/>0.085283f,<sp/>0.085869f,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.086459f,<sp/>0.087053f,<sp/>0.087651f,<sp/>0.088253f,<sp/>0.088859f,<sp/>0.089469f,<sp/>0.090083f,<sp/>0.090702f,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.091325f,<sp/>0.091952f,<sp/>0.092583f,<sp/>0.093218f,<sp/>0.093858f,<sp/>0.094502f,<sp/>0.095151f,<sp/>0.095803f,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.096461f,<sp/>0.097123f,<sp/>0.097789f,<sp/>0.098460f,<sp/>0.099135f,<sp/>0.099815f,<sp/>0.100500f,<sp/>0.101189f,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.101883f,<sp/>0.102581f,<sp/>0.103285f,<sp/>0.103993f,<sp/>0.104706f,<sp/>0.105424f,<sp/>0.106146f,<sp/>0.106874f,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.107606f,<sp/>0.108344f,<sp/>0.109086f,<sp/>0.109834f,<sp/>0.110587f,<sp/>0.111344f,<sp/>0.112107f,<sp/>0.112875f,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.113649f,<sp/>0.114427f,<sp/>0.115211f,<sp/>0.116000f,<sp/>0.116795f,<sp/>0.117594f,<sp/>0.118400f,<sp/>0.119211f,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.120027f,<sp/>0.120849f,<sp/>0.121676f,<sp/>0.122509f,<sp/>0.123348f,<sp/>0.124192f,<sp/>0.125042f,<sp/>0.125898f,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.126760f,<sp/>0.127628f,<sp/>0.128501f,<sp/>0.129381f,<sp/>0.130266f,<sp/>0.131157f,<sp/>0.132055f,<sp/>0.132958f,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.133868f,<sp/>0.134784f,<sp/>0.135706f,<sp/>0.136634f,<sp/>0.137569f,<sp/>0.138510f,<sp/>0.139457f,<sp/>0.140411f,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.141372f,<sp/>0.142338f,<sp/>0.143312f,<sp/>0.144292f,<sp/>0.145278f,<sp/>0.146272f,<sp/>0.147272f,<sp/>0.148279f,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.149293f,<sp/>0.150313f,<sp/>0.151341f,<sp/>0.152375f,<sp/>0.153417f,<sp/>0.154466f,<sp/>0.155521f,<sp/>0.156584f,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.157654f,<sp/>0.158732f,<sp/>0.159817f,<sp/>0.160909f,<sp/>0.162008f,<sp/>0.163115f,<sp/>0.164230f,<sp/>0.165352f,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.166481f,<sp/>0.167619f,<sp/>0.168764f,<sp/>0.169917f,<sp/>0.171077f,<sp/>0.172246f,<sp/>0.173423f,<sp/>0.174607f,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.175800f,<sp/>0.177000f,<sp/>0.178209f,<sp/>0.179426f,<sp/>0.180651f,<sp/>0.181885f,<sp/>0.183127f,<sp/>0.184378f,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.185636f,<sp/>0.186904f,<sp/>0.188180f,<sp/>0.189465f,<sp/>0.190758f,<sp/>0.192061f,<sp/>0.193372f,<sp/>0.194692f,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.196021f,<sp/>0.197359f,<sp/>0.198706f,<sp/>0.200062f,<sp/>0.201427f,<sp/>0.202802f,<sp/>0.204186f,<sp/>0.205580f,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.206983f,<sp/>0.208395f,<sp/>0.209817f,<sp/>0.211249f,<sp/>0.212690f,<sp/>0.214141f,<sp/>0.215603f,<sp/>0.217074f,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.218555f,<sp/>0.220046f,<sp/>0.221547f,<sp/>0.223058f,<sp/>0.224580f,<sp/>0.226112f,<sp/>0.227654f,<sp/>0.229207f,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.230770f,<sp/>0.232344f,<sp/>0.233929f,<sp/>0.235525f,<sp/>0.237131f,<sp/>0.238748f,<sp/>0.240376f,<sp/>0.242016f,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.243666f,<sp/>0.245328f,<sp/>0.247001f,<sp/>0.248685f,<sp/>0.250380f,<sp/>0.252088f,<sp/>0.253807f,<sp/>0.255537f,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.257279f,<sp/>0.259033f,<sp/>0.260799f,<sp/>0.262577f,<sp/>0.264367f,<sp/>0.266170f,<sp/>0.267984f,<sp/>0.269811f,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.271650f,<sp/>0.273502f,<sp/>0.275366f,<sp/>0.277243f,<sp/>0.279132f,<sp/>0.281035f,<sp/>0.282950f,<sp/>0.284879f,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.286820f,<sp/>0.288775f,<sp/>0.290743f,<sp/>0.292724f,<sp/>0.294719f,<sp/>0.296728f,<sp/>0.298750f,<sp/>0.300785f,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.302835f,<sp/>0.304898f,<sp/>0.306976f,<sp/>0.309067f,<sp/>0.311173f,<sp/>0.313293f,<sp/>0.315428f,<sp/>0.317577f,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.319741f,<sp/>0.321919f,<sp/>0.324112f,<sp/>0.326320f,<sp/>0.328543f,<sp/>0.330781f,<sp/>0.333034f,<sp/>0.335303f,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.337587f,<sp/>0.339886f,<sp/>0.342202f,<sp/>0.344532f,<sp/>0.346879f,<sp/>0.349242f,<sp/>0.351620f,<sp/>0.354015f,</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.356426f,<sp/>0.358854f,<sp/>0.361298f,<sp/>0.363758f,<sp/>0.366236f,<sp/>0.368730f,<sp/>0.371241f,<sp/>0.373769f,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.376314f,<sp/>0.378877f,<sp/>0.381457f,<sp/>0.384054f,<sp/>0.386669f,<sp/>0.389302f,<sp/>0.391953f,<sp/>0.394622f,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.397309f,<sp/>0.400014f,<sp/>0.402737f,<sp/>0.405479f,<sp/>0.408240f,<sp/>0.411019f,<sp/>0.413818f,<sp/>0.416635f,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.419471f,<sp/>0.422327f,<sp/>0.425202f,<sp/>0.428097f,<sp/>0.431011f,<sp/>0.433945f,<sp/>0.436899f,<sp/>0.439873f,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.442867f,<sp/>0.445882f,<sp/>0.448917f,<sp/>0.451972f,<sp/>0.455049f,<sp/>0.458146f,<sp/>0.461265f,<sp/>0.464404f,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.467565f,<sp/>0.470747f,<sp/>0.473951f,<sp/>0.477177f,<sp/>0.480424f,<sp/>0.483694f,<sp/>0.486986f,<sp/>0.490300f,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.493637f,<sp/>0.496996f,<sp/>0.500379f,<sp/>0.503784f,<sp/>0.507212f,<sp/>0.510664f,<sp/>0.514139f,<sp/>0.517637f,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.521160f,<sp/>0.524706f,<sp/>0.528277f,<sp/>0.531871f,<sp/>0.535490f,<sp/>0.539134f,<sp/>0.542803f,<sp/>0.546496f,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.550214f,<sp/>0.553958f,<sp/>0.557727f,<sp/>0.561522f,<sp/>0.565342f,<sp/>0.569189f,<sp/>0.573061f,<sp/>0.576960f,</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.580885f,<sp/>0.584837f,<sp/>0.588816f,<sp/>0.592822f,<sp/>0.596855f,<sp/>0.600916f,<sp/>0.605004f,<sp/>0.609120f,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.613263f,<sp/>0.617435f,<sp/>0.621635f,<sp/>0.625864f,<sp/>0.630122f,<sp/>0.634408f,<sp/>0.638724f,<sp/>0.643068f,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.647443f,<sp/>0.651847f,<sp/>0.656281f,<sp/>0.660745f,<sp/>0.665239f,<sp/>0.669764f,<sp/>0.674320f,<sp/>0.678906f,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.683524f,<sp/>0.688173f,<sp/>0.692854f,<sp/>0.697566f,<sp/>0.702311f,<sp/>0.707088f,<sp/>0.711897f,<sp/>0.716739f,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.721613f,<sp/>0.726521f,<sp/>0.731462f,<sp/>0.736437f,<sp/>0.741446f,<sp/>0.746488f,<sp/>0.751565f,<sp/>0.756676f,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.761822f,<sp/>0.767003f,<sp/>0.772219f,<sp/>0.777471f,<sp/>0.782758f,<sp/>0.788081f,<sp/>0.793440f,<sp/>0.798836f,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.804268f,<sp/>0.809737f,<sp/>0.815244f,<sp/>0.820787f,<sp/>0.826369f,<sp/>0.831988f,<sp/>0.837646f,<sp/>0.843342f,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.849076f,<sp/>0.854850f,<sp/>0.860662f,<sp/>0.866515f,<sp/>0.872407f,<sp/>0.878339f,<sp/>0.884311f,<sp/>0.890324f,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.896378f,<sp/>0.902472f,<sp/>0.908609f,<sp/>0.914786f,<sp/>0.921006f,<sp/>0.927268f,<sp/>0.933573f,<sp/>0.939920f,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>0.946311f,<sp/>0.952745f,<sp/>0.959223f,<sp/>0.965744f,<sp/>0.972310f,<sp/>0.978921f,<sp/>0.985576f,<sp/>0.992277f,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/users/fadis/rc/harps/src/exp2_table.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,148 @@
+\section{harps::DynamicMonophony Class Reference}
+\label{classharps_1_1DynamicMonophony}\index{harps::DynamicMonophony@{harps::DynamicMonophony}}
+{\tt \#include $<$instrument.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf DynamicMonophony} ()
+\item 
+virtual {\bf $\sim$DynamicMonophony} ()
+\item 
+{\footnotesize template$<$typename SampleType$>$ }\\void {\bf operator()} ({\bf Buffer}$<$ SampleType $>$ \&\_\-buffer)
+\item 
+int {\bf noteOn} (int \_\-note, float \_\-touch)
+\item 
+void {\bf noteOff} (int \_\-dummy=0)
+\item 
+void {\bf noteWait} (int \_\-dummy=0)
+\item 
+void {\bf setPitchBend} (float \_\-pitch)
+\item 
+void {\bf reset} ()
+\item 
+Note::NoteState {\bf getStatus} () const 
+\item 
+double {\bf getGlobalTime} ()
+\item 
+void {\bf programChange} (const char $\ast$\_\-filename)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+モジュールの発音とクロックを管理するインスツルメントクラスです。 ダイナミックモノフォニーは外部トーンモジュールを読み込んで同時に1音を鳴らすことが出来ます。 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{harps::DynamicMonophony@{harps::DynamicMonophony}!DynamicMonophony@{DynamicMonophony}}
+\index{DynamicMonophony@{DynamicMonophony}!harps::DynamicMonophony@{harps::DynamicMonophony}}
+\subsubsection[DynamicMonophony]{\setlength{\rightskip}{0pt plus 5cm}harps::DynamicMonophony::DynamicMonophony ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicMonophony_1aa6282a44718f26647c48aa627a80f5}
+
+
+コンストラクタ \index{harps::DynamicMonophony@{harps::DynamicMonophony}!$\sim$DynamicMonophony@{$\sim$DynamicMonophony}}
+\index{$\sim$DynamicMonophony@{$\sim$DynamicMonophony}!harps::DynamicMonophony@{harps::DynamicMonophony}}
+\subsubsection[$\sim$DynamicMonophony]{\setlength{\rightskip}{0pt plus 5cm}virtual harps::DynamicMonophony::$\sim$DynamicMonophony ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classharps_1_1DynamicMonophony_c48c12ff80ee6f9088979fa13509e148}
+
+
+デストラクタ 
+
+\subsection{Member Function Documentation}
+\index{harps::DynamicMonophony@{harps::DynamicMonophony}!operator()@{operator()}}
+\index{operator()@{operator()}!harps::DynamicMonophony@{harps::DynamicMonophony}}
+\subsubsection[operator()]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename SampleType$>$ void harps::DynamicMonophony::operator() ({\bf Buffer}$<$ SampleType $>$ \& {\em \_\-buffer})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicMonophony_034e8a8eb8d8fafd8df36379fb1647dc}
+
+
+モジュールを実行し、クロックを1ブロック分進めます。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-buffer}]実行結果を出力するバッファブロック \end{description}
+\end{Desc}
+\index{harps::DynamicMonophony@{harps::DynamicMonophony}!noteOn@{noteOn}}
+\index{noteOn@{noteOn}!harps::DynamicMonophony@{harps::DynamicMonophony}}
+\subsubsection[noteOn]{\setlength{\rightskip}{0pt plus 5cm}int harps::DynamicMonophony::noteOn (int {\em \_\-note}, \/  float {\em \_\-touch})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicMonophony_183d62c092e5903c0e60b5ded5670290}
+
+
+指定した鍵盤を押された状態にします。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-note}]鍵盤(MIDIノートナンバーで指定) \item[{\em \_\-touch}]鍵盤を押す強さ \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]ノートID(モノフォニーは1音しか発音しないため、ノートIDは必ず0になります) \end{Desc}
+
+
+References harps::Note::noteOn(), and harps::CurrentTime::noteOn().\index{harps::DynamicMonophony@{harps::DynamicMonophony}!noteOff@{noteOff}}
+\index{noteOff@{noteOff}!harps::DynamicMonophony@{harps::DynamicMonophony}}
+\subsubsection[noteOff]{\setlength{\rightskip}{0pt plus 5cm}void harps::DynamicMonophony::noteOff (int {\em \_\-dummy} = {\tt 0})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicMonophony_46144634cfb0eefe21660fdf5ac3baef}
+
+
+現在押している鍵盤から指を離します。モジュールによっては鍵盤から指を離してもすぐに音は止まりません。音を完全に止めてインスツルメントを待機状態にするにはnoteWaitを呼び出す必要があります。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-dummy}]ノートID(ポリフォニーとインターフェースを揃えるために用意されています。この値は無視されます) \end{description}
+\end{Desc}
+
+
+References harps::Note::noteOff(), and harps::CurrentTime::noteOff().\index{harps::DynamicMonophony@{harps::DynamicMonophony}!noteWait@{noteWait}}
+\index{noteWait@{noteWait}!harps::DynamicMonophony@{harps::DynamicMonophony}}
+\subsubsection[noteWait]{\setlength{\rightskip}{0pt plus 5cm}void harps::DynamicMonophony::noteWait (int {\em \_\-dummy} = {\tt 0})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicMonophony_25728aacf3836d4e1fe4e401b02021df}
+
+
+発音処理を終了します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-dummy}]ノートID(ポリフォニーとインターフェースを揃えるために用意されています。この値は無視されます) \end{description}
+\end{Desc}
+
+
+References harps::Note::noteWait().\index{harps::DynamicMonophony@{harps::DynamicMonophony}!setPitchBend@{setPitchBend}}
+\index{setPitchBend@{setPitchBend}!harps::DynamicMonophony@{harps::DynamicMonophony}}
+\subsubsection[setPitchBend]{\setlength{\rightskip}{0pt plus 5cm}void harps::DynamicMonophony::setPitchBend (float {\em \_\-pitch})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicMonophony_4d304ca1400cb443cdb57a17cdedb3db}
+
+
+ピッチベンドします。設定したピッチベンド値はresetされるまで引き継がれます。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-pitch}]ピッチ(1.0で音階が1上がり、12.0で1オクターブ上がります) \end{description}
+\end{Desc}
+
+
+References harps::CurrentTime::setPitchBend().\index{harps::DynamicMonophony@{harps::DynamicMonophony}!reset@{reset}}
+\index{reset@{reset}!harps::DynamicMonophony@{harps::DynamicMonophony}}
+\subsubsection[reset]{\setlength{\rightskip}{0pt plus 5cm}void harps::DynamicMonophony::reset ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicMonophony_9293fc3cfa3044994c65a06c0e5709dc}
+
+
+インスツルメントをリセットします。設定されたピッチベンドは0に戻ります。 
+
+References harps::CurrentTime::reset().\index{harps::DynamicMonophony@{harps::DynamicMonophony}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!harps::DynamicMonophony@{harps::DynamicMonophony}}
+\subsubsection[getStatus]{\setlength{\rightskip}{0pt plus 5cm}Note::NoteState harps::DynamicMonophony::getStatus () const\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicMonophony_7691d2caaed5a624a33541a6c89f62a1}
+
+
+現在のノートの状態を取得します。 \begin{Desc}
+\item[Returns:]ノートの状態 \end{Desc}
+
+
+References harps::Note::getStatus().\index{harps::DynamicMonophony@{harps::DynamicMonophony}!getGlobalTime@{getGlobalTime}}
+\index{getGlobalTime@{getGlobalTime}!harps::DynamicMonophony@{harps::DynamicMonophony}}
+\subsubsection[getGlobalTime]{\setlength{\rightskip}{0pt plus 5cm}double harps::DynamicMonophony::getGlobalTime ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicMonophony_5891615a1418f7d7636469594c216f62}
+
+
+現在の処理中の箇所の時刻を返します。 \begin{Desc}
+\item[Returns:]現在時刻 \end{Desc}
+
+
+References harps::CurrentTime::getTime().\index{harps::DynamicMonophony@{harps::DynamicMonophony}!programChange@{programChange}}
+\index{programChange@{programChange}!harps::DynamicMonophony@{harps::DynamicMonophony}}
+\subsubsection[programChange]{\setlength{\rightskip}{0pt plus 5cm}void harps::DynamicMonophony::programChange (const char $\ast$ {\em \_\-filename})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicMonophony_1906e8848e676602585df3f896166dca}
+
+
+モジュールを変更します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-filename}]新しいモジュールのファイル名 \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+rc/harps/include/harps/instrument.hpp\end{CompactItemize}

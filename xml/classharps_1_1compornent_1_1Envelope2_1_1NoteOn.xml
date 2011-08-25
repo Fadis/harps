@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1compornent_1_1Envelope2_1_1NoteOn" kind="class" prot="public">
+    <compoundname>harps::compornent::Envelope2::NoteOn</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/envelope2.hpp" line="93" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/envelope2.hpp" bodystart="93" bodyend="93"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

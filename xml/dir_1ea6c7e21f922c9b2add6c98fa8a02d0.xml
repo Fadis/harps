@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="dir_1ea6c7e21f922c9b2add6c98fa8a02d0" kind="dir">
+    <compoundname>rc/harps/include/harps/compornent/</compoundname>
+    <innerfile refid="add_8hpp">add.hpp</innerfile>
+    <innerfile refid="branchbynote_8hpp">branchbynote.hpp</innerfile>
+    <innerfile refid="combiner_8hpp">combiner.hpp</innerfile>
+    <innerfile refid="constant_8hpp">constant.hpp</innerfile>
+    <innerfile refid="constant__mul_8hpp">constant_mul.hpp</innerfile>
+    <innerfile refid="distotion_8hpp">distotion.hpp</innerfile>
+    <innerfile refid="dynamic__module_8hpp">dynamic_module.hpp</innerfile>
+    <innerfile refid="envelope_8hpp">envelope.hpp</innerfile>
+    <innerfile refid="envelope2_8hpp">envelope2.hpp</innerfile>
+    <innerfile refid="fm_8hpp">fm.hpp</innerfile>
+    <innerfile refid="generator_8hpp">generator.hpp</innerfile>
+    <innerfile refid="mix_8hpp">mix.hpp</innerfile>
+    <innerfile refid="mul_8hpp">mul.hpp</innerfile>
+    <innerfile refid="noize_8hpp">noize.hpp</innerfile>
+    <innerfile refid="compornent_2normalize_8hpp">normalize.hpp</innerfile>
+    <innerfile refid="rectangle_8hpp">rectangle.hpp</innerfile>
+    <innerfile refid="scale_8hpp">scale.hpp</innerfile>
+    <innerfile refid="shift_8hpp">shift.hpp</innerfile>
+    <innerfile refid="compornent_2sine_8hpp">sine.hpp</innerfile>
+    <innerfile refid="switching__envelope_8hpp">switching_envelope.hpp</innerfile>
+    <innerfile refid="touch_8hpp">touch.hpp</innerfile>
+    <innerfile refid="triangle_8hpp">triangle.hpp</innerfile>
+    <innerfile refid="vector_8hpp">vector.hpp</innerfile>
+    <innerfile refid="volume_8hpp">volume.hpp</innerfile>
+    <innerfile refid="compornent_2wave_8hpp">wave.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/"/>
+  </compounddef>
+</doxygen>

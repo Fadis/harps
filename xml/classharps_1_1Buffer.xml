@@ -1,0 +1,434 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1Buffer" kind="class" prot="public">
+    <compoundname>harps::Buffer</compoundname>
+    <includes refid="buffer_8hpp" local="no">buffer.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>_SampleType</declname>
+        <defname>_SampleType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classharps_1_1Buffer_1f7833b35eca516673a6673a2e3891de9" prot="public" static="no">
+        <type>_SampleType</type>
+        <definition>typedef _SampleType harps::Buffer&lt; _SampleType &gt;::SampleType</definition>
+        <argsstring></argsstring>
+        <name>SampleType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="47" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1Buffer_1f4ed5f5a9c3baa581255057e560dbad0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool harps::Buffer&lt; _SampleType &gt;::used</definition>
+        <argsstring></argsstring>
+        <name>used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="188" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1Buffer_1bbdb01b8f0bece723f6b72f37d3e1ff9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int harps::Buffer&lt; _SampleType &gt;::is_stereo</definition>
+        <argsstring></argsstring>
+        <name>is_stereo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="189" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1Buffer_119f83804e8e0b9e195397c704a3213ca" prot="private" static="no" mutable="no">
+        <type>SampleType</type>
+        <definition>SampleType harps::Buffer&lt; _SampleType &gt;::buffer[2][SAMPLE_COUNT]</definition>
+        <argsstring>[2][SAMPLE_COUNT]</argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="190" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1Buffer_13eb2b383d9bde8e8b9dcb60b11901346" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int harps::Buffer&lt; _SampleType &gt;::continue_request</definition>
+        <argsstring></argsstring>
+        <name>continue_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="191" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="191" bodyend="-1"/>
+        <referencedby refid="classharps_1_1Buffer_1a42515d3024bfe66b2aea07e21e09e01" compoundref="buffer_8hpp" startline="156" endline="159">harps::Buffer&lt; SampleType &gt;::mergeVote</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1Buffer_1011f56515e753e1c7b28b8b4847b0567" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int harps::Buffer&lt; _SampleType &gt;::end_request</definition>
+        <argsstring></argsstring>
+        <name>end_request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="192" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="192" bodyend="-1"/>
+        <referencedby refid="classharps_1_1Buffer_1a42515d3024bfe66b2aea07e21e09e01" compoundref="buffer_8hpp" startline="156" endline="159">harps::Buffer&lt; SampleType &gt;::mergeVote</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1Buffer_1efec369ca2232f71a3846085fee8eb93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::Buffer&lt; _SampleType &gt;::Buffer</definition>
+        <argsstring>()</argsstring>
+        <name>Buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>コンストラクタ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="51" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_131d11f5c708d11688b49bee7e9af84fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual harps::Buffer&lt; _SampleType &gt;::~Buffer</definition>
+        <argsstring>()</argsstring>
+        <name>~Buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>デストラクタ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="55" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_12a7f5913399484eec854689812ea0bb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SampleType *</type>
+        <definition>SampleType* harps::Buffer&lt; _SampleType &gt;::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>モノラルバッファに使われている配列を取得します。 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="59" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="59" bodyend="61"/>
+        <referencedby refid="classharps_1_1DynamicPolyphony_13a2597029685d470e88e32a2ce3db94a" compoundref="instrument_8hpp" startline="169" endline="197">harps::DynamicPolyphony&lt; MonophonyType, max_polyphony &gt;::operator()</referencedby>
+        <referencedby refid="classharps_1_1input_1_1Tracks_139bfd26b91c4f04a0c6d9c7fdb01e1d9" compoundref="simple_8hpp" startline="187" endline="213">harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::operator()</referencedby>
+        <referencedby refid="namespaceharps_19f18f91c4acdcbfe42895fc812853066" compoundref="normalize_8hpp" startline="46" endline="67">harps::reduceNormalizingNoize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_16050133c6cd1ab3db1c7a169633dddf4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SampleType *</type>
+        <definition>SampleType* harps::Buffer&lt; _SampleType &gt;::getLeft</definition>
+        <argsstring>()</argsstring>
+        <name>getLeft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ステレオバッファに使われている左側の音を保持している配列を取得します。 <simplesect kind="return"><para>配列 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="66" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="66" bodyend="68"/>
+        <referencedby refid="classharps_1_1output_1_1ALSA_1721e00562d78f619502336705231c930" compoundref="alsa_8hpp" startline="77" endline="91">harps::output::ALSA&lt; is_stereo, bytes_per_sample &gt;::operator()</referencedby>
+        <referencedby refid="classharps_1_1output_1_1Wave_188399ca38037a5aa11bd8daa73d91cfa" compoundref="output_2wave_8hpp" startline="114" endline="123">harps::output::Wave&lt; is_stereo, bytes_per_sample &gt;::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_1668b1ac5c2af479da54a29cbec5a55c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SampleType *</type>
+        <definition>SampleType* harps::Buffer&lt; _SampleType &gt;::getRight</definition>
+        <argsstring>()</argsstring>
+        <name>getRight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ステレオバッファに使われている右側の音を保持している配列を取得します。 <simplesect kind="return"><para>配列 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="73" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="73" bodyend="75"/>
+        <referencedby refid="classharps_1_1output_1_1ALSA_1721e00562d78f619502336705231c930" compoundref="alsa_8hpp" startline="77" endline="91">harps::output::ALSA&lt; is_stereo, bytes_per_sample &gt;::operator()</referencedby>
+        <referencedby refid="classharps_1_1output_1_1Wave_188399ca38037a5aa11bd8daa73d91cfa" compoundref="output_2wave_8hpp" startline="114" endline="123">harps::output::Wave&lt; is_stereo, bytes_per_sample &gt;::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_197753c5714688c1be48ab451be12da34" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const SampleType *</type>
+        <definition>const SampleType* harps::Buffer&lt; _SampleType &gt;::get</definition>
+        <argsstring>() const </argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>モノラルバッファに使われている配列を取得します。 <simplesect kind="return"><para>配列 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="80" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_11172c500abe58b618a8a765cef5b9189" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const SampleType *</type>
+        <definition>const SampleType* harps::Buffer&lt; _SampleType &gt;::getLeft</definition>
+        <argsstring>() const </argsstring>
+        <name>getLeft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ステレオバッファに使われている左側の音を保持している配列を取得します。 <simplesect kind="return"><para>配列 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="87" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_117f18647a15e3ec85c4e6e497e2639f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const SampleType *</type>
+        <definition>const SampleType* harps::Buffer&lt; _SampleType &gt;::getRight</definition>
+        <argsstring>() const </argsstring>
+        <name>getRight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ステレオバッファに使われている右側の音を保持している配列を取得します。 <simplesect kind="return"><para>配列 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="94" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_15b03fbc0c2d1a6cede5a3c8a6d08aff9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::Buffer&lt; _SampleType &gt;::setStereo</definition>
+        <argsstring>()</argsstring>
+        <name>setStereo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>バッファをステレオにします。 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="100" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_1d64ce748ee70aaf027e30bc4ac23a641" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::Buffer&lt; _SampleType &gt;::setMonoral</definition>
+        <argsstring>()</argsstring>
+        <name>setMonoral</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>バッファをモノラルにします。 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="106" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_1aed1f9feac43f2110bc0345847259a2f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool harps::Buffer&lt; _SampleType &gt;::isStereo</definition>
+        <argsstring>() const </argsstring>
+        <name>isStereo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>バッファがステレオかどうか確認します。 <simplesect kind="return"><para>ステレオの場合true モノラルの場合false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="113" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_1c8c59a4b9026ae0db6029846305dfdb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::Buffer&lt; _SampleType &gt;::requestContinue</definition>
+        <argsstring>()</argsstring>
+        <name>requestContinue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>継続要求を出します。このバッファで音が終わってもらっては困る場合に、モジュールが呼び出します。 継続要求が全く無く、終了要求が1回以上ある場合バッファは音の終了をインスツルメントに提案します。 実際に音が終了するかどうかはインスツルメントに依存します。 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="121" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="121" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_10975021873c9957e22944e210d0a6de9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::Buffer&lt; _SampleType &gt;::requestEnd</definition>
+        <argsstring>()</argsstring>
+        <name>requestEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>終了要求を出します。このバッファで音が終わっていると考えられる場合に、モジュールが呼び出します。 継続要求が全く無く、終了要求が1回以上ある場合バッファは音の終了をインスツルメントに提案します。 実際に音が終了するかどうかはインスツルメントに依存します。 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="129" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="129" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_15c9522a1c6d2f36bfb387fc4ee1832fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::Buffer&lt; _SampleType &gt;::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>バッファの状態をリセットします。リセットされるのは状態だけでバッファの値はクリアされません。 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="135" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="135" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_1559084a4b5a2932f04a00aefe3cb7e37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool harps::Buffer&lt; _SampleType &gt;::shouldEnd</definition>
+        <argsstring>()</argsstring>
+        <name>shouldEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>音を終了すべきかどうかを判断します。 継続要求が全く無く、終了要求が1回以上ある場合バッファは音の終了をインスツルメントに提案します。 実際に音が終了するかどうかはインスツルメントに依存します。 <simplesect kind="return"><para>終了すべきならtrue 継続すべきならfalse </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="146" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="146" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_1a42515d3024bfe66b2aea07e21e09e01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::Buffer&lt; _SampleType &gt;::mergeVote</definition>
+        <argsstring>(const Buffer&lt; _SampleType &gt; &amp;_source)</argsstring>
+        <name>mergeVote</name>
+        <param>
+          <type>const <ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; _SampleType &gt; &amp;</type>
+          <declname>_source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>複数のバッファの投票を足し合わせます。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>足し合わせるバッファ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="156" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_1f102d36b2f325b5d22fa91b7dfb6d7ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int harps::Buffer&lt; _SampleType &gt;::getContinueRequestCount</definition>
+        <argsstring>() const </argsstring>
+        <name>getContinueRequestCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>継続要求の回数を取得します。 <simplesect kind="return"><para>回数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="164" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="164" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_1588439f2fb486c1ceef8f3e2700e1110" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int harps::Buffer&lt; _SampleType &gt;::getEndRequestCount</definition>
+        <argsstring>() const </argsstring>
+        <name>getEndRequestCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>終了要求の回数を取得します。 <simplesect kind="return"><para>回数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="171" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="171" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_1cb84b61718acf55369f9d896db08649b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::Buffer&lt; _SampleType &gt;::setUsed</definition>
+        <argsstring>()</argsstring>
+        <name>setUsed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>バッファに使用済フラグを立てます。 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="177" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Buffer_17d71d808b95592e23858926cc6fec561" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool harps::Buffer&lt; _SampleType &gt;::getUsed</definition>
+        <argsstring>() const </argsstring>
+        <name>getUsed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>バッファが使用済かどうか調べます。 <simplesect kind="return"><para>使用済ならtrue 未使用ならfalse </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="184" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="184" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>モジュールの出力を保持するバッファです。 モノラル、またはステレオであらかじめ指定された長さの音を保持します。 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>_SampleType</label>
+      </node>
+      <node id="9">
+        <label>harps::Buffer&lt; _SampleType &gt;</label>
+        <link refid="classharps_1_1Buffer"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>buffer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="45" bodyfile="/home/users/fadis/rc/harps/include/harps/buffer.hpp" bodystart="45" bodyend="193"/>
+    <listofallmembers>
+      <member refid="classharps_1_1Buffer_119f83804e8e0b9e195397c704a3213ca" prot="private" virt="non-virtual"><scope>harps::Buffer</scope><name>buffer</name></member>
+      <member refid="classharps_1_1Buffer_1efec369ca2232f71a3846085fee8eb93" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>Buffer</name></member>
+      <member refid="classharps_1_1Buffer_13eb2b383d9bde8e8b9dcb60b11901346" prot="private" virt="non-virtual"><scope>harps::Buffer</scope><name>continue_request</name></member>
+      <member refid="classharps_1_1Buffer_1011f56515e753e1c7b28b8b4847b0567" prot="private" virt="non-virtual"><scope>harps::Buffer</scope><name>end_request</name></member>
+      <member refid="classharps_1_1Buffer_12a7f5913399484eec854689812ea0bb9" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>get</name></member>
+      <member refid="classharps_1_1Buffer_197753c5714688c1be48ab451be12da34" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>get</name></member>
+      <member refid="classharps_1_1Buffer_1f102d36b2f325b5d22fa91b7dfb6d7ba" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>getContinueRequestCount</name></member>
+      <member refid="classharps_1_1Buffer_1588439f2fb486c1ceef8f3e2700e1110" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>getEndRequestCount</name></member>
+      <member refid="classharps_1_1Buffer_16050133c6cd1ab3db1c7a169633dddf4" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>getLeft</name></member>
+      <member refid="classharps_1_1Buffer_11172c500abe58b618a8a765cef5b9189" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>getLeft</name></member>
+      <member refid="classharps_1_1Buffer_1668b1ac5c2af479da54a29cbec5a55c7" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>getRight</name></member>
+      <member refid="classharps_1_1Buffer_117f18647a15e3ec85c4e6e497e2639f2" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>getRight</name></member>
+      <member refid="classharps_1_1Buffer_17d71d808b95592e23858926cc6fec561" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>getUsed</name></member>
+      <member refid="classharps_1_1Buffer_1bbdb01b8f0bece723f6b72f37d3e1ff9" prot="private" virt="non-virtual"><scope>harps::Buffer</scope><name>is_stereo</name></member>
+      <member refid="classharps_1_1Buffer_1aed1f9feac43f2110bc0345847259a2f" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>isStereo</name></member>
+      <member refid="classharps_1_1Buffer_1a42515d3024bfe66b2aea07e21e09e01" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>mergeVote</name></member>
+      <member refid="classharps_1_1Buffer_1c8c59a4b9026ae0db6029846305dfdb9" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>requestContinue</name></member>
+      <member refid="classharps_1_1Buffer_10975021873c9957e22944e210d0a6de9" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>requestEnd</name></member>
+      <member refid="classharps_1_1Buffer_15c9522a1c6d2f36bfb387fc4ee1832fb" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>reset</name></member>
+      <member refid="classharps_1_1Buffer_1f7833b35eca516673a6673a2e3891de9" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>SampleType</name></member>
+      <member refid="classharps_1_1Buffer_1d64ce748ee70aaf027e30bc4ac23a641" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>setMonoral</name></member>
+      <member refid="classharps_1_1Buffer_15b03fbc0c2d1a6cede5a3c8a6d08aff9" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>setStereo</name></member>
+      <member refid="classharps_1_1Buffer_1cb84b61718acf55369f9d896db08649b" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>setUsed</name></member>
+      <member refid="classharps_1_1Buffer_1559084a4b5a2932f04a00aefe3cb7e37" prot="public" virt="non-virtual"><scope>harps::Buffer</scope><name>shouldEnd</name></member>
+      <member refid="classharps_1_1Buffer_1f4ed5f5a9c3baa581255057e560dbad0" prot="private" virt="non-virtual"><scope>harps::Buffer</scope><name>used</name></member>
+      <member refid="classharps_1_1Buffer_131d11f5c708d11688b49bee7e9af84fd" prot="public" virt="virtual"><scope>harps::Buffer</scope><name>~Buffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

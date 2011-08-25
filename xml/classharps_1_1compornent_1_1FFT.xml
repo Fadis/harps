@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1compornent_1_1FFT" kind="class" prot="public">
+    <compoundname>harps::compornent::FFT</compoundname>
+    <includes refid="noize_8hpp" local="no">noize.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>size</declname>
+        <defname>size</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1compornent_1_1FFT_1dc4db580af8a20c0622bfc9dc7cb9534" prot="private" static="no" mutable="no">
+        <type>boost::array&lt; std::complex&lt; float &gt;, size &gt;</type>
+        <definition>boost::array&lt; std::complex&lt; float &gt;, size &gt; harps::compornent::FFT&lt; size &gt;::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" line="139" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1compornent_1_1FFT_1a4d4ce607deaa4982d382ee98ffebeec" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool harps::compornent::FFT&lt; size &gt;::inverse</definition>
+        <argsstring></argsstring>
+        <name>inverse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" line="140" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1compornent_1_1FFT_1f9e163248a4a1effeb45be7aacf18824" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::compornent::FFT&lt; size &gt;::FFT</definition>
+        <argsstring>(int _inverse)</argsstring>
+        <name>FFT</name>
+        <param>
+          <type>int</type>
+          <declname>_inverse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" line="62" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" bodystart="62" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1compornent_1_1FFT_1ead57ca53e62bf176a43f9b4c2b356e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::compornent::FFT&lt; size &gt;::operator()</definition>
+        <argsstring>(float *_buffer)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>float *</type>
+          <declname>_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" line="75" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" bodystart="75" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1compornent_1_1FFT_1138cf479685812d1d792d91ab0f40e01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::compornent::FFT&lt; size &gt;::operator()</definition>
+        <argsstring>(std::complex&lt; float &gt; *_buffer)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>std::complex&lt; float &gt; *</type>
+          <declname>_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" line="84" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" bodystart="84" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1compornent_1_1FFT_1dc2aeef5b010a13811af33d2b7fceabf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::compornent::FFT&lt; size &gt;::process</definition>
+        <argsstring>(std::complex&lt; float &gt; *_dest, std::complex&lt; float &gt; *_src, unsigned int _block_size)</argsstring>
+        <name>process</name>
+        <param>
+          <type>std::complex&lt; float &gt; *</type>
+          <declname>_dest</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; float &gt; *</type>
+          <declname>_src</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>_block_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" line="101" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" bodystart="101" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classharps_1_1compornent_1_1FFT_1100b698ed9ffd2d8d5663a9a61ee457a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int harps::compornent::FFT&lt; size &gt;::flipBit</definition>
+        <argsstring>(unsigned int _value)</argsstring>
+        <name>flipBit</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" line="116" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" bodystart="116" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1compornent_1_1FFT_189d87ab40fe43ca878e2172b07ec90ce" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::compornent::FFT&lt; size &gt;::swap</definition>
+        <argsstring>(std::complex&lt; float &gt; *_buffer)</argsstring>
+        <name>swap</name>
+        <param>
+          <type>std::complex&lt; float &gt; *</type>
+          <declname>_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" line="126" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" bodystart="126" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1compornent_1_1FFT_17c3cd96070e0aa609610ef378a5b20e6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::compornent::FFT&lt; size &gt;::div</definition>
+        <argsstring>(std::complex&lt; float &gt; *_buffer)</argsstring>
+        <name>div</name>
+        <param>
+          <type>std::complex&lt; float &gt; *</type>
+          <declname>_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" line="134" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" bodystart="134" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>高速フーリエ変換を行うためのクラスです。 </para>    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" line="60" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" bodystart="60" bodyend="141"/>
+    <listofallmembers>
+      <member refid="classharps_1_1compornent_1_1FFT_17c3cd96070e0aa609610ef378a5b20e6" prot="private" virt="non-virtual"><scope>harps::compornent::FFT</scope><name>div</name></member>
+      <member refid="classharps_1_1compornent_1_1FFT_1f9e163248a4a1effeb45be7aacf18824" prot="public" virt="non-virtual"><scope>harps::compornent::FFT</scope><name>FFT</name></member>
+      <member refid="classharps_1_1compornent_1_1FFT_1100b698ed9ffd2d8d5663a9a61ee457a" prot="private" virt="non-virtual"><scope>harps::compornent::FFT</scope><name>flipBit</name></member>
+      <member refid="classharps_1_1compornent_1_1FFT_1a4d4ce607deaa4982d382ee98ffebeec" prot="private" virt="non-virtual"><scope>harps::compornent::FFT</scope><name>inverse</name></member>
+      <member refid="classharps_1_1compornent_1_1FFT_1ead57ca53e62bf176a43f9b4c2b356e7" prot="public" virt="non-virtual"><scope>harps::compornent::FFT</scope><name>operator()</name></member>
+      <member refid="classharps_1_1compornent_1_1FFT_1138cf479685812d1d792d91ab0f40e01" prot="public" virt="non-virtual"><scope>harps::compornent::FFT</scope><name>operator()</name></member>
+      <member refid="classharps_1_1compornent_1_1FFT_1dc2aeef5b010a13811af33d2b7fceabf" prot="public" virt="non-virtual"><scope>harps::compornent::FFT</scope><name>process</name></member>
+      <member refid="classharps_1_1compornent_1_1FFT_189d87ab40fe43ca878e2172b07ec90ce" prot="private" virt="non-virtual"><scope>harps::compornent::FFT</scope><name>swap</name></member>
+      <member refid="classharps_1_1compornent_1_1FFT_1dc4db580af8a20c0622bfc9dc7cb9534" prot="private" virt="non-virtual"><scope>harps::compornent::FFT</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

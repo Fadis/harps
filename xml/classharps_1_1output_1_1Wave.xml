@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1output_1_1Wave" kind="class" prot="public">
+    <compoundname>harps::output::Wave</compoundname>
+    <includes refid="output_2wave_8hpp" local="no">wave.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>is_stereo</declname>
+        <defname>is_stereo</defname>
+      </param>
+      <param>
+        <type>unsigned int</type>
+        <declname>bytes_per_sample</declname>
+        <defname>bytes_per_sample</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1output_1_1Wave_15ad0bfbdcb886f5c5809c765d0484821" prot="private" static="no" mutable="no">
+        <type>boost::filesystem::path</type>
+        <definition>boost::filesystem::path harps::output::Wave&lt; is_stereo, bytes_per_sample &gt;::filepath</definition>
+        <argsstring></argsstring>
+        <name>filepath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/output/wave.hpp" line="136" bodyfile="/home/users/fadis/rc/harps/include/harps/output/wave.hpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1output_1_1Wave_1e8bb2e01a097585241b816c80ef54ee3" prot="private" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; std::fstream &gt;</type>
+        <definition>boost::shared_ptr&lt; std::fstream &gt; harps::output::Wave&lt; is_stereo, bytes_per_sample &gt;::outfile</definition>
+        <argsstring></argsstring>
+        <name>outfile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/output/wave.hpp" line="137" bodyfile="/home/users/fadis/rc/harps/include/harps/output/wave.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1output_1_1Wave_1220425fb4828faccdc2c6f3be63f498c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::output::Wave&lt; is_stereo, bytes_per_sample &gt;::Wave</definition>
+        <argsstring>(const char *_filename)</argsstring>
+        <name>Wave</name>
+        <param>
+          <type>const char *</type>
+          <declname>_filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>コンストラクタ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>出力ファイル名 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/output/wave.hpp" line="55" bodyfile="/home/users/fadis/rc/harps/include/harps/output/wave.hpp" bodystart="54" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1output_1_1Wave_105c145cb74ff699e183a516a76f9a50a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual harps::output::Wave&lt; is_stereo, bytes_per_sample &gt;::~Wave</definition>
+        <argsstring>()</argsstring>
+        <name>~Wave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>デストラクタ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/output/wave.hpp" line="94" bodyfile="/home/users/fadis/rc/harps/include/harps/output/wave.hpp" bodystart="94" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1output_1_1Wave_188399ca38037a5aa11bd8daa73d91cfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>SampleType</declname>
+            <defname>SampleType</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void harps::output::Wave&lt; is_stereo, bytes_per_sample &gt;::operator()</definition>
+        <argsstring>(Buffer&lt; SampleType &gt; &amp;_buffer)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; SampleType &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>バッファを書き出します <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>バッファ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/output/wave.hpp" line="114" bodyfile="/home/users/fadis/rc/harps/include/harps/output/wave.hpp" bodystart="114" bodyend="123"/>
+        <references refid="classharps_1_1Buffer_16050133c6cd1ab3db1c7a169633dddf4" compoundref="buffer_8hpp" startline="66" endline="68">harps::Buffer&lt; _SampleType &gt;::getLeft</references>
+        <references refid="classharps_1_1Buffer_1668b1ac5c2af479da54a29cbec5a55c7" compoundref="buffer_8hpp" startline="73" endline="75">harps::Buffer&lt; _SampleType &gt;::getRight</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classharps_1_1output_1_1Wave_19eae3b9664054cc582419cc0bbbc3938" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::output::Wave&lt; is_stereo, bytes_per_sample &gt;::writeValue</definition>
+        <argsstring>(float _value)</argsstring>
+        <name>writeValue</name>
+        <param>
+          <type>float</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/output/wave.hpp" line="125" bodyfile="/home/users/fadis/rc/harps/include/harps/output/wave.hpp" bodystart="125" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>RIFF Wave形式でファイルに書き出します。 </para>    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/output/wave.hpp" line="48" bodyfile="/home/users/fadis/rc/harps/include/harps/output/wave.hpp" bodystart="48" bodyend="138"/>
+    <listofallmembers>
+      <member refid="classharps_1_1output_1_1Wave_15ad0bfbdcb886f5c5809c765d0484821" prot="private" virt="non-virtual"><scope>harps::output::Wave</scope><name>filepath</name></member>
+      <member refid="classharps_1_1output_1_1Wave_188399ca38037a5aa11bd8daa73d91cfa" prot="public" virt="non-virtual"><scope>harps::output::Wave</scope><name>operator()</name></member>
+      <member refid="classharps_1_1output_1_1Wave_1e8bb2e01a097585241b816c80ef54ee3" prot="private" virt="non-virtual"><scope>harps::output::Wave</scope><name>outfile</name></member>
+      <member refid="classharps_1_1output_1_1Wave_1220425fb4828faccdc2c6f3be63f498c" prot="public" virt="non-virtual"><scope>harps::output::Wave</scope><name>Wave</name></member>
+      <member refid="classharps_1_1output_1_1Wave_19eae3b9664054cc582419cc0bbbc3938" prot="private" virt="non-virtual"><scope>harps::output::Wave</scope><name>writeValue</name></member>
+      <member refid="classharps_1_1output_1_1Wave_105c145cb74ff699e183a516a76f9a50a" prot="public" virt="virtual"><scope>harps::output::Wave</scope><name>~Wave</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

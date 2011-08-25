@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="dir_e792caa1eca5ce854299b413ebcd909d" kind="dir">
+    <compoundname>rc/harps/include/harps/table/</compoundname>
+    <innerfile refid="exp2_8hpp">exp2.hpp</innerfile>
+    <innerfile refid="table_2sine_8hpp">sine.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/table/"/>
+  </compounddef>
+</doxygen>

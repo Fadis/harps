@@ -1,0 +1,38 @@
+\section{harps::DynamicModuleSlot Class Reference}
+\label{classharps_1_1DynamicModuleSlot}\index{harps::DynamicModuleSlot@{harps::DynamicModuleSlot}}
+{\tt \#include $<$dynamic\_\-module.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf DynamicModuleSlot} (const char $\ast$\_\-filename)
+\item 
+void \textbf{operator()} ({\bf Buffer}$<$ float $>$ \&\_\-buffer, {\bf CurrentTime} \&\_\-clock, {\bf Note} \&\_\-note)\label{classharps_1_1DynamicModuleSlot_0bb30450af88f9a6bfe7b796d6533a05}
+
+\item 
+void \textbf{operator()} ({\bf Buffer}$<$ double $>$ \&\_\-buffer, {\bf CurrentTime} \&\_\-clock, {\bf Note} \&\_\-note)\label{classharps_1_1DynamicModuleSlot_d8a9c601e21e7daf79992b65e6babb36}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+動的ロードモジュールのソケットを接続するためのスロットです。 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{harps::DynamicModuleSlot@{harps::DynamicModuleSlot}!DynamicModuleSlot@{DynamicModuleSlot}}
+\index{DynamicModuleSlot@{DynamicModuleSlot}!harps::DynamicModuleSlot@{harps::DynamicModuleSlot}}
+\subsubsection[DynamicModuleSlot]{\setlength{\rightskip}{0pt plus 5cm}harps::DynamicModuleSlot::DynamicModuleSlot (const char $\ast$ {\em \_\-filename})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicModuleSlot_ae856e3f338981e6016c9834433bfeff}
+
+
+コンストラクタ \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-filename}]動的ロードモジュールの名前 \end{description}
+\end{Desc}
+
+
+References harps::getModulePath().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+rc/harps/include/harps/compornent/dynamic\_\-module.hpp\end{CompactItemize}

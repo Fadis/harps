@@ -1,0 +1,339 @@
+\section{harps Namespace Reference}
+\label{namespaceharps}\index{harps@{harps}}
+
+
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class {\bf Buffer}
+\item 
+class {\bf ClockMatrixCalc}
+\item 
+class {\bf ClockMatrixCalc$<$ LOCAL $>$}
+\item 
+class {\bf ClockMatrixCalc$<$ KEY $>$}
+\item 
+class {\bf ClockMatrixCalc$<$ TONE $>$}
+\item 
+class {\bf CurrentTime}
+\item 
+class {\bf Clock}
+\item 
+class {\bf DynamicModuleSocket}
+\item 
+class {\bf DynamicModuleSlot}
+\item 
+class \textbf{Dummy}
+\item 
+class {\bf HarpsException}
+\item 
+class {\bf ModuleNotFound}
+\item 
+class {\bf UnableToCreateInstance}
+\item 
+class {\bf UnableToOpenSink}
+\item 
+class {\bf SinkConfigurationFailed}
+\item 
+class {\bf SinkOutputFailed}
+\item 
+class {\bf DynamicMonophony}
+\item 
+class {\bf DynamicPolyphony}
+\item 
+class {\bf Normalizer}
+\item 
+class {\bf Note}
+\item 
+class {\bf SharedBuffer}
+\end{CompactItemize}
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace {\bf compornent}
+\item 
+namespace {\bf input}
+\item 
+namespace {\bf output}
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef double \textbf{Time}\label{namespaceharps_e436698398d387e2b89ecdc95171e7a7}
+
+\item 
+typedef std::pair$<$ Time, Time $>$ \textbf{TimeMatrix}\label{namespaceharps_e9707f612d7e353030e63165bc8796fc}
+
+\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \{ \textbf{GLOBAL} =  -1, 
+\textbf{LOCAL} =  0, 
+\textbf{KEY} =  1, 
+\textbf{TONE} =  2
+ \}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+float {\bf noteToFrequency} (float \_\-note)
+\item 
+const char $\ast$ {\bf getModulePath} ()
+\item 
+{\footnotesize template$<$typename SampleType$>$ }\\void {\bf reduceNormalizingNoize} ({\bf Buffer}$<$ SampleType $>$ \&\_\-buffer)
+\item 
+double {\bf getTime} ()
+\item 
+void {\bf sleep} (double \_\-until)
+\item 
+float {\bf loop} (float \_\-source)
+\item 
+double {\bf loop} (double \_\-source)
+\item 
+float {\bf sin} (float \_\-theta)
+\item 
+double {\bf sin} (double \_\-theta)
+\item 
+float {\bf volume} (float \_\-linear)
+\item 
+double {\bf volume} (double \_\-linear)
+\item 
+float {\bf triangle} (float \_\-theta)
+\item 
+double {\bf triangle} (double \_\-theta)
+\item 
+float {\bf rectangle} (float \_\-duty, float \_\-theta)
+\item 
+double {\bf rectangle} (double \_\-duty, double \_\-theta)
+\item 
+float {\bf nes} (float \_\-theta)
+\item 
+double {\bf nes} (double \_\-theta)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+harpsはテンプレートベースで作られたモジュールシンセサイザーです。 harpsではスタック操作の最適化の効果を最大限に得るために殆どの関数はインラインかされています。 
+
+\subsection{Function Documentation}
+\index{harps@{harps}!getModulePath@{getModulePath}}
+\index{getModulePath@{getModulePath}!harps@{harps}}
+\subsubsection[getModulePath]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ harps::getModulePath ()}\label{namespaceharps_39a98007c1da8f7aedcfe13c51760124}
+
+
+モジュールを探すパスを取得します。モジュールを探すパスはビルド時に指定されたprefixをもとに決定されます。 \begin{Desc}
+\item[Returns:]探索パス \end{Desc}
+
+
+Referenced by harps::DynamicModuleSlot::DynamicModuleSlot().\index{harps@{harps}!getTime@{getTime}}
+\index{getTime@{getTime}!harps@{harps}}
+\subsubsection[getTime]{\setlength{\rightskip}{0pt plus 5cm}double harps::getTime ()\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_54146ea57c1846a470bf191f51516988}
+
+
+現在時刻を取得します。 \begin{Desc}
+\item[Returns:]現在時刻 \end{Desc}
+
+
+Referenced by sleep().\index{harps@{harps}!loop@{loop}}
+\index{loop@{loop}!harps@{harps}}
+\subsubsection[loop]{\setlength{\rightskip}{0pt plus 5cm}double harps::loop (double {\em \_\-source})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_cb6eb6b6be744624501519370f1973ed}
+
+
+入力値を0.0から1.0(1.0を含まない)の間でループします。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-source}]入力値 \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]出力値 \end{Desc}
+\index{harps@{harps}!loop@{loop}}
+\index{loop@{loop}!harps@{harps}}
+\subsubsection[loop]{\setlength{\rightskip}{0pt plus 5cm}float harps::loop (float {\em \_\-source})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_87cb95178359fc94fd9cf4b8c6bcefff}
+
+
+入力値を0.0から1.0(1.0を含まない)の間でループします。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-source}]入力値 \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]出力値 \end{Desc}
+
+
+Referenced by nes(), rectangle(), harps::CurrentTime::setPitchBend(), sin(), and triangle().\index{harps@{harps}!nes@{nes}}
+\index{nes@{nes}!harps@{harps}}
+\subsubsection[nes]{\setlength{\rightskip}{0pt plus 5cm}double harps::nes (double {\em \_\-theta})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_bebd9a61b530b183652b2d08e2e8ee23}
+
+
+ファミコンっぽい三角波を返します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-theta}]角度(1周を1.0とする) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]triangle( \_\-theta )をある程度の精度で丸めたもの \end{Desc}
+
+
+References loop().\index{harps@{harps}!nes@{nes}}
+\index{nes@{nes}!harps@{harps}}
+\subsubsection[nes]{\setlength{\rightskip}{0pt plus 5cm}float harps::nes (float {\em \_\-theta})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_99acf61c717498656a088ceb0c6d8e3e}
+
+
+ファミコンっぽい三角波を返します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-theta}]角度(1周を1.0とする) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]triangle( \_\-theta )をある程度の精度で丸めたもの \end{Desc}
+
+
+References loop().\index{harps@{harps}!noteToFrequency@{noteToFrequency}}
+\index{noteToFrequency@{noteToFrequency}!harps@{harps}}
+\subsubsection[noteToFrequency]{\setlength{\rightskip}{0pt plus 5cm}float harps::noteToFrequency (float {\em \_\-note})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_4f7bddae87173a07222e7cd4b32519bb}
+
+
+MIDIノートナンバーから周波数に変換します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-note}]ノートナンバー \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]周波数 \end{Desc}
+
+
+Referenced by harps::CurrentTime::noteOn(), and harps::CurrentTime::setPitchBend().\index{harps@{harps}!rectangle@{rectangle}}
+\index{rectangle@{rectangle}!harps@{harps}}
+\subsubsection[rectangle]{\setlength{\rightskip}{0pt plus 5cm}double harps::rectangle (double {\em \_\-duty}, \/  double {\em \_\-theta})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_77bf2d30984c1216bd4809e722675683}
+
+
+矩形波を返します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-theta}]角度(1周を1.0とする) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]rectangle( \_\-theta ) \end{Desc}
+
+
+References loop().\index{harps@{harps}!rectangle@{rectangle}}
+\index{rectangle@{rectangle}!harps@{harps}}
+\subsubsection[rectangle]{\setlength{\rightskip}{0pt plus 5cm}float harps::rectangle (float {\em \_\-duty}, \/  float {\em \_\-theta})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_ec41e89fe7065da3484b8e541bdd42a1}
+
+
+矩形波を返します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-theta}]角度(1周を1.0とする) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]rectangle( \_\-theta ) \end{Desc}
+
+
+References loop().\index{harps@{harps}!reduceNormalizingNoize@{reduceNormalizingNoize}}
+\index{reduceNormalizingNoize@{reduceNormalizingNoize}!harps@{harps}}
+\subsubsection[reduceNormalizingNoize]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename SampleType$>$ void harps::reduceNormalizingNoize (Buffer$<$ SampleType $>$ \& {\em \_\-buffer})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_9f18f91c4acdcbfe42895fc812853066}
+
+
+正規化のスケール値にローパスフィルタをかけて急激なスケーリングによるノイズを低減します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-buffer}]スケール値バッファ \end{description}
+\end{Desc}
+
+
+References harps::Buffer$<$ \_\-SampleType $>$::get().
+
+Referenced by harps::DynamicPolyphony$<$ MonophonyType, max\_\-polyphony $>$::operator()(), and harps::input::Tracks$<$ OutputType, ReaderType, BufferType, track\_\-count $>$::operator()().\index{harps@{harps}!sin@{sin}}
+\index{sin@{sin}!harps@{harps}}
+\subsubsection[sin]{\setlength{\rightskip}{0pt plus 5cm}double harps::sin (double {\em \_\-theta})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_4286fc6aa658faf13aaa83d4d2402a4e}
+
+
+テーブルを使って高速に正弦の近似値を返します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-theta}]角度(1周を1.0とする) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]sin( \_\-theta ) \end{Desc}
+
+
+References loop().\index{harps@{harps}!sin@{sin}}
+\index{sin@{sin}!harps@{harps}}
+\subsubsection[sin]{\setlength{\rightskip}{0pt plus 5cm}float harps::sin (float {\em \_\-theta})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_14925ee15691035e1d0e8c9efbc73c0d}
+
+
+テーブルを使って高速に正弦の近似値を返します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-theta}]角度(1周を1.0とする) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]sin( \_\-theta ) \end{Desc}
+
+
+References loop().\index{harps@{harps}!sleep@{sleep}}
+\index{sleep@{sleep}!harps@{harps}}
+\subsubsection[sleep]{\setlength{\rightskip}{0pt plus 5cm}void harps::sleep (double {\em \_\-until})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_7ddb3dd742346b37c7027671e7878792}
+
+
+指定した時刻までプロセスを停止させます。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-until}]再開予定時刻 \end{description}
+\end{Desc}
+
+
+References getTime().\index{harps@{harps}!triangle@{triangle}}
+\index{triangle@{triangle}!harps@{harps}}
+\subsubsection[triangle]{\setlength{\rightskip}{0pt plus 5cm}double harps::triangle (double {\em \_\-theta})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_59471afc6a4b9fda2abad9ef125c6245}
+
+
+三角波を返します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-theta}]角度(1周を1.0とする) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]triangle( \_\-theta ) \end{Desc}
+
+
+References loop().\index{harps@{harps}!triangle@{triangle}}
+\index{triangle@{triangle}!harps@{harps}}
+\subsubsection[triangle]{\setlength{\rightskip}{0pt plus 5cm}float harps::triangle (float {\em \_\-theta})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_521c0226ca004e6f0942eebbcd706fb0}
+
+
+三角波を返します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-theta}]角度(1周を1.0とする) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]triangle( \_\-theta ) \end{Desc}
+
+
+References loop().\index{harps@{harps}!volume@{volume}}
+\index{volume@{volume}!harps@{harps}}
+\subsubsection[volume]{\setlength{\rightskip}{0pt plus 5cm}double harps::volume (double {\em \_\-linear})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_561f42a6eddee3829c8e429b1209fc7e}
+
+
+テーブルを使って高速に音量と実際の振幅の変換を行います。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-linear}]音量 \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]振幅 \end{Desc}
+\index{harps@{harps}!volume@{volume}}
+\index{volume@{volume}!harps@{harps}}
+\subsubsection[volume]{\setlength{\rightskip}{0pt plus 5cm}float harps::volume (float {\em \_\-linear})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceharps_2d3449b08861e19e466414aed28d4f22}
+
+
+テーブルを使って高速に音量と実際の振幅の変換を行います。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-linear}]音量 \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]振幅 \end{Desc}

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1compornent_1_1Envelope2_3_01__clock__select_00_01__delay_00_01__attack_00_01__atta773b038a0ff6b555e6fe6e6727ad0ed0" kind="class" prot="public">
+    <compoundname>harps::compornent::Envelope2&lt; _clock_select, _delay, _attack, _attack_middle, _attack_middle_level, _hold, _hold_level, _decay1, _decay1_middle, _decay1_middle_level, _decay1_end_level, _decay2, _decay2_middle, _decay2_middle_level, 0, _release, _release_middle, _release_middle_level &gt;::NoteOff</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/envelope2.hpp" line="249" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/envelope2.hpp" bodystart="249" bodyend="249"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

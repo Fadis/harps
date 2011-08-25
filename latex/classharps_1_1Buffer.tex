@@ -1,0 +1,200 @@
+\section{harps::Buffer$<$ \_\-SampleType $>$ Class Template Reference}
+\label{classharps_1_1Buffer}\index{harps::Buffer@{harps::Buffer}}
+{\tt \#include $<$buffer.hpp$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef \_\-SampleType \textbf{SampleType}\label{classharps_1_1Buffer_f7833b35eca516673a6673a2e3891de9}
+
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Buffer} ()
+\item 
+virtual {\bf $\sim$Buffer} ()
+\item 
+SampleType $\ast$ {\bf get} ()
+\item 
+SampleType $\ast$ {\bf getLeft} ()
+\item 
+SampleType $\ast$ {\bf getRight} ()
+\item 
+const SampleType $\ast$ {\bf get} () const 
+\item 
+const SampleType $\ast$ {\bf getLeft} () const 
+\item 
+const SampleType $\ast$ {\bf getRight} () const 
+\item 
+void {\bf setStereo} ()
+\item 
+void {\bf setMonoral} ()
+\item 
+bool {\bf isStereo} () const 
+\item 
+void {\bf requestContinue} ()
+\item 
+void {\bf requestEnd} ()
+\item 
+void {\bf reset} ()
+\item 
+bool {\bf shouldEnd} ()
+\item 
+void {\bf mergeVote} (const {\bf Buffer}$<$ \_\-SampleType $>$ \&\_\-source)
+\item 
+unsigned int {\bf getContinueRequestCount} () const 
+\item 
+unsigned int {\bf getEndRequestCount} () const 
+\item 
+void {\bf setUsed} ()
+\item 
+bool {\bf getUsed} () const 
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename \_\-SampleType$>$ class harps::Buffer$<$ \_\-SampleType $>$}
+
+モジュールの出力を保持するバッファです。 モノラル、またはステレオであらかじめ指定された長さの音を保持します。 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{harps::Buffer@{harps::Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!harps::Buffer@{harps::Buffer}}
+\subsubsection[Buffer]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ {\bf harps::Buffer}$<$ \_\-SampleType $>$::{\bf Buffer} ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_efec369ca2232f71a3846085fee8eb93}
+
+
+コンストラクタ \index{harps::Buffer@{harps::Buffer}!$\sim$Buffer@{$\sim$Buffer}}
+\index{$\sim$Buffer@{$\sim$Buffer}!harps::Buffer@{harps::Buffer}}
+\subsubsection[$\sim$Buffer]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ virtual {\bf harps::Buffer}$<$ \_\-SampleType $>$::$\sim${\bf Buffer} ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classharps_1_1Buffer_31d11f5c708d11688b49bee7e9af84fd}
+
+
+デストラクタ 
+
+\subsection{Member Function Documentation}
+\index{harps::Buffer@{harps::Buffer}!get@{get}}
+\index{get@{get}!harps::Buffer@{harps::Buffer}}
+\subsubsection[get]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ SampleType$\ast$ {\bf harps::Buffer}$<$ \_\-SampleType $>$::get ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_2a7f5913399484eec854689812ea0bb9}
+
+
+モノラルバッファに使われている配列を取得します。 
+
+Referenced by harps::DynamicPolyphony$<$ MonophonyType, max\_\-polyphony $>$::operator()(), harps::input::Tracks$<$ OutputType, ReaderType, BufferType, track\_\-count $>$::operator()(), and harps::reduceNormalizingNoize().\index{harps::Buffer@{harps::Buffer}!getLeft@{getLeft}}
+\index{getLeft@{getLeft}!harps::Buffer@{harps::Buffer}}
+\subsubsection[getLeft]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ SampleType$\ast$ {\bf harps::Buffer}$<$ \_\-SampleType $>$::getLeft ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_6050133c6cd1ab3db1c7a169633dddf4}
+
+
+ステレオバッファに使われている左側の音を保持している配列を取得します。 \begin{Desc}
+\item[Returns:]配列 \end{Desc}
+
+
+Referenced by harps::output::ALSA$<$ is\_\-stereo, bytes\_\-per\_\-sample $>$::operator()(), and harps::output::Wave$<$ is\_\-stereo, bytes\_\-per\_\-sample $>$::operator()().\index{harps::Buffer@{harps::Buffer}!getRight@{getRight}}
+\index{getRight@{getRight}!harps::Buffer@{harps::Buffer}}
+\subsubsection[getRight]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ SampleType$\ast$ {\bf harps::Buffer}$<$ \_\-SampleType $>$::getRight ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_668b1ac5c2af479da54a29cbec5a55c7}
+
+
+ステレオバッファに使われている右側の音を保持している配列を取得します。 \begin{Desc}
+\item[Returns:]配列 \end{Desc}
+
+
+Referenced by harps::output::ALSA$<$ is\_\-stereo, bytes\_\-per\_\-sample $>$::operator()(), and harps::output::Wave$<$ is\_\-stereo, bytes\_\-per\_\-sample $>$::operator()().\index{harps::Buffer@{harps::Buffer}!get@{get}}
+\index{get@{get}!harps::Buffer@{harps::Buffer}}
+\subsubsection[get]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ const SampleType$\ast$ {\bf harps::Buffer}$<$ \_\-SampleType $>$::get () const\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_97753c5714688c1be48ab451be12da34}
+
+
+モノラルバッファに使われている配列を取得します。 \begin{Desc}
+\item[Returns:]配列 \end{Desc}
+\index{harps::Buffer@{harps::Buffer}!getLeft@{getLeft}}
+\index{getLeft@{getLeft}!harps::Buffer@{harps::Buffer}}
+\subsubsection[getLeft]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ const SampleType$\ast$ {\bf harps::Buffer}$<$ \_\-SampleType $>$::getLeft () const\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_1172c500abe58b618a8a765cef5b9189}
+
+
+ステレオバッファに使われている左側の音を保持している配列を取得します。 \begin{Desc}
+\item[Returns:]配列 \end{Desc}
+\index{harps::Buffer@{harps::Buffer}!getRight@{getRight}}
+\index{getRight@{getRight}!harps::Buffer@{harps::Buffer}}
+\subsubsection[getRight]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ const SampleType$\ast$ {\bf harps::Buffer}$<$ \_\-SampleType $>$::getRight () const\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_17f18647a15e3ec85c4e6e497e2639f2}
+
+
+ステレオバッファに使われている右側の音を保持している配列を取得します。 \begin{Desc}
+\item[Returns:]配列 \end{Desc}
+\index{harps::Buffer@{harps::Buffer}!setStereo@{setStereo}}
+\index{setStereo@{setStereo}!harps::Buffer@{harps::Buffer}}
+\subsubsection[setStereo]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ void {\bf harps::Buffer}$<$ \_\-SampleType $>$::setStereo ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_5b03fbc0c2d1a6cede5a3c8a6d08aff9}
+
+
+バッファをステレオにします。 \index{harps::Buffer@{harps::Buffer}!setMonoral@{setMonoral}}
+\index{setMonoral@{setMonoral}!harps::Buffer@{harps::Buffer}}
+\subsubsection[setMonoral]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ void {\bf harps::Buffer}$<$ \_\-SampleType $>$::setMonoral ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_d64ce748ee70aaf027e30bc4ac23a641}
+
+
+バッファをモノラルにします。 \index{harps::Buffer@{harps::Buffer}!isStereo@{isStereo}}
+\index{isStereo@{isStereo}!harps::Buffer@{harps::Buffer}}
+\subsubsection[isStereo]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ bool {\bf harps::Buffer}$<$ \_\-SampleType $>$::isStereo () const\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_aed1f9feac43f2110bc0345847259a2f}
+
+
+バッファがステレオかどうか確認します。 \begin{Desc}
+\item[Returns:]ステレオの場合true モノラルの場合false \end{Desc}
+\index{harps::Buffer@{harps::Buffer}!requestContinue@{requestContinue}}
+\index{requestContinue@{requestContinue}!harps::Buffer@{harps::Buffer}}
+\subsubsection[requestContinue]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ void {\bf harps::Buffer}$<$ \_\-SampleType $>$::requestContinue ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_c8c59a4b9026ae0db6029846305dfdb9}
+
+
+継続要求を出します。このバッファで音が終わってもらっては困る場合に、モジュールが呼び出します。 継続要求が全く無く、終了要求が1回以上ある場合バッファは音の終了をインスツルメントに提案します。 実際に音が終了するかどうかはインスツルメントに依存します。 \index{harps::Buffer@{harps::Buffer}!requestEnd@{requestEnd}}
+\index{requestEnd@{requestEnd}!harps::Buffer@{harps::Buffer}}
+\subsubsection[requestEnd]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ void {\bf harps::Buffer}$<$ \_\-SampleType $>$::requestEnd ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_0975021873c9957e22944e210d0a6de9}
+
+
+終了要求を出します。このバッファで音が終わっていると考えられる場合に、モジュールが呼び出します。 継続要求が全く無く、終了要求が1回以上ある場合バッファは音の終了をインスツルメントに提案します。 実際に音が終了するかどうかはインスツルメントに依存します。 \index{harps::Buffer@{harps::Buffer}!reset@{reset}}
+\index{reset@{reset}!harps::Buffer@{harps::Buffer}}
+\subsubsection[reset]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ void {\bf harps::Buffer}$<$ \_\-SampleType $>$::reset ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_5c9522a1c6d2f36bfb387fc4ee1832fb}
+
+
+バッファの状態をリセットします。リセットされるのは状態だけでバッファの値はクリアされません。 \index{harps::Buffer@{harps::Buffer}!shouldEnd@{shouldEnd}}
+\index{shouldEnd@{shouldEnd}!harps::Buffer@{harps::Buffer}}
+\subsubsection[shouldEnd]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ bool {\bf harps::Buffer}$<$ \_\-SampleType $>$::shouldEnd ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_559084a4b5a2932f04a00aefe3cb7e37}
+
+
+音を終了すべきかどうかを判断します。 継続要求が全く無く、終了要求が1回以上ある場合バッファは音の終了をインスツルメントに提案します。 実際に音が終了するかどうかはインスツルメントに依存します。 \begin{Desc}
+\item[Returns:]終了すべきならtrue 継続すべきならfalse \end{Desc}
+\index{harps::Buffer@{harps::Buffer}!mergeVote@{mergeVote}}
+\index{mergeVote@{mergeVote}!harps::Buffer@{harps::Buffer}}
+\subsubsection[mergeVote]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ void {\bf harps::Buffer}$<$ \_\-SampleType $>$::mergeVote (const {\bf Buffer}$<$ \_\-SampleType $>$ \& {\em \_\-source})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_a42515d3024bfe66b2aea07e21e09e01}
+
+
+複数のバッファの投票を足し合わせます。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-source}]足し合わせるバッファ \end{description}
+\end{Desc}
+\index{harps::Buffer@{harps::Buffer}!getContinueRequestCount@{getContinueRequestCount}}
+\index{getContinueRequestCount@{getContinueRequestCount}!harps::Buffer@{harps::Buffer}}
+\subsubsection[getContinueRequestCount]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ unsigned int {\bf harps::Buffer}$<$ \_\-SampleType $>$::getContinueRequestCount () const\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_f102d36b2f325b5d22fa91b7dfb6d7ba}
+
+
+継続要求の回数を取得します。 \begin{Desc}
+\item[Returns:]回数 \end{Desc}
+\index{harps::Buffer@{harps::Buffer}!getEndRequestCount@{getEndRequestCount}}
+\index{getEndRequestCount@{getEndRequestCount}!harps::Buffer@{harps::Buffer}}
+\subsubsection[getEndRequestCount]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ unsigned int {\bf harps::Buffer}$<$ \_\-SampleType $>$::getEndRequestCount () const\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_588439f2fb486c1ceef8f3e2700e1110}
+
+
+終了要求の回数を取得します。 \begin{Desc}
+\item[Returns:]回数 \end{Desc}
+\index{harps::Buffer@{harps::Buffer}!setUsed@{setUsed}}
+\index{setUsed@{setUsed}!harps::Buffer@{harps::Buffer}}
+\subsubsection[setUsed]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ void {\bf harps::Buffer}$<$ \_\-SampleType $>$::setUsed ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_cb84b61718acf55369f9d896db08649b}
+
+
+バッファに使用済フラグを立てます。 \index{harps::Buffer@{harps::Buffer}!getUsed@{getUsed}}
+\index{getUsed@{getUsed}!harps::Buffer@{harps::Buffer}}
+\subsubsection[getUsed]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-SampleType$>$ bool {\bf harps::Buffer}$<$ \_\-SampleType $>$::getUsed () const\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Buffer_7d71d808b95592e23858926cc6fec561}
+
+
+バッファが使用済かどうか調べます。 \begin{Desc}
+\item[Returns:]使用済ならtrue 未使用ならfalse \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+rc/harps/include/harps/buffer.hpp\end{CompactItemize}

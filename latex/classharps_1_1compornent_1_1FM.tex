@@ -1,0 +1,26 @@
+\section{harps::compornent::FM$<$ ModuleType0, ModuleType1, \_\-clock\_\-select, \_\-delay, \_\-attack, \_\-hold, \_\-decay, \_\-sustain, \_\-release $>$ Class Template Reference}
+\label{classharps_1_1compornent_1_1FM}\index{harps::compornent::FM@{harps::compornent::FM}}
+{\tt \#include $<$fm.hpp$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef {\bf Mul}$<$ {\bf Sine}$<$ {\bf Add}$<$ ModuleType0, ModuleType1 $>$ $>$, {\bf Envelope}$<$ \_\-clock\_\-select, \_\-delay, \_\-attack, \_\-hold, \_\-decay, \_\-sustain, \_\-release $>$ $>$ \textbf{OperatorType}\label{classharps_1_1compornent_1_1FM_886c27da348512aaa4f524a23b57990b}
+
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\footnotesize template$<$typename SampleType$>$ }\\void \textbf{operator()} ({\bf Buffer}$<$ SampleType $>$ \&\_\-buffer, {\bf CurrentTime} \&\_\-clock, {\bf Note} \&\_\-note)\label{classharps_1_1compornent_1_1FM_6705ad0ccfaf5d3f69ebe71f779e3e5f}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename ModuleType0, typename ModuleType1, unsigned int \_\-clock\_\-select = 0, int \_\-delay = 0, int \_\-attack = 0, int \_\-hold = 0, int \_\-decay = 0, int \_\-sustain = 0, int \_\-release = 0$>$ class harps::compornent::FM$<$ ModuleType0, ModuleType1, \_\-clock\_\-select, \_\-delay, \_\-attack, \_\-hold, \_\-decay, \_\-sustain, \_\-release $>$}
+
+FM音源のオペレータです。2つの入力を使って正弦波を周波数変調して出力します。線形補間エンベロープを使用します。 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+rc/harps/include/harps/compornent/fm.hpp\end{CompactItemize}

@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1DynamicModuleSlot" kind="class" prot="public">
+    <compoundname>harps::DynamicModuleSlot</compoundname>
+    <includes refid="dynamic__module_8hpp" local="no">dynamic_module.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1DynamicModuleSlot_162d3efeaf21082c740be44d6db005ae6" prot="private" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; Dummy &gt;</type>
+        <definition>boost::shared_ptr&lt; Dummy &gt; harps::DynamicModuleSlot::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="170" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1DynamicModuleSlot_1a40405d4746607de1b5e13aa7fa5c05a" prot="private" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; Dummy &gt;</type>
+        <definition>boost::shared_ptr&lt; Dummy &gt; harps::DynamicModuleSlot::instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="171" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1DynamicModuleSlot_1026538c3582e101677cebc394537c3aa" prot="private" static="no" mutable="no">
+        <type>Dummy *(*</type>
+        <definition>Dummy*(* harps::DynamicModuleSlot::create)()</definition>
+        <argsstring>)()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="172"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1DynamicModuleSlot_1a0411ab7f4a99aebc86b78cba1ff4db2" prot="private" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* harps::DynamicModuleSlot::destroy)(Dummy *)</definition>
+        <argsstring>)(Dummy *)</argsstring>
+        <name>destroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="173"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1DynamicModuleSlot_1ae856e3f338981e6016c9834433bfeff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::DynamicModuleSlot::DynamicModuleSlot</definition>
+        <argsstring>(const char *_filename)</argsstring>
+        <name>DynamicModuleSlot</name>
+        <param>
+          <type>const char *</type>
+          <declname>_filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>コンストラクタ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>動的ロードモジュールの名前 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="135" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" bodystart="135" bodyend="162"/>
+        <references refid="namespaceharps_139a98007c1da8f7aedcfe13c51760124" compoundref="module__dir_8cpp" startline="37" endline="40">harps::getModulePath</references>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicModuleSlot_10bb30450af88f9a6bfe7b796d6533a05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::DynamicModuleSlot::operator()</definition>
+        <argsstring>(Buffer&lt; float &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; float &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="163" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" bodystart="163" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicModuleSlot_1d8a9c601e21e7daf79992b65e6babb36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::DynamicModuleSlot::operator()</definition>
+        <argsstring>(Buffer&lt; double &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; double &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="166" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" bodystart="166" bodyend="168"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classharps_1_1DynamicModuleSlot_1f752ce00af94134b8dcca37709ed6b8c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>harps::DynamicModuleSlot::void</definition>
+        <argsstring>(BOOST_PP_CAT(*run, BOOST_PP_CAT(SAMPLE_COUNT, float)))(Dummy *</argsstring>
+        <name>void</name>
+        <param>
+          <type>BOOST_PP_CAT(*,,</type>
+          <declname>float</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicModuleSlot_1a676f21fc1bdcfc70b834727846be904" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; float &gt; <ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> <ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+        <definition>Buffer&lt; float &gt; CurrentTime Note&amp; harps::DynamicModuleSlot::void</definition>
+        <argsstring>(BOOST_PP_CAT(*run, BOOST_PP_CAT(SAMPLE_COUNT, double)))(Dummy *</argsstring>
+        <name>void</name>
+        <param>
+          <type>BOOST_PP_CAT(*,,</type>
+          <declname>double</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="175"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>動的ロードモジュールのソケットを接続するためのスロットです。 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="38">
+        <label>harps::Dummy</label>
+      </node>
+      <node id="37">
+        <label>harps::DynamicModuleSlot</label>
+        <link refid="classharps_1_1DynamicModuleSlot"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>create</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="129" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" bodystart="129" bodyend="176"/>
+    <listofallmembers>
+      <member refid="classharps_1_1DynamicModuleSlot_1026538c3582e101677cebc394537c3aa" prot="private" virt="non-virtual"><scope>harps::DynamicModuleSlot</scope><name>create</name></member>
+      <member refid="classharps_1_1DynamicModuleSlot_1a0411ab7f4a99aebc86b78cba1ff4db2" prot="private" virt="non-virtual"><scope>harps::DynamicModuleSlot</scope><name>destroy</name></member>
+      <member refid="classharps_1_1DynamicModuleSlot_1ae856e3f338981e6016c9834433bfeff" prot="public" virt="non-virtual"><scope>harps::DynamicModuleSlot</scope><name>DynamicModuleSlot</name></member>
+      <member refid="classharps_1_1DynamicModuleSlot_162d3efeaf21082c740be44d6db005ae6" prot="private" virt="non-virtual"><scope>harps::DynamicModuleSlot</scope><name>handle</name></member>
+      <member refid="classharps_1_1DynamicModuleSlot_1a40405d4746607de1b5e13aa7fa5c05a" prot="private" virt="non-virtual"><scope>harps::DynamicModuleSlot</scope><name>instance</name></member>
+      <member refid="classharps_1_1DynamicModuleSlot_10bb30450af88f9a6bfe7b796d6533a05" prot="public" virt="non-virtual"><scope>harps::DynamicModuleSlot</scope><name>operator()</name></member>
+      <member refid="classharps_1_1DynamicModuleSlot_1d8a9c601e21e7daf79992b65e6babb36" prot="public" virt="non-virtual"><scope>harps::DynamicModuleSlot</scope><name>operator()</name></member>
+      <member refid="classharps_1_1DynamicModuleSlot_1f752ce00af94134b8dcca37709ed6b8c" prot="private" virt="non-virtual"><scope>harps::DynamicModuleSlot</scope><name>void</name></member>
+      <member refid="classharps_1_1DynamicModuleSlot_1a676f21fc1bdcfc70b834727846be904" prot="private" virt="non-virtual"><scope>harps::DynamicModuleSlot</scope><name>void</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

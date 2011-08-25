@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1DynamicPolyphony_1_1Renderer" kind="class" prot="private">
+    <compoundname>harps::DynamicPolyphony::Renderer</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>SampleType</declname>
+        <defname>SampleType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1DynamicPolyphony_1_1Renderer_11ff90a65ea479bbb5c7d3333dece36dd" prot="private" static="no" mutable="no">
+        <type>MonophonyType *const</type>
+        <definition>MonophonyType* const harps::DynamicPolyphony&lt; MonophonyType, max_polyphony &gt;::Renderer&lt; SampleType &gt;::monophony</definition>
+        <argsstring></argsstring>
+        <name>monophony</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="306" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1DynamicPolyphony_1_1Renderer_1408906bb5ea463f10311d357a72a48b8" prot="private" static="no" mutable="no">
+        <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; SampleType &gt; *const</type>
+        <definition>Buffer&lt; SampleType &gt;* const harps::DynamicPolyphony&lt; MonophonyType, max_polyphony &gt;::Renderer&lt; SampleType &gt;::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="307" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1DynamicPolyphony_1_1Renderer_13e108dce2751d4aa462a55ebbc161347" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::DynamicPolyphony&lt; MonophonyType, max_polyphony &gt;::Renderer&lt; SampleType &gt;::Renderer</definition>
+        <argsstring>(MonophonyType *_monophony, Buffer&lt; SampleType &gt; *_buffer)</argsstring>
+        <name>Renderer</name>
+        <param>
+          <type>MonophonyType *</type>
+          <declname>_monophony</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; SampleType &gt; *</type>
+          <declname>_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="289" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="289" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicPolyphony_1_1Renderer_1de5aa5fc499a7d3739c9b7f4ee127234" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::DynamicPolyphony&lt; MonophonyType, max_polyphony &gt;::Renderer&lt; SampleType &gt;::operator()</definition>
+        <argsstring>(const tbb::blocked_range&lt; unsigned int &gt; &amp;_r) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const tbb::blocked_range&lt; unsigned int &gt; &amp;</type>
+          <declname>_r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="290" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="290" bodyend="304"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>これはダイナミックポリフォニーがIntel Threading Building Blocksでモジュールの実行を分散するために使う内部クラスです。 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="52">
+        <label>harps::DynamicPolyphony&lt; MonophonyType, max_polyphony &gt;::Renderer&lt; SampleType &gt;</label>
+        <childnode refid="53" relation="usage">
+          <edgelabel>buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="53">
+        <label>harps::Buffer&lt; SampleType &gt;</label>
+        <link refid="classharps_1_1Buffer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="287" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="287" bodyend="308"/>
+    <listofallmembers>
+      <member refid="classharps_1_1DynamicPolyphony_1_1Renderer_1408906bb5ea463f10311d357a72a48b8" prot="private" virt="non-virtual"><scope>harps::DynamicPolyphony::Renderer</scope><name>buffer</name></member>
+      <member refid="classharps_1_1DynamicPolyphony_1_1Renderer_11ff90a65ea479bbb5c7d3333dece36dd" prot="private" virt="non-virtual"><scope>harps::DynamicPolyphony::Renderer</scope><name>monophony</name></member>
+      <member refid="classharps_1_1DynamicPolyphony_1_1Renderer_1de5aa5fc499a7d3739c9b7f4ee127234" prot="public" virt="non-virtual"><scope>harps::DynamicPolyphony::Renderer</scope><name>operator()</name></member>
+      <member refid="classharps_1_1DynamicPolyphony_1_1Renderer_13e108dce2751d4aa462a55ebbc161347" prot="public" virt="non-virtual"><scope>harps::DynamicPolyphony::Renderer</scope><name>Renderer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

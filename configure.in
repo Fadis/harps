@@ -1,0 +1,109 @@
+AC_INIT(configure.in)
+
+AM_CONFIG_HEADER(include/harps/config.hpp)
+AM_INIT_AUTOMAKE(harps, 0.1.0)
+
+AC_LANG_CPLUSPLUS
+AC_PROG_CXX
+AM_PROG_LIBTOOL
+
+LC_CURRENT=0
+LC_REVISION=1
+LC_AGE=0
+HARPS_VERSION="$LC_CURRENT":"$LC_REVISION":"$LC_AGE"
+AC_SUBST([HARPS_VERSION])
+
+AC_ARG_WITH(pkgconfigdir,
+        AC_HELP_STRING([--with-pkgconfigdir],
+        [Use the specified pkgconfig dir (default is libdir/pkgconfig)]),
+        [pkgconfigdir=${withval}],
+        [pkgconfigdir='${libdir}/pkgconfig'])
+AC_MSG_NOTICE([pkgconfig directory is ${pkgconfigdir}])
+AC_SUBST([pkgconfigdir])
+AC_CONFIG_FILES([src/harps.pc])
+
+
+AX_BOOST_BASE([1.35.0])
+AX_BOOST_FILESYSTEM
+AX_BOOST_THREAD
+
+AM_PATH_ALSA
+
+AC_DEFUN([AXF_LIB_TBB], [
+  AH_TEMPLATE([HAVE_LIBTBB], [Define if libtbb is available])
+  AC_ARG_WITH(libtbb, [  --with-libtbb=DIR      prefix for TBB library files and headers], [
+    if test "$withval" = "no"; then
+      ac_tbb_path=
+      $2
+    elif test "$withval" = "yes"; then
+      ac_tbb_path=/usr
+    else
+      ac_tbb_path="$withval"
+    fi
+  ],[ac_tbb_path=/usr])
+  if test "$ac_tbb_path" != ""; then
+    saved_CPPFLAGS="$CPPFLAGS"
+    CPPFLAGS="$CPPFLAGS -I$ac_tbb_path/include/tbb"
+    AC_CHECK_HEADER([tbb.h], [
+      saved_LDFLAGS="$LDFLAGS"
+      LDFLAGS="$LDFLAGS -L$ac_tbb_path/lib"
+      AC_HAVE_LIBRARY(tbb, [
+        AC_SUBST(TBB_CPPFLAGS, [-I$ac_tbb_path/include/tbb])
+        AC_SUBST(TBB_LDFLAGS, [-L$ac_tbb_path/lib])
+        AC_SUBST(TBB_LIBS, [-ltbb])
+        AC_DEFINE([HAVE_LIBTBB])
+        $1
+      ], [
+        :
+        $2
+      ])
+      LDFLAGS="$saved_LDFLAGS"
+    ], [
+      AC_MSG_RESULT([not found])
+      $2
+    ])
+    CPPFLAGS="$saved_CPPFLAGS"
+  fi
+])
+
+AC_DEFUN([AXF_SAMPLING_RATE], [
+  AC_ARG_WITH([samplingrate],
+    [  --with-samplingrate=n        Specify sampling rate to n Hz [default=48000]])
+  if test "x$with_samplingrate" == "x"
+  then
+    with_samplingrate=48000
+  fi
+  AC_DEFINE_UNQUOTED([SAMPLING_RATE], $with_samplingrate,[sampling rate])
+])
+
+AC_DEFUN([AXF_SAMPLE_COUNT], [
+  AC_ARG_WITH([samplecount],
+    [  --with-samplecount=n        Specify sample count to n [default=32]])
+  if test "x$with_samplecount" == "x"
+  then
+    with_samplecount=32
+  fi
+  AC_DEFINE_UNQUOTED([SAMPLE_COUNT], $with_samplecount,[sample count])
+])
+
+AC_DEFUN([AXF_MAX_MODULES_PER_MIXER], [
+  AC_ARG_WITH([maxcomp],
+    [  --with-max-compornent=n        Specify how many compornents can mixer mix [default=32]])
+  if test "x$with_maxcomp" == "x"
+  then
+    with_maxcomp=32
+  fi
+  AC_DEFINE_UNQUOTED([HARPS_MAX_MODULES_PER_MIXER], $with_maxcomp,[max compornent per mixer])
+])
+
+AXF_LIB_TBB
+AXF_SAMPLING_RATE
+AXF_SAMPLE_COUNT
+AXF_MAX_MODULES_PER_MIXER
+
+
+AC_OUTPUT( \
+  Makefile \
+  src/Makefile \
+  include/Makefile
+)

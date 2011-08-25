@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="utils_8hpp" kind="file">
+    <compoundname>utils.hpp</compoundname>
+    <includes refid="table_2sine_8hpp" local="no">harps/table/sine.hpp</includes>
+    <includes refid="exp2_8hpp" local="no">harps/table/exp2.hpp</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">tr1/cstdint</includes>
+    <includedby refid="clock_8hpp" local="no">rc/harps/include/harps/clock.hpp</includedby>
+    <includedby refid="add_8hpp" local="no">rc/harps/include/harps/compornent/add.hpp</includedby>
+    <includedby refid="branchbynote_8hpp" local="no">rc/harps/include/harps/compornent/branchbynote.hpp</includedby>
+    <includedby refid="constant_8hpp" local="no">rc/harps/include/harps/compornent/constant.hpp</includedby>
+    <includedby refid="constant__mul_8hpp" local="no">rc/harps/include/harps/compornent/constant_mul.hpp</includedby>
+    <includedby refid="distotion_8hpp" local="no">rc/harps/include/harps/compornent/distotion.hpp</includedby>
+    <includedby refid="envelope_8hpp" local="no">rc/harps/include/harps/compornent/envelope.hpp</includedby>
+    <includedby refid="envelope2_8hpp" local="no">rc/harps/include/harps/compornent/envelope2.hpp</includedby>
+    <includedby refid="generator_8hpp" local="no">rc/harps/include/harps/compornent/generator.hpp</includedby>
+    <includedby refid="mix_8hpp" local="no">rc/harps/include/harps/compornent/mix.hpp</includedby>
+    <includedby refid="mul_8hpp" local="no">rc/harps/include/harps/compornent/mul.hpp</includedby>
+    <includedby refid="noize_8hpp" local="no">rc/harps/include/harps/compornent/noize.hpp</includedby>
+    <includedby refid="compornent_2normalize_8hpp" local="no">rc/harps/include/harps/compornent/normalize.hpp</includedby>
+    <includedby refid="rectangle_8hpp" local="no">rc/harps/include/harps/compornent/rectangle.hpp</includedby>
+    <includedby refid="scale_8hpp" local="no">rc/harps/include/harps/compornent/scale.hpp</includedby>
+    <includedby refid="shift_8hpp" local="no">rc/harps/include/harps/compornent/shift.hpp</includedby>
+    <includedby refid="compornent_2sine_8hpp" local="no">rc/harps/include/harps/compornent/sine.hpp</includedby>
+    <includedby refid="switching__envelope_8hpp" local="no">rc/harps/include/harps/compornent/switching_envelope.hpp</includedby>
+    <includedby refid="touch_8hpp" local="no">rc/harps/include/harps/compornent/touch.hpp</includedby>
+    <includedby refid="triangle_8hpp" local="no">rc/harps/include/harps/compornent/triangle.hpp</includedby>
+    <includedby refid="vector_8hpp" local="no">rc/harps/include/harps/compornent/vector.hpp</includedby>
+    <includedby refid="volume_8hpp" local="no">rc/harps/include/harps/compornent/volume.hpp</includedby>
+    <includedby refid="compornent_2wave_8hpp" local="no">rc/harps/include/harps/compornent/wave.hpp</includedby>
+    <includedby refid="envelope_8cpp" local="no">rc/harps/src/envelope.cpp</includedby>
+    <incdepgraph>
+      <node id="659">
+        <label>rc/harps/include/harps/utils.hpp</label>
+        <link refid="utils.hpp"/>
+        <childnode refid="660" relation="include">
+        </childnode>
+        <childnode refid="661" relation="include">
+        </childnode>
+        <childnode refid="662" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="662">
+        <label>cmath</label>
+      </node>
+      <node id="660">
+        <label>harps/table/sine.hpp</label>
+        <link refid="table_2sine_8hpp-source"/>
+      </node>
+      <node id="663">
+        <label>tr1/cstdint</label>
+      </node>
+      <node id="661">
+        <label>harps/table/exp2.hpp</label>
+        <link refid="exp2_8hpp-source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="681">
+        <label>rc/harps/include/harps/compornent/rectangle.hpp</label>
+        <link refid="rectangle_8hpp-source"/>
+      </node>
+      <node id="674">
+        <label>rc/harps/include/harps/compornent/envelope.hpp</label>
+        <link refid="envelope_8hpp-source"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+      <node id="664">
+        <label>rc/harps/include/harps/utils.hpp</label>
+        <link refid="utils.hpp"/>
+        <childnode refid="665" relation="include">
+        </childnode>
+        <childnode refid="666" relation="include">
+        </childnode>
+        <childnode refid="668" relation="include">
+        </childnode>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+        <childnode refid="686" relation="include">
+        </childnode>
+        <childnode refid="687" relation="include">
+        </childnode>
+        <childnode refid="688" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+      </node>
+      <node id="679">
+        <label>rc/harps/include/harps/compornent/noize.hpp</label>
+        <link refid="noize_8hpp-source"/>
+      </node>
+      <node id="686">
+        <label>rc/harps/include/harps/compornent/touch.hpp</label>
+        <link refid="touch_8hpp-source"/>
+      </node>
+      <node id="680">
+        <label>rc/harps/include/harps/compornent/normalize.hpp</label>
+        <link refid="compornent_2normalize_8hpp-source"/>
+      </node>
+      <node id="678">
+        <label>rc/harps/include/harps/compornent/mul.hpp</label>
+        <link refid="mul_8hpp-source"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+      <node id="672">
+        <label>rc/harps/include/harps/compornent/dynamic_module.hpp</label>
+        <link refid="dynamic__module_8hpp-source"/>
+        <childnode refid="673" relation="include">
+        </childnode>
+      </node>
+      <node id="671">
+        <label>rc/harps/include/harps/compornent/distotion.hpp</label>
+        <link refid="distotion_8hpp-source"/>
+      </node>
+      <node id="684">
+        <label>rc/harps/include/harps/compornent/sine.hpp</label>
+        <link refid="compornent_2sine_8hpp-source"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+      <node id="682">
+        <label>rc/harps/include/harps/compornent/scale.hpp</label>
+        <link refid="scale_8hpp-source"/>
+      </node>
+      <node id="670">
+        <label>rc/harps/include/harps/compornent/constant_mul.hpp</label>
+        <link refid="constant__mul_8hpp-source"/>
+      </node>
+      <node id="688">
+        <label>rc/harps/include/harps/compornent/vector.hpp</label>
+        <link refid="vector_8hpp-source"/>
+      </node>
+      <node id="666">
+        <label>rc/harps/include/harps/compornent/add.hpp</label>
+        <link refid="add_8hpp-source"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+      <node id="690">
+        <label>rc/harps/include/harps/compornent/wave.hpp</label>
+        <link refid="compornent_2wave_8hpp-source"/>
+      </node>
+      <node id="669">
+        <label>rc/harps/include/harps/compornent/constant.hpp</label>
+        <link refid="constant_8hpp-source"/>
+      </node>
+      <node id="685">
+        <label>rc/harps/include/harps/compornent/switching_envelope.hpp</label>
+        <link refid="switching__envelope_8hpp-source"/>
+      </node>
+      <node id="675">
+        <label>rc/harps/include/harps/compornent/envelope2.hpp</label>
+        <link refid="envelope2_8hpp-source"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+      <node id="676">
+        <label>rc/harps/include/harps/compornent/generator.hpp</label>
+        <link refid="generator_8hpp-source"/>
+      </node>
+      <node id="687">
+        <label>rc/harps/include/harps/compornent/triangle.hpp</label>
+        <link refid="triangle_8hpp-source"/>
+      </node>
+      <node id="683">
+        <label>rc/harps/include/harps/compornent/shift.hpp</label>
+        <link refid="shift_8hpp-source"/>
+      </node>
+      <node id="689">
+        <label>rc/harps/include/harps/compornent/volume.hpp</label>
+        <link refid="volume_8hpp-source"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+      <node id="667">
+        <label>rc/harps/include/harps/compornent/fm.hpp</label>
+        <link refid="fm_8hpp-source"/>
+      </node>
+      <node id="673">
+        <label>rc/harps/include/harps/instrument.hpp</label>
+        <link refid="instrument_8hpp-source"/>
+      </node>
+      <node id="668">
+        <label>rc/harps/include/harps/compornent/branchbynote.hpp</label>
+        <link refid="branchbynote_8hpp-source"/>
+      </node>
+      <node id="677">
+        <label>rc/harps/include/harps/compornent/mix.hpp</label>
+        <link refid="mix_8hpp-source"/>
+      </node>
+      <node id="665">
+        <label>rc/harps/include/harps/clock.hpp</label>
+        <link refid="clock_8hpp-source"/>
+        <childnode refid="666" relation="include">
+        </childnode>
+        <childnode refid="668" relation="include">
+        </childnode>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="667" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+        <childnode refid="686" relation="include">
+        </childnode>
+        <childnode refid="687" relation="include">
+        </childnode>
+        <childnode refid="688" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceharps">harps</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>by<sp/>Naomasa<sp/>Matsubayashi<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>harps@quaternion.sakura.ne.jp<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/>are<sp/>met:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>distribution.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/>OWNER<sp/>OR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/><sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.<sp/><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HARPS_UTILS</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HARPS_UTILS</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;harps/table/sine.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;harps/table/exp2.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tr1/cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">harps<sp/>{</highlight></codeline>
+<codeline lineno="45" refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" kindref="member">loop</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_source<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_source<sp/>-<sp/>::floorf(<sp/>_source<sp/>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53" refid="namespaceharps_1cb6eb6b6be744624501519370f1973ed" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" kindref="member">loop</ref>(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_source<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_source<sp/>-<sp/>::floor(<sp/>_source<sp/>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61" refid="namespaceharps_114925ee15691035e1d0e8c9efbc73c0d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespaceharps_114925ee15691035e1d0e8c9efbc73c0d" kindref="member">sin</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_theta<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>table::sine[<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/><ref refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" kindref="member">loop</ref>(<sp/>_theta<sp/>)<sp/>*<sp/>HARPS_SINE_TABLE_SIZE<sp/>)<sp/>];</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69" refid="namespaceharps_14286fc6aa658faf13aaa83d4d2402a4e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceharps_114925ee15691035e1d0e8c9efbc73c0d" kindref="member">sin</ref>(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_theta<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>table::sine[<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/><ref refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" kindref="member">loop</ref>(<sp/>_theta<sp/>)<sp/>*<sp/>HARPS_SINE_TABLE_SIZE<sp/>)<sp/>];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77" refid="namespaceharps_12d3449b08861e19e466414aed28d4f22" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespaceharps_12d3449b08861e19e466414aed28d4f22" kindref="member">volume</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_linear<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>_linear<sp/>&gt;=<sp/>1.0f<sp/>)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.999023f;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>_linear<sp/>&lt;<sp/>0.0f<sp/>)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0f;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>table::exp2[<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/>_linear<sp/>*<sp/>HARPS_EXP2_TABLE_SIZE<sp/>)<sp/>];</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90" refid="namespaceharps_1561f42a6eddee3829c8e429b1209fc7e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceharps_12d3449b08861e19e466414aed28d4f22" kindref="member">volume</ref>(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_linear<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>_linear<sp/>&gt;=<sp/>1.0<sp/>)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.999023;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>_linear<sp/>&lt;<sp/>0.0<sp/>)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>table::exp2[<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/>_linear<sp/>*<sp/>HARPS_EXP2_TABLE_SIZE<sp/>)<sp/>];</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103" refid="namespaceharps_1521c0226ca004e6f0942eebbcd706fb0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespaceharps_1521c0226ca004e6f0942eebbcd706fb0" kindref="member">triangle</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_theta<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>loop_theta<sp/>=<sp/><ref refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" kindref="member">loop</ref>(<sp/>_theta<sp/>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>loop_theta<sp/>&lt;<sp/>0.25f<sp/>)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>loop_theta<sp/>*<sp/>4.0f;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>loop_theta<sp/>&lt;<sp/>0.75f<sp/>)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>loop_theta<sp/>*<sp/>-4.0f<sp/>+<sp/>2.0f;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>loop_theta<sp/>*<sp/>4.0f<sp/>-<sp/>4.0f;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117" refid="namespaceharps_159471afc6a4b9fda2abad9ef125c6245" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceharps_1521c0226ca004e6f0942eebbcd706fb0" kindref="member">triangle</ref>(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_theta<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>loop_theta<sp/>=<sp/><ref refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" kindref="member">loop</ref>(<sp/>_theta<sp/>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>loop_theta<sp/>&lt;<sp/>0.25<sp/>)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>loop_theta<sp/>*<sp/>4.0;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>loop_theta<sp/>&lt;<sp/>0.75<sp/>)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>loop_theta<sp/>*<sp/>-4.0<sp/>+<sp/>2.0;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>loop_theta<sp/>*<sp/>4.0<sp/>-<sp/>4.0;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="namespaceharps_1ec41e89fe7065da3484b8e541bdd42a1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespaceharps_1ec41e89fe7065da3484b8e541bdd42a1" kindref="member">rectangle</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_duty,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_theta<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>loop_duty<sp/>=<sp/><ref refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" kindref="member">loop</ref>(<sp/>_duty<sp/>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>loop_theta<sp/>=<sp/><ref refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" kindref="member">loop</ref>(<sp/>_theta<sp/>);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>loop_theta<sp/>&lt;<sp/>loop_duty<sp/>)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.0f;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0f;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145" refid="namespaceharps_177bf2d30984c1216bd4809e722675683" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceharps_1ec41e89fe7065da3484b8e541bdd42a1" kindref="member">rectangle</ref>(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_duty,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_theta<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>loop_duty<sp/>=<sp/><ref refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" kindref="member">loop</ref>(<sp/>_duty<sp/>);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>loop_theta<sp/>=<sp/><ref refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" kindref="member">loop</ref>(<sp/>_theta<sp/>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>loop_theta<sp/>&lt;<sp/>loop_duty<sp/>)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.0;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158" refid="namespaceharps_199acf61c717498656a088ceb0c6d8e3e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespaceharps_199acf61c717498656a088ceb0c6d8e3e" kindref="member">nes</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_theta<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>loop_theta<sp/>=<sp/><ref refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" kindref="member">loop</ref>(<sp/>_theta<sp/>);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>loop_theta<sp/>&lt;<sp/>0.25f<sp/>)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>loop_theta<sp/>*<sp/>4.0f;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>loop_theta<sp/>&lt;<sp/>0.75f<sp/>)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>loop_theta<sp/>*<sp/>-4.0f<sp/>+<sp/>2.0f;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>loop_theta<sp/>*<sp/>4.0f<sp/>-<sp/>4.0f;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>roundf(<sp/>result<sp/>*<sp/>7.0f<sp/>)<sp/>/<sp/>7.0f;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174" refid="namespaceharps_1bebd9a61b530b183652b2d08e2e8ee23" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceharps_199acf61c717498656a088ceb0c6d8e3e" kindref="member">nes</ref>(<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_theta<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>loop_theta<sp/>=<sp/><ref refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" kindref="member">loop</ref>(<sp/>_theta<sp/>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>loop_theta<sp/>&lt;<sp/>0.25<sp/>)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>loop_theta<sp/>*<sp/>4.0;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>loop_theta<sp/>&lt;<sp/>0.75<sp/>)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>loop_theta<sp/>*<sp/>-4.0<sp/>+<sp/>2.0;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>loop_theta<sp/>*<sp/>4.0<sp/>-<sp/>4.0;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>round(<sp/>result<sp/>*<sp/>7.0<sp/>)<sp/>/<sp/>7.0;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/users/fadis/rc/harps/include/harps/utils.hpp"/>
+  </compounddef>
+</doxygen>

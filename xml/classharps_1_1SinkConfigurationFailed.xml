@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1SinkConfigurationFailed" kind="class" prot="public">
+    <compoundname>harps::SinkConfigurationFailed</compoundname>
+    <basecompoundref refid="classharps_1_1HarpsException" prot="public" virt="non-virtual">harps::HarpsException</basecompoundref>
+    <includes refid="exceptions_8hpp" local="no">exceptions.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1SinkConfigurationFailed_1fbfc46425031d1d949655c4409d81258" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::SinkConfigurationFailed::SinkConfigurationFailed</definition>
+        <argsstring>()</argsstring>
+        <name>SinkConfigurationFailed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/exceptions.hpp" line="70" bodyfile="/home/users/fadis/rc/harps/include/harps/exceptions.hpp" bodystart="70" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>出力にパラメータの指定が出来ない場合はこの例外が投げられます。 </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="137">
+        <label>harps::HarpsException</label>
+        <link refid="classharps_1_1HarpsException"/>
+      </node>
+      <node id="136">
+        <label>harps::SinkConfigurationFailed</label>
+        <link refid="classharps_1_1SinkConfigurationFailed"/>
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="139">
+        <label>harps::HarpsException</label>
+        <link refid="classharps_1_1HarpsException"/>
+      </node>
+      <node id="138">
+        <label>harps::SinkConfigurationFailed</label>
+        <link refid="classharps_1_1SinkConfigurationFailed"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/exceptions.hpp" line="68" bodyfile="/home/users/fadis/rc/harps/include/harps/exceptions.hpp" bodystart="68" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classharps_1_1HarpsException_11c1c3000d2e0184cbeedb07d13c80eb4" prot="public" virt="non-virtual"><scope>harps::SinkConfigurationFailed</scope><name>HarpsException</name></member>
+      <member refid="classharps_1_1SinkConfigurationFailed_1fbfc46425031d1d949655c4409d81258" prot="public" virt="non-virtual"><scope>harps::SinkConfigurationFailed</scope><name>SinkConfigurationFailed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

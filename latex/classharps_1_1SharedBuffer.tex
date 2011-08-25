@@ -1,0 +1,34 @@
+\section{harps::SharedBuffer$<$ Tag, SampleType, count $>$ Class Template Reference}
+\label{classharps_1_1SharedBuffer}\index{harps::SharedBuffer@{harps::SharedBuffer}}
+{\tt \#include $<$shared\_\-buffer.hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static boost::array$<$ SampleType, count $>$ \& {\bf init} (boost::function$<$ void(boost::array$<$ SampleType, count $>$ \&) $>$ \_\-initializer)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Tag, typename SampleType, unsigned int count$>$ class harps::SharedBuffer$<$ Tag, SampleType, count $>$}
+
+モジュール内の複数の箇所で共有されるバッファ 
+
+\subsection{Member Function Documentation}
+\index{harps::SharedBuffer@{harps::SharedBuffer}!init@{init}}
+\index{init@{init}!harps::SharedBuffer@{harps::SharedBuffer}}
+\subsubsection[init]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Tag, typename SampleType, unsigned int count$>$ static boost::array$<$ SampleType, count $>$\& {\bf harps::SharedBuffer}$<$ Tag, SampleType, count $>$::init (boost::function$<$ void(boost::array$<$ SampleType, count $>$ \&) $>$ {\em \_\-initializer})\hspace{0.3cm}{\tt  [inline, static]}}\label{classharps_1_1SharedBuffer_ca645777b94d527a7e340aba24b2c104}
+
+
+バッファを取得します \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-initializer}]バッファの初期化に用いる関数 \end{description}
+\end{Desc}
+
+
+References harps::SharedBuffer$<$ Tag, SampleType, count $>$::buffer.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+rc/harps/include/harps/shared\_\-buffer.hpp\end{CompactItemize}

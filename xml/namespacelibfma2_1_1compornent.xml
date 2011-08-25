@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="namespacelibfma2_1_1compornent" kind="namespace">
+    <compoundname>libfma2::compornent</compoundname>
+    <innerclass refid="classlibfma2_1_1compornent_1_1Normalize" prot="public">libfma2::compornent::Normalize</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/normalize.hpp" line="46"/>
+  </compounddef>
+</doxygen>

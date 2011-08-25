@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1Clock" kind="class" prot="public">
+    <compoundname>harps::Clock</compoundname>
+    <basecompoundref refid="classharps_1_1CurrentTime" prot="public" virt="non-virtual">harps::CurrentTime</basecompoundref>
+    <includes refid="clock_8hpp" local="no">clock.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>unsigned int</type>
+        <declname>_sampling_rate</declname>
+        <defname>_sampling_rate</defname>
+      </param>
+      <param>
+        <type>unsigned int</type>
+        <declname>_sample_count</declname>
+        <defname>_sample_count</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1Clock_1234200fc5aa6a0cdee214f5d86f33b94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::Clock&lt; _sampling_rate, _sample_count &gt;::Clock</definition>
+        <argsstring>()</argsstring>
+        <name>Clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="255" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="254" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Clock_1c5c9a2eea4b8ce861211d14b81deb99a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual harps::Clock&lt; _sampling_rate, _sample_count &gt;::~Clock</definition>
+        <argsstring>()</argsstring>
+        <name>~Clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="256" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="256" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Clock_139971acf3b3d864c1e3484ee055d93ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::Clock&lt; _sampling_rate, _sample_count &gt;::tick</definition>
+        <argsstring>()</argsstring>
+        <name>tick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="257" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="257" bodyend="259"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>CurrentTimeのtick幅をバッファの長さに固定したものです。 </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>harps::CurrentTime</label>
+        <link refid="classharps_1_1CurrentTime"/>
+      </node>
+      <node id="11">
+        <label>harps::Clock&lt; _sampling_rate, _sample_count &gt;</label>
+        <link refid="classharps_1_1Clock"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="14">
+        <label>harps::CurrentTime</label>
+        <link refid="classharps_1_1CurrentTime"/>
+      </node>
+      <node id="13">
+        <label>harps::Clock&lt; _sampling_rate, _sample_count &gt;</label>
+        <link refid="classharps_1_1Clock"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="252" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="252" bodyend="261"/>
+    <listofallmembers>
+      <member refid="classharps_1_1Clock_1234200fc5aa6a0cdee214f5d86f33b94" prot="public" virt="non-virtual"><scope>harps::Clock</scope><name>Clock</name></member>
+      <member refid="classharps_1_1CurrentTime_16a58e37c3b82280888f7d39e9387fda9" prot="public" virt="non-virtual"><scope>harps::Clock</scope><name>CurrentTime</name></member>
+      <member refid="classharps_1_1CurrentTime_1b7d1435e1b3d59c6a71b6d85c3743d3c" prot="public" virt="non-virtual"><scope>harps::Clock</scope><name>getMatrix</name></member>
+      <member refid="classharps_1_1CurrentTime_14843be872283108748b222eebefec0c2" prot="public" virt="non-virtual"><scope>harps::Clock</scope><name>getPitchBend</name></member>
+      <member refid="classharps_1_1CurrentTime_1b4e5c08585a7599b89db2dac14b9c4d1" prot="public" virt="non-virtual"><scope>harps::Clock</scope><name>getTime</name></member>
+      <member refid="classharps_1_1CurrentTime_13f08fd579a5b04db6ceb2497984d237b" prot="public" virt="non-virtual"><scope>harps::Clock</scope><name>getTone</name></member>
+      <member refid="classharps_1_1CurrentTime_13fbbd98cbd3c4517bbf49e62d86f2cc5" prot="public" virt="non-virtual"><scope>harps::Clock</scope><name>getToneFrequency</name></member>
+      <member refid="classharps_1_1CurrentTime_130223f190a94981c8c109e38cdf9fa11787e6b67fdd7a472232ecb17f64a3379" prot="public" virt="non-virtual"><scope>harps::Clock</scope><name>MATRIX_COUNT</name></member>
+      <member refid="classharps_1_1CurrentTime_1d4ba06019a3066b8aa29bb3a789d9e5d" prot="public" virt="non-virtual"><scope>harps::Clock</scope><name>noteOff</name></member>
+      <member refid="classharps_1_1CurrentTime_117506ab95e4f9dd773489478751f39d4" prot="public" virt="non-virtual"><scope>harps::Clock</scope><name>noteOn</name></member>
+      <member refid="classharps_1_1CurrentTime_174647316ea9eed4d83fe899b18d110a2" prot="public" virt="non-virtual"><scope>harps::Clock</scope><name>reset</name></member>
+      <member refid="classharps_1_1CurrentTime_11cf8a7b0fb4fde33e472acf9d086816d" prot="public" virt="non-virtual"><scope>harps::Clock</scope><name>setPitchBend</name></member>
+      <member refid="classharps_1_1CurrentTime_128f0470f31805494343847286d69694e" prot="public" virt="non-virtual"><scope>harps::Clock</scope><name>swapMatrix</name></member>
+      <member refid="classharps_1_1Clock_139971acf3b3d864c1e3484ee055d93ef" prot="public" virt="non-virtual"><scope>harps::Clock</scope><name>tick</name></member>
+      <member refid="classharps_1_1CurrentTime_14997fde13ba0065725222565dedc6321" prot="public" virt="non-virtual" ambiguityscope="harps::CurrentTime::"><scope>harps::Clock</scope><name>tick</name></member>
+      <member refid="classharps_1_1Clock_1c5c9a2eea4b8ce861211d14b81deb99a" prot="public" virt="virtual"><scope>harps::Clock</scope><name>~Clock</name></member>
+      <member refid="classharps_1_1CurrentTime_102901d4094d29badc64b00c1d428e34b" prot="public" virt="virtual"><scope>harps::Clock</scope><name>~CurrentTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="namespaceharps" kind="namespace">
+    <compoundname>harps</compoundname>
+    <innerclass refid="classharps_1_1Buffer" prot="public">harps::Buffer</innerclass>
+    <innerclass refid="classharps_1_1ClockMatrixCalc" prot="public">harps::ClockMatrixCalc</innerclass>
+    <innerclass refid="classharps_1_1ClockMatrixCalc_3_01LOCAL_01_4" prot="public">harps::ClockMatrixCalc&lt; LOCAL &gt;</innerclass>
+    <innerclass refid="classharps_1_1ClockMatrixCalc_3_01KEY_01_4" prot="public">harps::ClockMatrixCalc&lt; KEY &gt;</innerclass>
+    <innerclass refid="classharps_1_1ClockMatrixCalc_3_01TONE_01_4" prot="public">harps::ClockMatrixCalc&lt; TONE &gt;</innerclass>
+    <innerclass refid="classharps_1_1CurrentTime" prot="public">harps::CurrentTime</innerclass>
+    <innerclass refid="classharps_1_1Clock" prot="public">harps::Clock</innerclass>
+    <innerclass refid="classharps_1_1DynamicModuleSocket" prot="public">harps::DynamicModuleSocket</innerclass>
+    <innerclass refid="classharps_1_1DynamicModuleSlot" prot="public">harps::DynamicModuleSlot</innerclass>
+    <innerclass refid="classharps_1_1Dummy" prot="public">harps::Dummy</innerclass>
+    <innerclass refid="classharps_1_1HarpsException" prot="public">harps::HarpsException</innerclass>
+    <innerclass refid="classharps_1_1ModuleNotFound" prot="public">harps::ModuleNotFound</innerclass>
+    <innerclass refid="classharps_1_1UnableToCreateInstance" prot="public">harps::UnableToCreateInstance</innerclass>
+    <innerclass refid="classharps_1_1UnableToOpenSink" prot="public">harps::UnableToOpenSink</innerclass>
+    <innerclass refid="classharps_1_1SinkConfigurationFailed" prot="public">harps::SinkConfigurationFailed</innerclass>
+    <innerclass refid="classharps_1_1SinkOutputFailed" prot="public">harps::SinkOutputFailed</innerclass>
+    <innerclass refid="classharps_1_1DynamicMonophony" prot="public">harps::DynamicMonophony</innerclass>
+    <innerclass refid="classharps_1_1DynamicPolyphony" prot="public">harps::DynamicPolyphony</innerclass>
+    <innerclass refid="classharps_1_1Normalizer" prot="public">harps::Normalizer</innerclass>
+    <innerclass refid="classharps_1_1Note" prot="public">harps::Note</innerclass>
+    <innerclass refid="classharps_1_1SharedBuffer" prot="public">harps::SharedBuffer</innerclass>
+    <innernamespace refid="namespaceharps_1_1compornent">harps::compornent</innernamespace>
+    <innernamespace refid="namespaceharps_1_1input">harps::input</innernamespace>
+    <innernamespace refid="namespaceharps_1_1output">harps::output</innernamespace>
+    <innernamespace refid="namespaceharps_1_1table">harps::table</innernamespace>
+      <sectiondef kind="enum">
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceharps_1e436698398d387e2b89ecdc95171e7a7" prot="public" static="no">
+        <type>double</type>
+        <definition>typedef double harps::Time</definition>
+        <argsstring></argsstring>
+        <name>Time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="52" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceharps_1e9707f612d7e353030e63165bc8796fc" prot="public" static="no">
+        <type>std::pair&lt; Time, Time &gt;</type>
+        <definition>typedef std::pair&lt; Time, Time &gt; harps::TimeMatrix</definition>
+        <argsstring></argsstring>
+        <name>TimeMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="53" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceharps_14f7bddae87173a07222e7cd4b32519bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float harps::noteToFrequency</definition>
+        <argsstring>(float _note)</argsstring>
+        <name>noteToFrequency</name>
+        <param>
+          <type>float</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MIDIノートナンバーから周波数に変換します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ノートナンバー </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>周波数 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="48" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="48" bodyend="50"/>
+        <referencedby refid="classharps_1_1CurrentTime_117506ab95e4f9dd773489478751f39d4" compoundref="clock_8hpp" startline="175" endline="185">harps::CurrentTime::noteOn</referencedby>
+        <referencedby refid="classharps_1_1CurrentTime_11cf8a7b0fb4fde33e472acf9d086816d" compoundref="clock_8hpp" startline="199" endline="208">harps::CurrentTime::setPitchBend</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_139a98007c1da8f7aedcfe13c51760124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * harps::getModulePath</definition>
+        <argsstring>()</argsstring>
+        <name>getModulePath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>モジュールを探すパスを取得します。モジュールを探すパスはビルド時に指定されたprefixをもとに決定されます。 <simplesect kind="return"><para>探索パス </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="124" bodyfile="/home/users/fadis/rc/harps/src/module_dir.cpp" bodystart="37" bodyend="40"/>
+        <referencedby refid="classharps_1_1DynamicModuleSlot_1ae856e3f338981e6016c9834433bfeff" compoundref="dynamic__module_8hpp" startline="135" endline="162">harps::DynamicModuleSlot::DynamicModuleSlot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_19f18f91c4acdcbfe42895fc812853066" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>SampleType</declname>
+            <defname>SampleType</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void harps::reduceNormalizingNoize</definition>
+        <argsstring>(Buffer&lt; SampleType &gt; &amp;_buffer)</argsstring>
+        <name>reduceNormalizingNoize</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; SampleType &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>正規化のスケール値にローパスフィルタをかけて急激なスケーリングによるノイズを低減します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>スケール値バッファ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/normalize.hpp" line="48" bodyfile="/home/users/fadis/rc/harps/include/harps/normalize.hpp" bodystart="46" bodyend="67"/>
+        <references refid="classharps_1_1Buffer_12a7f5913399484eec854689812ea0bb9" compoundref="buffer_8hpp" startline="59" endline="61">harps::Buffer&lt; _SampleType &gt;::get</references>
+        <referencedby refid="classharps_1_1DynamicPolyphony_13a2597029685d470e88e32a2ce3db94a" compoundref="instrument_8hpp" startline="169" endline="197">harps::DynamicPolyphony&lt; MonophonyType, max_polyphony &gt;::operator()</referencedby>
+        <referencedby refid="classharps_1_1input_1_1Tracks_139bfd26b91c4f04a0c6d9c7fdb01e1d9" compoundref="simple_8hpp" startline="187" endline="213">harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_154146ea57c1846a470bf191f51516988" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double harps::getTime</definition>
+        <argsstring>()</argsstring>
+        <name>getTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>現在時刻を取得します。 <simplesect kind="return"><para>現在時刻 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/time.hpp" line="49" bodyfile="/home/users/fadis/rc/harps/include/harps/time.hpp" bodystart="49" bodyend="53"/>
+        <referencedby refid="namespaceharps_17ddb3dd742346b37c7027671e7878792" compoundref="time_8hpp" startline="59" endline="62">sleep</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_17ddb3dd742346b37c7027671e7878792" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::sleep</definition>
+        <argsstring>(double _until)</argsstring>
+        <name>sleep</name>
+        <param>
+          <type>double</type>
+          <declname>_until</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>指定した時刻までプロセスを停止させます。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_until</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>再開予定時刻 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/time.hpp" line="59" bodyfile="/home/users/fadis/rc/harps/include/harps/time.hpp" bodystart="59" bodyend="62"/>
+        <references refid="namespaceharps_154146ea57c1846a470bf191f51516988" compoundref="time_8hpp" startline="49" endline="53">getTime</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float harps::loop</definition>
+        <argsstring>(float _source)</argsstring>
+        <name>loop</name>
+        <param>
+          <type>float</type>
+          <declname>_source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>入力値を0.0から1.0(1.0を含まない)の間でループします。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>入力値 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>出力値 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/utils.hpp" line="45" bodyfile="/home/users/fadis/rc/harps/include/harps/utils.hpp" bodystart="45" bodyend="47"/>
+        <referencedby refid="namespaceharps_199acf61c717498656a088ceb0c6d8e3e" compoundref="utils_8hpp" startline="158" endline="168">nes</referencedby>
+        <referencedby refid="namespaceharps_1ec41e89fe7065da3484b8e541bdd42a1" compoundref="utils_8hpp" startline="132" endline="139">rectangle</referencedby>
+        <referencedby refid="classharps_1_1CurrentTime_11cf8a7b0fb4fde33e472acf9d086816d" compoundref="clock_8hpp" startline="199" endline="208">harps::CurrentTime::setPitchBend</referencedby>
+        <referencedby refid="namespaceharps_114925ee15691035e1d0e8c9efbc73c0d" compoundref="utils_8hpp" startline="61" endline="63">sin</referencedby>
+        <referencedby refid="namespaceharps_1521c0226ca004e6f0942eebbcd706fb0" compoundref="utils_8hpp" startline="103" endline="111">triangle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_1cb6eb6b6be744624501519370f1973ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double harps::loop</definition>
+        <argsstring>(double _source)</argsstring>
+        <name>loop</name>
+        <param>
+          <type>double</type>
+          <declname>_source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>入力値を0.0から1.0(1.0を含まない)の間でループします。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>入力値 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>出力値 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/utils.hpp" line="53" bodyfile="/home/users/fadis/rc/harps/include/harps/utils.hpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_114925ee15691035e1d0e8c9efbc73c0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float harps::sin</definition>
+        <argsstring>(float _theta)</argsstring>
+        <name>sin</name>
+        <param>
+          <type>float</type>
+          <declname>_theta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>テーブルを使って高速に正弦の近似値を返します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>角度(1周を1.0とする) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sin( _theta ) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/utils.hpp" line="61" bodyfile="/home/users/fadis/rc/harps/include/harps/utils.hpp" bodystart="61" bodyend="63"/>
+        <references refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" compoundref="utils_8hpp" startline="45" endline="47">loop</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_14286fc6aa658faf13aaa83d4d2402a4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double harps::sin</definition>
+        <argsstring>(double _theta)</argsstring>
+        <name>sin</name>
+        <param>
+          <type>double</type>
+          <declname>_theta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>テーブルを使って高速に正弦の近似値を返します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>角度(1周を1.0とする) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sin( _theta ) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/utils.hpp" line="69" bodyfile="/home/users/fadis/rc/harps/include/harps/utils.hpp" bodystart="69" bodyend="71"/>
+        <references refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" compoundref="utils_8hpp" startline="45" endline="47">loop</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_12d3449b08861e19e466414aed28d4f22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float harps::volume</definition>
+        <argsstring>(float _linear)</argsstring>
+        <name>volume</name>
+        <param>
+          <type>float</type>
+          <declname>_linear</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>テーブルを使って高速に音量と実際の振幅の変換を行います。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_linear</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>音量 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>振幅 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/utils.hpp" line="77" bodyfile="/home/users/fadis/rc/harps/include/harps/utils.hpp" bodystart="77" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_1561f42a6eddee3829c8e429b1209fc7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double harps::volume</definition>
+        <argsstring>(double _linear)</argsstring>
+        <name>volume</name>
+        <param>
+          <type>double</type>
+          <declname>_linear</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>テーブルを使って高速に音量と実際の振幅の変換を行います。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_linear</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>音量 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>振幅 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/utils.hpp" line="90" bodyfile="/home/users/fadis/rc/harps/include/harps/utils.hpp" bodystart="90" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_1521c0226ca004e6f0942eebbcd706fb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float harps::triangle</definition>
+        <argsstring>(float _theta)</argsstring>
+        <name>triangle</name>
+        <param>
+          <type>float</type>
+          <declname>_theta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>三角波を返します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>角度(1周を1.0とする) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>triangle( _theta ) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/utils.hpp" line="103" bodyfile="/home/users/fadis/rc/harps/include/harps/utils.hpp" bodystart="103" bodyend="111"/>
+        <references refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" compoundref="utils_8hpp" startline="45" endline="47">loop</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_159471afc6a4b9fda2abad9ef125c6245" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double harps::triangle</definition>
+        <argsstring>(double _theta)</argsstring>
+        <name>triangle</name>
+        <param>
+          <type>double</type>
+          <declname>_theta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>三角波を返します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>角度(1周を1.0とする) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>triangle( _theta ) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/utils.hpp" line="117" bodyfile="/home/users/fadis/rc/harps/include/harps/utils.hpp" bodystart="117" bodyend="125"/>
+        <references refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" compoundref="utils_8hpp" startline="45" endline="47">loop</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_1ec41e89fe7065da3484b8e541bdd42a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float harps::rectangle</definition>
+        <argsstring>(float _duty, float _theta)</argsstring>
+        <name>rectangle</name>
+        <param>
+          <type>float</type>
+          <declname>_duty</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_theta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>矩形波を返します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>角度(1周を1.0とする) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>rectangle( _theta ) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/utils.hpp" line="132" bodyfile="/home/users/fadis/rc/harps/include/harps/utils.hpp" bodystart="132" bodyend="139"/>
+        <references refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" compoundref="utils_8hpp" startline="45" endline="47">loop</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_177bf2d30984c1216bd4809e722675683" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double harps::rectangle</definition>
+        <argsstring>(double _duty, double _theta)</argsstring>
+        <name>rectangle</name>
+        <param>
+          <type>double</type>
+          <declname>_duty</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>_theta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>矩形波を返します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>角度(1周を1.0とする) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>rectangle( _theta ) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/utils.hpp" line="145" bodyfile="/home/users/fadis/rc/harps/include/harps/utils.hpp" bodystart="145" bodyend="152"/>
+        <references refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" compoundref="utils_8hpp" startline="45" endline="47">loop</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_199acf61c717498656a088ceb0c6d8e3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float harps::nes</definition>
+        <argsstring>(float _theta)</argsstring>
+        <name>nes</name>
+        <param>
+          <type>float</type>
+          <declname>_theta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ファミコンっぽい三角波を返します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>角度(1周を1.0とする) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>triangle( _theta )をある程度の精度で丸めたもの </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/utils.hpp" line="158" bodyfile="/home/users/fadis/rc/harps/include/harps/utils.hpp" bodystart="158" bodyend="168"/>
+        <references refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" compoundref="utils_8hpp" startline="45" endline="47">loop</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_1bebd9a61b530b183652b2d08e2e8ee23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double harps::nes</definition>
+        <argsstring>(double _theta)</argsstring>
+        <name>nes</name>
+        <param>
+          <type>double</type>
+          <declname>_theta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ファミコンっぽい三角波を返します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>角度(1周を1.0とする) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>triangle( _theta )をある程度の精度で丸めたもの </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/utils.hpp" line="174" bodyfile="/home/users/fadis/rc/harps/include/harps/utils.hpp" bodystart="174" bodyend="184"/>
+        <references refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" compoundref="utils_8hpp" startline="45" endline="47">loop</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>harpsはテンプレートベースで作られたモジュールシンセサイザーです。 harpsではスタック操作の最適化の効果を最大限に得るために殆どの関数はインラインかされています。 </para>    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/buffer.hpp" line="39"/>
+  </compounddef>
+</doxygen>

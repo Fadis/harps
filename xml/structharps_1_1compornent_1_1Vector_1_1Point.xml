@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="structharps_1_1compornent_1_1Vector_1_1Point" kind="struct" prot="public">
+    <compoundname>harps::compornent::Vector::Point</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structharps_1_1compornent_1_1Vector_1_1Point_1be5590b0478612c372ebaa8893252770" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float harps::compornent::Vector&lt; array_size &gt;::Point::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/vector.hpp" line="54" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/vector.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structharps_1_1compornent_1_1Vector_1_1Point_1c40930a7bb732f5b70b71a766035be86" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float harps::compornent::Vector&lt; array_size &gt;::Point::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/vector.hpp" line="55" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/vector.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/vector.hpp" line="53" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/vector.hpp" bodystart="53" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structharps_1_1compornent_1_1Vector_1_1Point_1be5590b0478612c372ebaa8893252770" prot="public" virt="non-virtual"><scope>harps::compornent::Vector::Point</scope><name>x</name></member>
+      <member refid="structharps_1_1compornent_1_1Vector_1_1Point_1c40930a7bb732f5b70b71a766035be86" prot="public" virt="non-virtual"><scope>harps::compornent::Vector::Point</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

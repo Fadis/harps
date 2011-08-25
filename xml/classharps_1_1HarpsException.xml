@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1HarpsException" kind="class" prot="public">
+    <compoundname>harps::HarpsException</compoundname>
+    <derivedcompoundref refid="classharps_1_1ModuleNotFound" prot="public" virt="non-virtual">harps::ModuleNotFound</derivedcompoundref>
+    <derivedcompoundref refid="classharps_1_1SinkConfigurationFailed" prot="public" virt="non-virtual">harps::SinkConfigurationFailed</derivedcompoundref>
+    <derivedcompoundref refid="classharps_1_1SinkOutputFailed" prot="public" virt="non-virtual">harps::SinkOutputFailed</derivedcompoundref>
+    <derivedcompoundref refid="classharps_1_1UnableToCreateInstance" prot="public" virt="non-virtual">harps::UnableToCreateInstance</derivedcompoundref>
+    <derivedcompoundref refid="classharps_1_1UnableToOpenSink" prot="public" virt="non-virtual">harps::UnableToOpenSink</derivedcompoundref>
+    <includes refid="exceptions_8hpp" local="no">exceptions.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1HarpsException_11c1c3000d2e0184cbeedb07d13c80eb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::HarpsException::HarpsException</definition>
+        <argsstring>(const char *_value)</argsstring>
+        <name>HarpsException</name>
+        <param>
+          <type>const char *</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/exceptions.hpp" line="42" bodyfile="/home/users/fadis/rc/harps/include/harps/exceptions.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Harpsの中で投げられる例外はこのクラスを継承します。 </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="85">
+        <label>harps::UnableToOpenSink</label>
+        <link refid="classharps_1_1UnableToOpenSink"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>harps::ModuleNotFound</label>
+        <link refid="classharps_1_1ModuleNotFound"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>harps::HarpsException</label>
+        <link refid="classharps_1_1HarpsException"/>
+      </node>
+      <node id="84">
+        <label>harps::UnableToCreateInstance</label>
+        <link refid="classharps_1_1UnableToCreateInstance"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>harps::SinkConfigurationFailed</label>
+        <link refid="classharps_1_1SinkConfigurationFailed"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>harps::SinkOutputFailed</label>
+        <link refid="classharps_1_1SinkOutputFailed"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/exceptions.hpp" line="40" bodyfile="/home/users/fadis/rc/harps/include/harps/exceptions.hpp" bodystart="40" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classharps_1_1HarpsException_11c1c3000d2e0184cbeedb07d13c80eb4" prot="public" virt="non-virtual"><scope>harps::HarpsException</scope><name>HarpsException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

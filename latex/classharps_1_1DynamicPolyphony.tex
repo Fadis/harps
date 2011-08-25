@@ -1,0 +1,160 @@
+\section{harps::DynamicPolyphony$<$ MonophonyType, max\_\-polyphony $>$ Class Template Reference}
+\label{classharps_1_1DynamicPolyphony}\index{harps::DynamicPolyphony@{harps::DynamicPolyphony}}
+{\tt \#include $<$instrument.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf DynamicPolyphony} ()
+\item 
+virtual {\bf $\sim$DynamicPolyphony} ()
+\item 
+{\footnotesize template$<$typename SampleType$>$ }\\void {\bf operator()} ({\bf Buffer}$<$ SampleType $>$ \&\_\-buffer)
+\item 
+int {\bf noteOn} (int \_\-note, float \_\-touch)
+\item 
+void {\bf noteOff} (int \_\-note\_\-id)
+\item 
+void {\bf setPitchBend} (int \_\-note\_\-id, float \_\-pitch)
+\item 
+void {\bf setPitchBend} (float \_\-pitch)
+\item 
+void {\bf reset} ()
+\item 
+int {\bf findMonophony} (int \_\-note\_\-id)
+\item 
+double {\bf getGlobalTime} ()
+\item 
+void {\bf programChange} (const char $\ast$\_\-filename)
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \textbf{Renderer}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename MonophonyType, unsigned int max\_\-polyphony$>$ class harps::DynamicPolyphony$<$ MonophonyType, max\_\-polyphony $>$}
+
+モジュールの発音とクロックを管理するインスツルメントクラスです。 ダイナミックポリフォニーは外部トーンモジュールを読み込んで同時に複数音を鳴らすことが出来ます。 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{harps::DynamicPolyphony@{harps::DynamicPolyphony}!DynamicPolyphony@{DynamicPolyphony}}
+\index{DynamicPolyphony@{DynamicPolyphony}!harps::DynamicPolyphony@{harps::DynamicPolyphony}}
+\subsubsection[DynamicPolyphony]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename MonophonyType, unsigned int max\_\-polyphony$>$ {\bf harps::DynamicPolyphony}$<$ MonophonyType, max\_\-polyphony $>$::{\bf DynamicPolyphony} ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicPolyphony_c15bc693840c9fee92b45a46c61db43d}
+
+
+コンストラクタ \index{harps::DynamicPolyphony@{harps::DynamicPolyphony}!$\sim$DynamicPolyphony@{$\sim$DynamicPolyphony}}
+\index{$\sim$DynamicPolyphony@{$\sim$DynamicPolyphony}!harps::DynamicPolyphony@{harps::DynamicPolyphony}}
+\subsubsection[$\sim$DynamicPolyphony]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename MonophonyType, unsigned int max\_\-polyphony$>$ virtual {\bf harps::DynamicPolyphony}$<$ MonophonyType, max\_\-polyphony $>$::$\sim${\bf DynamicPolyphony} ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classharps_1_1DynamicPolyphony_ca69bdfdc3a1629b7abbea24b6444ac9}
+
+
+デストラクタ 
+
+\subsection{Member Function Documentation}
+\index{harps::DynamicPolyphony@{harps::DynamicPolyphony}!operator()@{operator()}}
+\index{operator()@{operator()}!harps::DynamicPolyphony@{harps::DynamicPolyphony}}
+\subsubsection[operator()]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename MonophonyType, unsigned int max\_\-polyphony$>$ template$<$typename SampleType$>$ void {\bf harps::DynamicPolyphony}$<$ MonophonyType, max\_\-polyphony $>$::operator() ({\bf Buffer}$<$ SampleType $>$ \& {\em \_\-buffer})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicPolyphony_3a2597029685d470e88e32a2ce3db94a}
+
+
+全てのモジュールを実行しクロックを1ブロック分進めます。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-buffer}]実行結果の総和を出力するバッファブロック \end{description}
+\end{Desc}
+
+
+References harps::Buffer$<$ \_\-SampleType $>$::get(), harps::Normalizer$<$ tail $>$::getAmp(), harps::reduceNormalizingNoize(), harps::Normalizer$<$ tail $>$::setValue(), and harps::CurrentTime::tick().\index{harps::DynamicPolyphony@{harps::DynamicPolyphony}!noteOn@{noteOn}}
+\index{noteOn@{noteOn}!harps::DynamicPolyphony@{harps::DynamicPolyphony}}
+\subsubsection[noteOn]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename MonophonyType, unsigned int max\_\-polyphony$>$ int {\bf harps::DynamicPolyphony}$<$ MonophonyType, max\_\-polyphony $>$::noteOn (int {\em \_\-note}, \/  float {\em \_\-touch})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicPolyphony_664216adf59bb943e5e399c43309888c}
+
+
+指定した鍵盤を押された状態にします。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-note}]鍵盤(MIDIノートナンバーで指定) \item[{\em \_\-touch}]鍵盤を押す強さ \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]ノートID \end{Desc}
+\index{harps::DynamicPolyphony@{harps::DynamicPolyphony}!noteOff@{noteOff}}
+\index{noteOff@{noteOff}!harps::DynamicPolyphony@{harps::DynamicPolyphony}}
+\subsubsection[noteOff]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename MonophonyType, unsigned int max\_\-polyphony$>$ void {\bf harps::DynamicPolyphony}$<$ MonophonyType, max\_\-polyphony $>$::noteOff (int {\em \_\-note\_\-id})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicPolyphony_7accc347e968a411ecaf81b377a5e50f}
+
+
+現在押している鍵盤から指を離します。モジュールによっては鍵盤から指を離してもすぐに音は止まりません。音を完全に止めてインスツルメントを待機状態にするにはnoteWaitを呼び出す必要があります。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-note\_\-id}]指を離す鍵盤をnoteOn時に取得したノートIDで指定します \end{description}
+\end{Desc}
+
+
+References harps::DynamicPolyphony$<$ MonophonyType, max\_\-polyphony $>$::findMonophony().\index{harps::DynamicPolyphony@{harps::DynamicPolyphony}!setPitchBend@{setPitchBend}}
+\index{setPitchBend@{setPitchBend}!harps::DynamicPolyphony@{harps::DynamicPolyphony}}
+\subsubsection[setPitchBend]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename MonophonyType, unsigned int max\_\-polyphony$>$ void {\bf harps::DynamicPolyphony}$<$ MonophonyType, max\_\-polyphony $>$::setPitchBend (int {\em \_\-note\_\-id}, \/  float {\em \_\-pitch})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicPolyphony_d150e720cad12009a12982f0b467a707}
+
+
+ピッチベンドします。設定したピッチベンド値は指定した音のみに影響します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-note\_\-id}]ノートID \item[{\em \_\-pitch}]ピッチ(1.0で音階が1上がり、12.0で1オクターブ上がります) \end{description}
+\end{Desc}
+
+
+References harps::DynamicPolyphony$<$ MonophonyType, max\_\-polyphony $>$::findMonophony().
+
+Referenced by harps::DynamicPolyphony$<$ MonophonyType, max\_\-polyphony $>$::setPitchBend().\index{harps::DynamicPolyphony@{harps::DynamicPolyphony}!setPitchBend@{setPitchBend}}
+\index{setPitchBend@{setPitchBend}!harps::DynamicPolyphony@{harps::DynamicPolyphony}}
+\subsubsection[setPitchBend]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename MonophonyType, unsigned int max\_\-polyphony$>$ void {\bf harps::DynamicPolyphony}$<$ MonophonyType, max\_\-polyphony $>$::setPitchBend (float {\em \_\-pitch})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicPolyphony_c6e407d71432eec1425e56a5e5461f86}
+
+
+ピッチベンドします。設定したピッチベンド値は発音中の全ての音に影響します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-pitch}]ピッチ(1.0で音階が1上がり、12.0で1オクターブ上がります) \end{description}
+\end{Desc}
+
+
+References harps::DynamicPolyphony$<$ MonophonyType, max\_\-polyphony $>$::setPitchBend().\index{harps::DynamicPolyphony@{harps::DynamicPolyphony}!reset@{reset}}
+\index{reset@{reset}!harps::DynamicPolyphony@{harps::DynamicPolyphony}}
+\subsubsection[reset]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename MonophonyType, unsigned int max\_\-polyphony$>$ void {\bf harps::DynamicPolyphony}$<$ MonophonyType, max\_\-polyphony $>$::reset ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicPolyphony_a719ce61a5f7c106a8bcc896b9a5c167}
+
+
+インスツルメントをリセットします。それまでに生成されたNoteIDは全て無効になります。無効になったNoteIDを使ってnoteOffした場合の動作は未定義です。 
+
+References harps::CurrentTime::reset().\index{harps::DynamicPolyphony@{harps::DynamicPolyphony}!findMonophony@{findMonophony}}
+\index{findMonophony@{findMonophony}!harps::DynamicPolyphony@{harps::DynamicPolyphony}}
+\subsubsection[findMonophony]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename MonophonyType, unsigned int max\_\-polyphony$>$ int {\bf harps::DynamicPolyphony}$<$ MonophonyType, max\_\-polyphony $>$::findMonophony (int {\em \_\-note\_\-id})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicPolyphony_0db5c94c16f5babf60c2e47d02cb6f36}
+
+
+指定したIDの音が割り当てられているモノフォニーインスツルメントのIDを返します。これはnoteOnした音が実際に発音されているか、あるいはインスツルメントが最大同時発音数に達した等の理由によって発音されなかったかを調べるために使うことが出来ます。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-note\_\-id}]ノートID \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]モノフォニーインスツルメントのID(見つからなかった場合は-1) \end{Desc}
+
+
+Referenced by harps::DynamicPolyphony$<$ MonophonyType, max\_\-polyphony $>$::noteOff(), and harps::DynamicPolyphony$<$ MonophonyType, max\_\-polyphony $>$::setPitchBend().\index{harps::DynamicPolyphony@{harps::DynamicPolyphony}!getGlobalTime@{getGlobalTime}}
+\index{getGlobalTime@{getGlobalTime}!harps::DynamicPolyphony@{harps::DynamicPolyphony}}
+\subsubsection[getGlobalTime]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename MonophonyType, unsigned int max\_\-polyphony$>$ double {\bf harps::DynamicPolyphony}$<$ MonophonyType, max\_\-polyphony $>$::getGlobalTime ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicPolyphony_04c6b1c548270bc160e7a96e6ecc034d}
+
+
+現在の処理中の箇所の時刻を返します。 \begin{Desc}
+\item[Returns:]現在時刻 \end{Desc}
+\index{harps::DynamicPolyphony@{harps::DynamicPolyphony}!programChange@{programChange}}
+\index{programChange@{programChange}!harps::DynamicPolyphony@{harps::DynamicPolyphony}}
+\subsubsection[programChange]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename MonophonyType, unsigned int max\_\-polyphony$>$ void {\bf harps::DynamicPolyphony}$<$ MonophonyType, max\_\-polyphony $>$::programChange (const char $\ast$ {\em \_\-filename})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1DynamicPolyphony_1223aecd5a7ee1bcbf22904cb555ab50}
+
+
+モジュールを変更します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-filename}]新しいモジュールのファイル名 \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+rc/harps/include/harps/instrument.hpp\end{CompactItemize}

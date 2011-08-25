@@ -1,0 +1,121 @@
+\section{harps::compornent Namespace Reference}
+\label{namespaceharps_1_1compornent}\index{harps::compornent@{harps::compornent}}
+
+
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class {\bf Add}
+\item 
+class {\bf Add$<$  $>$}
+\item 
+class {\bf BranchByNote}
+\item 
+class {\bf Constant}
+\item 
+class {\bf ConstantMul}
+\item 
+class {\bf Distotion}
+\item 
+class {\bf Envelope}
+\item 
+class {\bf Envelope$<$ \_\-clock\_\-select, \_\-delay, \_\-attack, \_\-hold, \_\-decay, 0, \_\-release $>$}
+\item 
+class {\bf Envelope2}
+\item 
+class {\bf Envelope2$<$ \_\-clock\_\-select, \_\-delay, \_\-attack, \_\-attack\_\-middle, \_\-attack\_\-middle\_\-level, \_\-hold, \_\-hold\_\-level, \_\-decay1, \_\-decay1\_\-middle, \_\-decay1\_\-middle\_\-level, \_\-decay1\_\-end\_\-level, \_\-decay2, \_\-decay2\_\-middle, \_\-decay2\_\-middle\_\-level, 0, \_\-release, \_\-release\_\-middle, \_\-release\_\-middle\_\-level $>$}
+\item 
+class {\bf FM}
+\item 
+class {\bf FM$<$ ModuleType0, ModuleType1, 0, 0, 0, 0, 0, 0, 0 $>$}
+\item 
+class {\bf FM2}
+\item 
+class {\bf Generator}
+\item 
+class {\bf Mix}
+\item 
+class {\bf Mix$<$  $>$}
+\item 
+class {\bf Mul}
+\item 
+class {\bf Mul$<$  $>$}
+\item 
+class {\bf FFT}
+\item 
+class {\bf Noize}
+\item 
+class {\bf Normalize}
+\item 
+class {\bf Rectangle}
+\item 
+class {\bf Scale}
+\item 
+class {\bf Scale$<$ ModuleType, 1000, 0 $>$}
+\item 
+class {\bf Shift}
+\item 
+class {\bf Sine}
+\item 
+class {\bf SwitchingEnvelope}
+\item 
+class {\bf Touch}
+\item 
+class {\bf Triangle}
+\item 
+class {\bf NES}
+\item 
+class \textbf{Vector}
+\item 
+class {\bf Volume}
+\item 
+class {\bf Wave}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+bool {\bf lu} (float $\ast$\_\-lu, unsigned int $\ast$\_\-index)
+\item 
+bool {\bf inverse} (float $\ast$\_\-dest, const float $\ast$\_\-source\_\-orig)
+\item 
+void \textbf{calcCoef} (float \&\_\-a, float \&\_\-b, float \_\-x0, float \_\-y0, float \_\-x1, float \_\-y1)\label{namespaceharps_1_1compornent_7e2f00e77c2c4b3cab75ccc616740f96}
+
+\item 
+void \textbf{calcCoef} (float \&\_\-a, float \&\_\-b, float \&\_\-c, float \_\-x0, float \_\-y0, float \_\-x1, float \_\-y1, float \_\-x2, float \_\-y2)\label{namespaceharps_1_1compornent_011aade3968e39a9e933c9bdeb0dac45}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+この名前空間にはモジュールを構成する演算が置かれています。 
+
+\subsection{Function Documentation}
+\index{harps::compornent@{harps::compornent}!inverse@{inverse}}
+\index{inverse@{inverse}!harps::compornent@{harps::compornent}}
+\subsubsection[inverse]{\setlength{\rightskip}{0pt plus 5cm}bool harps::compornent::inverse (float $\ast$ {\em \_\-dest}, \/  const float $\ast$ {\em \_\-source\_\-orig})}\label{namespaceharps_1_1compornent_b660c352783a5da8d91b8751fc64291b}
+
+
+逆行列を求めます。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-dest}]逆行列 \item[{\em \_\-source\_\-orig}]もとの行列 \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]逆行列が存在するならtrue 存在しないならfalse \end{Desc}
+
+
+References lu().\index{harps::compornent@{harps::compornent}!lu@{lu}}
+\index{lu@{lu}!harps::compornent@{harps::compornent}}
+\subsubsection[lu]{\setlength{\rightskip}{0pt plus 5cm}bool harps::compornent::lu (float $\ast$ {\em \_\-lu}, \/  unsigned int $\ast$ {\em \_\-index})}\label{namespaceharps_1_1compornent_52686693ee6e21316ae152459d1263eb}
+
+
+行列をLU分解します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-lu}]行列 \item[{\em \_\-lu}]ピボット \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]LU分解が成功したらtrue 失敗したらfalse \end{Desc}
+
+
+Referenced by inverse().

@@ -1,0 +1,45 @@
+\section{harps::compornent::Envelope2$<$ \_\-clock\_\-select, \_\-delay, \_\-attack, \_\-attack\_\-middle, \_\-attack\_\-middle\_\-level, \_\-hold, \_\-hold\_\-level, \_\-decay1, \_\-decay1\_\-middle, \_\-decay1\_\-middle\_\-level, \_\-decay1\_\-end\_\-level, \_\-decay2, \_\-decay2\_\-middle, \_\-decay2\_\-middle\_\-level, \_\-sustain\_\-level, \_\-release, \_\-release\_\-middle, \_\-release\_\-middle\_\-level $>$ Class Template Reference}
+\label{classharps_1_1compornent_1_1Envelope2}\index{harps::compornent::Envelope2@{harps::compornent::Envelope2}}
+{\tt \#include $<$envelope2.hpp$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \{ \textbf{CACHE\_\-SIZE} =  2048
+ \}
+\item 
+typedef {\bf Envelope2}$<$ \_\-clock\_\-select, \_\-delay, \_\-attack, \_\-attack\_\-middle, \_\-attack\_\-middle\_\-level, \_\-hold, \_\-hold\_\-level, \_\-decay1, \_\-decay1\_\-middle, \_\-decay1\_\-middle\_\-level, \_\-decay1\_\-end\_\-level, \_\-decay2, \_\-decay2\_\-middle, \_\-decay2\_\-middle\_\-level, \_\-sustain\_\-level, \_\-release, \_\-release\_\-middle, \_\-release\_\-middle\_\-level $>$ \textbf{ThisType}\label{classharps_1_1compornent_1_1Envelope2_1826d375d377d25e54fdb8a24a519f64}
+
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\footnotesize template$<$typename SampleType$>$ }\\void \textbf{operator()} ({\bf Buffer}$<$ SampleType $>$ \&\_\-buffer, {\bf CurrentTime} \&\_\-clock, {\bf Note} \&\_\-note)\label{classharps_1_1compornent_1_1Envelope2_991902e280a18e0d87744d959259f3cc}
+
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static void \textbf{initNoteOnEnvelope} (boost::array$<$ float, CACHE\_\-SIZE $>$ \&\_\-dest)\label{classharps_1_1compornent_1_1Envelope2_f0251b560de2e3a263cd8d0c768293b6}
+
+\item 
+static void \textbf{initNoteOffEnvelope} (boost::array$<$ float, CACHE\_\-SIZE $>$ \&\_\-dest)\label{classharps_1_1compornent_1_1Envelope2_e9d3a4889ad359b68b5df6e285626c1e}
+
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \textbf{NoteOff}
+\item 
+class \textbf{NoteOn}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$unsigned int \_\-clock\_\-select, int \_\-delay, int \_\-attack, int \_\-attack\_\-middle, int \_\-attack\_\-middle\_\-level, int \_\-hold, int \_\-hold\_\-level, int \_\-decay1, int \_\-decay1\_\-middle, int \_\-decay1\_\-middle\_\-level, int \_\-decay1\_\-end\_\-level, int \_\-decay2, int \_\-decay2\_\-middle, int \_\-decay2\_\-middle\_\-level, int \_\-sustain\_\-level, int \_\-release, int \_\-release\_\-middle, int \_\-release\_\-middle\_\-level$>$ class harps::compornent::Envelope2$<$ \_\-clock\_\-select, \_\-delay, \_\-attack, \_\-attack\_\-middle, \_\-attack\_\-middle\_\-level, \_\-hold, \_\-hold\_\-level, \_\-decay1, \_\-decay1\_\-middle, \_\-decay1\_\-middle\_\-level, \_\-decay1\_\-end\_\-level, \_\-decay2, \_\-decay2\_\-middle, \_\-decay2\_\-middle\_\-level, \_\-sustain\_\-level, \_\-release, \_\-release\_\-middle, \_\-release\_\-middle\_\-level $>$}
+
+2次補間のエンベロープを生成して出力します。エンベロープのリリースが完了するとノートの終了を要求します。 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+rc/harps/include/harps/compornent/envelope2.hpp\end{CompactItemize}

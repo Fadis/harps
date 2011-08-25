@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1Note" kind="class" prot="public">
+    <compoundname>harps::Note</compoundname>
+    <includes refid="note_8hpp" local="no">note.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classharps_1_1Note_12897da17f37e518a4422859968a20fc1" prot="public" static="no">
+        <name>NoteState</name>
+        <enumvalue id="classharps_1_1Note_12897da17f37e518a4422859968a20fc1fd7ce3b34cb478db7e787a4f8764f22b" prot="public">
+          <name>NOTE_ON</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classharps_1_1Note_12897da17f37e518a4422859968a20fc11dec05adf5f267429854b48920e2c042" prot="public">
+          <name>NOTE_OFF</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classharps_1_1Note_12897da17f37e518a4422859968a20fc1306ac192c8517c8af2f6009d03b53a50" prot="public">
+          <name>NOTE_WAIT</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/note.hpp" line="44" bodyfile="/home/users/fadis/rc/harps/include/harps/note.hpp" bodystart="44" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1Note_1334203c55e80984f8057e2416f0ab5e2" prot="private" static="no" mutable="no">
+        <type>NoteState</type>
+        <definition>NoteState harps::Note::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/note.hpp" line="92" bodyfile="/home/users/fadis/rc/harps/include/harps/note.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1Note_1fb7ec7862cfbf8892951258ca0ee48cd" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float harps::Note::touch</definition>
+        <argsstring></argsstring>
+        <name>touch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/note.hpp" line="93" bodyfile="/home/users/fadis/rc/harps/include/harps/note.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1Note_1e30d3c03bff9e694ce939e0e5c62212b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::Note::Note</definition>
+        <argsstring>()</argsstring>
+        <name>Note</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>コンストラクタ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/note.hpp" line="52" bodyfile="/home/users/fadis/rc/harps/include/harps/note.hpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Note_19a7a81b989b96e47da4f32e49db991ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual harps::Note::~Note</definition>
+        <argsstring>()</argsstring>
+        <name>~Note</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>デストラクタ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/note.hpp" line="56" bodyfile="/home/users/fadis/rc/harps/include/harps/note.hpp" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Note_1f589da8cf6f57aa65d484909bb1eb61b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::Note::noteOn</definition>
+        <argsstring>(float _touch=1.0f)</argsstring>
+        <name>noteOn</name>
+        <param>
+          <type>float</type>
+          <declname>_touch</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>指定した強さで鍵盤を押します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_touch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>鍵盤を押す強さ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/note.hpp" line="61" bodyfile="/home/users/fadis/rc/harps/include/harps/note.hpp" bodystart="61" bodyend="64"/>
+        <referencedby refid="classharps_1_1DynamicMonophony_1183d62c092e5903c0e60b5ded5670290" compoundref="instrument_8hpp" startline="85" endline="89">harps::DynamicMonophony::noteOn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Note_199f66a9ff92dd3ad30199816c455fa78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::Note::noteOff</definition>
+        <argsstring>()</argsstring>
+        <name>noteOff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>鍵盤から指を離します </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/note.hpp" line="68" bodyfile="/home/users/fadis/rc/harps/include/harps/note.hpp" bodystart="68" bodyend="70"/>
+        <referencedby refid="classharps_1_1DynamicMonophony_146144634cfb0eefe21660fdf5ac3baef" compoundref="instrument_8hpp" startline="94" endline="97">harps::DynamicMonophony::noteOff</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Note_1ae555fa8b846740ece16309eeb3aed89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::Note::noteWait</definition>
+        <argsstring>()</argsstring>
+        <name>noteWait</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>発音を終了します </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/note.hpp" line="74" bodyfile="/home/users/fadis/rc/harps/include/harps/note.hpp" bodystart="74" bodyend="76"/>
+        <referencedby refid="classharps_1_1DynamicMonophony_125728aacf3836d4e1fe4e401b02021df" compoundref="instrument_8hpp" startline="102" endline="104">harps::DynamicMonophony::noteWait</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Note_12e242ce9707561f3ff22f9d61ecf332a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NoteState</type>
+        <definition>NoteState harps::Note::getStatus</definition>
+        <argsstring>() const </argsstring>
+        <name>getStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>現在の音の状態を取得します <simplesect kind="return"><para>音の状態 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/note.hpp" line="81" bodyfile="/home/users/fadis/rc/harps/include/harps/note.hpp" bodystart="81" bodyend="83"/>
+        <referencedby refid="classharps_1_1DynamicMonophony_17691d2caaed5a624a33541a6c89f62a1" compoundref="instrument_8hpp" startline="122" endline="124">harps::DynamicMonophony::getStatus</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Note_14c5924cbd850f3221114a24872be5f83" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float harps::Note::getTouch</definition>
+        <argsstring>() const </argsstring>
+        <name>getTouch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>現在発音中の音の鍵盤が押された時の強さを取得します <simplesect kind="return"><para>鍵盤を押した強さ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/note.hpp" line="88" bodyfile="/home/users/fadis/rc/harps/include/harps/note.hpp" bodystart="88" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>ノートは発音中の音の音階と鍵盤を押した強さ、鍵盤の現在の状態を保持します。 </para>    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/note.hpp" line="42" bodyfile="/home/users/fadis/rc/harps/include/harps/note.hpp" bodystart="42" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classharps_1_1Note_12e242ce9707561f3ff22f9d61ecf332a" prot="public" virt="non-virtual"><scope>harps::Note</scope><name>getStatus</name></member>
+      <member refid="classharps_1_1Note_14c5924cbd850f3221114a24872be5f83" prot="public" virt="non-virtual"><scope>harps::Note</scope><name>getTouch</name></member>
+      <member refid="classharps_1_1Note_1e30d3c03bff9e694ce939e0e5c62212b" prot="public" virt="non-virtual"><scope>harps::Note</scope><name>Note</name></member>
+      <member refid="classharps_1_1Note_12897da17f37e518a4422859968a20fc11dec05adf5f267429854b48920e2c042" prot="public" virt="non-virtual"><scope>harps::Note</scope><name>NOTE_OFF</name></member>
+      <member refid="classharps_1_1Note_12897da17f37e518a4422859968a20fc1fd7ce3b34cb478db7e787a4f8764f22b" prot="public" virt="non-virtual"><scope>harps::Note</scope><name>NOTE_ON</name></member>
+      <member refid="classharps_1_1Note_12897da17f37e518a4422859968a20fc1306ac192c8517c8af2f6009d03b53a50" prot="public" virt="non-virtual"><scope>harps::Note</scope><name>NOTE_WAIT</name></member>
+      <member refid="classharps_1_1Note_199f66a9ff92dd3ad30199816c455fa78" prot="public" virt="non-virtual"><scope>harps::Note</scope><name>noteOff</name></member>
+      <member refid="classharps_1_1Note_1f589da8cf6f57aa65d484909bb1eb61b" prot="public" virt="non-virtual"><scope>harps::Note</scope><name>noteOn</name></member>
+      <member refid="classharps_1_1Note_12897da17f37e518a4422859968a20fc1" prot="public" virt="non-virtual"><scope>harps::Note</scope><name>NoteState</name></member>
+      <member refid="classharps_1_1Note_1ae555fa8b846740ece16309eeb3aed89" prot="public" virt="non-virtual"><scope>harps::Note</scope><name>noteWait</name></member>
+      <member refid="classharps_1_1Note_1334203c55e80984f8057e2416f0ab5e2" prot="private" virt="non-virtual"><scope>harps::Note</scope><name>status</name></member>
+      <member refid="classharps_1_1Note_1fb7ec7862cfbf8892951258ca0ee48cd" prot="private" virt="non-virtual"><scope>harps::Note</scope><name>touch</name></member>
+      <member refid="classharps_1_1Note_19a7a81b989b96e47da4f32e49db991ba" prot="public" virt="virtual"><scope>harps::Note</scope><name>~Note</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

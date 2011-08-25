@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1input_1_1Tracks" kind="class" prot="public">
+    <compoundname>harps::input::Tracks</compoundname>
+    <includes refid="simple_8hpp" local="no">simple.hpp</includes>
+    <innerclass refid="classharps_1_1input_1_1Tracks_1_1TrackRunner" prot="private">harps::input::Tracks::TrackRunner</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>OutputType</declname>
+        <defname>OutputType</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>ReaderType</declname>
+        <defname>ReaderType</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>BufferType</declname>
+        <defname>BufferType</defname>
+      </param>
+      <param>
+        <type>unsigned int</type>
+        <declname>track_count</declname>
+        <defname>track_count</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1input_1_1Tracks_18361008eb3175cef9c768e82ecd6458f" prot="private" static="no" mutable="no">
+        <type>OutputType</type>
+        <definition>OutputType harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::output</definition>
+        <argsstring></argsstring>
+        <name>output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="241" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1input_1_1Tracks_185941d24409b114d8f42d4a84f7341f6" prot="private" static="no" mutable="no">
+        <type><ref refid="classharps_1_1Normalizer" kindref="compound">harps::Normalizer</ref>&lt; SAMPLING_RATE *10 &gt;</type>
+        <definition>harps::Normalizer&lt; SAMPLING_RATE * 10 &gt; harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::normalizer</definition>
+        <argsstring></argsstring>
+        <name>normalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="242" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1input_1_1Tracks_11ca5d3dc4d156577b7ef2ffe2c8ecba8" prot="private" static="no" mutable="no">
+        <type>boost::array&lt; boost::shared_ptr&lt; ReaderType &gt;, track_count &gt;</type>
+        <definition>boost::array&lt; boost::shared_ptr&lt; ReaderType &gt;, track_count &gt; harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::readers</definition>
+        <argsstring></argsstring>
+        <name>readers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="243" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1input_1_1Tracks_1da8cd8360cd765f94e8ec8199d01b651" prot="private" static="no" mutable="no">
+        <type>boost::array&lt; boost::shared_ptr&lt; BufferType &gt;, track_count &gt;</type>
+        <definition>boost::array&lt; boost::shared_ptr&lt; BufferType &gt;, track_count &gt; harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::buffers</definition>
+        <argsstring></argsstring>
+        <name>buffers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="244" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1input_1_1Tracks_19f4150bcd3a5ac116d4759909ea9a9cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::Tracks</definition>
+        <argsstring>(const char *_sink)</argsstring>
+        <name>Tracks</name>
+        <param>
+          <type>const char *</type>
+          <declname>_sink</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>コンストラクタ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_sink</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>オーディオデータの出力先 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="178" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="178" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1input_1_1Tracks_1194d2399ae3cb04e0c8cf231f03a2265" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::setScore</definition>
+        <argsstring>(unsigned int _target, const char *_prog, const harps::input::Score *_score)</argsstring>
+        <name>setScore</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>_target</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>_prog</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structharps_1_1input_1_1Score" kindref="compound">harps::input::Score</ref> *</type>
+          <declname>_score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="179" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="179" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1input_1_1Tracks_139bfd26b91c4f04a0c6d9c7fdb01e1d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::operator()</definition>
+        <argsstring>()</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>楽譜を読んでオーディオデータを生成し、指定された出力先に出力します。 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="187" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="187" bodyend="213"/>
+        <references refid="classharps_1_1Buffer_12a7f5913399484eec854689812ea0bb9" compoundref="buffer_8hpp" startline="59" endline="61">harps::Buffer&lt; _SampleType &gt;::get</references>
+        <references refid="classharps_1_1Normalizer_1b4d4314f348404d2e96d2d22b3f1ced7" compoundref="normalize_8hpp" startline="100" endline="106">harps::Normalizer&lt; tail &gt;::getAmp</references>
+        <references refid="namespaceharps_19f18f91c4acdcbfe42895fc812853066" compoundref="normalize_8hpp" startline="46" endline="67">harps::reduceNormalizingNoize</references>
+        <references refid="classharps_1_1Normalizer_1719c26a532ee603de347033951b9e7ba" compoundref="normalize_8hpp" startline="88" endline="95">harps::Normalizer&lt; tail &gt;::setValue</references>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1input_1_1Tracks_1acb1ba476857eeaa4baaaa3e04c549de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::isEnd</definition>
+        <argsstring>()</argsstring>
+        <name>isEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>楽譜が終端に達しているかどうかを調べます <simplesect kind="return"><para>終端ならtrue そうでなければfalse </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="218" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="218" bodyend="223"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>複数のSimpleReaderを束ねて2つ以上の楽器を同時に演奏します。 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="155">
+        <label>OutputType</label>
+      </node>
+      <node id="154">
+        <label>harps::Normalizer&lt; SAMPLING_RATE *10 &gt;</label>
+        <link refid="classharps_1_1Normalizer"/>
+      </node>
+      <node id="153">
+        <label>harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;</label>
+        <link refid="classharps_1_1input_1_1Tracks"/>
+        <childnode refid="154" relation="usage">
+          <edgelabel>normalizer</edgelabel>
+        </childnode>
+        <childnode refid="155" relation="usage">
+          <edgelabel>output</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="172" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="172" bodyend="245"/>
+    <listofallmembers>
+      <member refid="classharps_1_1input_1_1Tracks_1da8cd8360cd765f94e8ec8199d01b651" prot="private" virt="non-virtual"><scope>harps::input::Tracks</scope><name>buffers</name></member>
+      <member refid="classharps_1_1input_1_1Tracks_1acb1ba476857eeaa4baaaa3e04c549de" prot="public" virt="non-virtual"><scope>harps::input::Tracks</scope><name>isEnd</name></member>
+      <member refid="classharps_1_1input_1_1Tracks_185941d24409b114d8f42d4a84f7341f6" prot="private" virt="non-virtual"><scope>harps::input::Tracks</scope><name>normalizer</name></member>
+      <member refid="classharps_1_1input_1_1Tracks_139bfd26b91c4f04a0c6d9c7fdb01e1d9" prot="public" virt="non-virtual"><scope>harps::input::Tracks</scope><name>operator()</name></member>
+      <member refid="classharps_1_1input_1_1Tracks_18361008eb3175cef9c768e82ecd6458f" prot="private" virt="non-virtual"><scope>harps::input::Tracks</scope><name>output</name></member>
+      <member refid="classharps_1_1input_1_1Tracks_11ca5d3dc4d156577b7ef2ffe2c8ecba8" prot="private" virt="non-virtual"><scope>harps::input::Tracks</scope><name>readers</name></member>
+      <member refid="classharps_1_1input_1_1Tracks_1194d2399ae3cb04e0c8cf231f03a2265" prot="public" virt="non-virtual"><scope>harps::input::Tracks</scope><name>setScore</name></member>
+      <member refid="classharps_1_1input_1_1Tracks_19f4150bcd3a5ac116d4759909ea9a9cd" prot="public" virt="non-virtual"><scope>harps::input::Tracks</scope><name>Tracks</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1ClockMatrixCalc_3_01LOCAL_01_4" kind="class" prot="public">
+    <compoundname>harps::ClockMatrixCalc&lt; LOCAL &gt;</compoundname>
+    <includes refid="clock_8hpp" local="no">clock.hpp</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classharps_1_1ClockMatrixCalc_3_01LOCAL_01_4_15af09ed3058237c047d95665d3cc40f2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void harps::ClockMatrixCalc&lt; LOCAL &gt;::updateCache</definition>
+        <argsstring>(TimeMatrix *_cache, TimeMatrix *_coef)</argsstring>
+        <name>updateCache</name>
+        <param>
+          <type>TimeMatrix *</type>
+          <declname>_cache</declname>
+        </param>
+        <param>
+          <type>TimeMatrix *</type>
+          <declname>_coef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="73" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="73" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>ローカルクロックのキャッシュを更新します </para>    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="71" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="71" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classharps_1_1ClockMatrixCalc_3_01LOCAL_01_4_15af09ed3058237c047d95665d3cc40f2" prot="public" virt="non-virtual"><scope>harps::ClockMatrixCalc&lt; LOCAL &gt;</scope><name>updateCache</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

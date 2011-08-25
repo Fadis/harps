@@ -1,0 +1,61 @@
+\section{harps::input::Tracks$<$ OutputType, ReaderType, BufferType, track\_\-count $>$ Class Template Reference}
+\label{classharps_1_1input_1_1Tracks}\index{harps::input::Tracks@{harps::input::Tracks}}
+{\tt \#include $<$simple.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Tracks} (const char $\ast$\_\-sink)
+\item 
+void \textbf{setScore} (unsigned int \_\-target, const char $\ast$\_\-prog, const {\bf harps::input::Score} $\ast$\_\-score)\label{classharps_1_1input_1_1Tracks_194d2399ae3cb04e0c8cf231f03a2265}
+
+\item 
+void {\bf operator()} ()
+\item 
+bool {\bf isEnd} ()
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \textbf{TrackRunner}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename OutputType, typename ReaderType, typename BufferType, unsigned int track\_\-count$>$ class harps::input::Tracks$<$ OutputType, ReaderType, BufferType, track\_\-count $>$}
+
+複数のSimpleReaderを束ねて2つ以上の楽器を同時に演奏します。 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{harps::input::Tracks@{harps::input::Tracks}!Tracks@{Tracks}}
+\index{Tracks@{Tracks}!harps::input::Tracks@{harps::input::Tracks}}
+\subsubsection[Tracks]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename OutputType, typename ReaderType, typename BufferType, unsigned int track\_\-count$>$ {\bf harps::input::Tracks}$<$ OutputType, ReaderType, BufferType, track\_\-count $>$::{\bf Tracks} (const char $\ast$ {\em \_\-sink})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1input_1_1Tracks_9f4150bcd3a5ac116d4759909ea9a9cd}
+
+
+コンストラクタ \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-sink}]オーディオデータの出力先 \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{harps::input::Tracks@{harps::input::Tracks}!operator()@{operator()}}
+\index{operator()@{operator()}!harps::input::Tracks@{harps::input::Tracks}}
+\subsubsection[operator()]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename OutputType, typename ReaderType, typename BufferType, unsigned int track\_\-count$>$ void {\bf harps::input::Tracks}$<$ OutputType, ReaderType, BufferType, track\_\-count $>$::operator() ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1input_1_1Tracks_39bfd26b91c4f04a0c6d9c7fdb01e1d9}
+
+
+楽譜を読んでオーディオデータを生成し、指定された出力先に出力します。 
+
+References harps::Buffer$<$ \_\-SampleType $>$::get(), harps::Normalizer$<$ tail $>$::getAmp(), harps::reduceNormalizingNoize(), and harps::Normalizer$<$ tail $>$::setValue().\index{harps::input::Tracks@{harps::input::Tracks}!isEnd@{isEnd}}
+\index{isEnd@{isEnd}!harps::input::Tracks@{harps::input::Tracks}}
+\subsubsection[isEnd]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename OutputType, typename ReaderType, typename BufferType, unsigned int track\_\-count$>$ bool {\bf harps::input::Tracks}$<$ OutputType, ReaderType, BufferType, track\_\-count $>$::isEnd ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1input_1_1Tracks_acb1ba476857eeaa4baaaa3e04c549de}
+
+
+楽譜が終端に達しているかどうかを調べます \begin{Desc}
+\item[Returns:]終端ならtrue そうでなければfalse \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+rc/harps/include/harps/input/simple.hpp\end{CompactItemize}

@@ -1,0 +1,404 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="dynamic__module_8hpp" kind="file">
+    <compoundname>dynamic_module.hpp</compoundname>
+    <includes refid="clock_8hpp" local="no">harps/clock.hpp</includes>
+    <includes refid="buffer_8hpp" local="no">harps/buffer.hpp</includes>
+    <includes refid="note_8hpp" local="no">harps/note.hpp</includes>
+    <includes refid="dummy_8hpp" local="no">harps/dummy.hpp</includes>
+    <includes refid="exceptions_8hpp" local="no">harps/exceptions.hpp</includes>
+    <includes refid="config_8hpp" local="no">harps/config.hpp</includes>
+    <includes local="no">boost/preprocessor.hpp</includes>
+    <includes local="no">boost/shared_ptr.hpp</includes>
+    <includes local="no">string</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">dlfcn.h</includes>
+    <includedby refid="instrument_8hpp" local="no">rc/harps/include/harps/instrument.hpp</includedby>
+    <incdepgraph>
+      <node id="194">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="181">
+        <label>harps/utils.hpp</label>
+        <link refid="utils_8hpp-source"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>harps/config.hpp</label>
+        <link refid="config_8hpp-source"/>
+      </node>
+      <node id="184">
+        <label>cmath</label>
+      </node>
+      <node id="192">
+        <label>stdexcept</label>
+      </node>
+      <node id="195">
+        <label>string</label>
+      </node>
+      <node id="191">
+        <label>harps/exceptions.hpp</label>
+        <link refid="exceptions_8hpp-source"/>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>harps/table/sine.hpp</label>
+        <link refid="table_2sine_8hpp-source"/>
+      </node>
+      <node id="179">
+        <label>rc/harps/include/harps/compornent/dynamic_module.hpp</label>
+        <link refid="dynamic_module.hpp"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>boost/preprocessor.hpp</label>
+      </node>
+      <node id="196">
+        <label>fstream</label>
+      </node>
+      <node id="185">
+        <label>tr1/cstdint</label>
+      </node>
+      <node id="187">
+        <label>utility</label>
+      </node>
+      <node id="188">
+        <label>harps/buffer.hpp</label>
+        <link refid="buffer_8hpp-source"/>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>harps/note.hpp</label>
+        <link refid="note_8hpp-source"/>
+      </node>
+      <node id="183">
+        <label>harps/table/exp2.hpp</label>
+        <link refid="exp2_8hpp-source"/>
+      </node>
+      <node id="180">
+        <label>harps/clock.hpp</label>
+        <link refid="clock_8hpp-source"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>harps/dummy.hpp</label>
+        <link refid="dummy_8hpp-source"/>
+      </node>
+      <node id="197">
+        <label>dlfcn.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="198">
+        <label>rc/harps/include/harps/compornent/dynamic_module.hpp</label>
+        <link refid="dynamic_module.hpp"/>
+        <childnode refid="199" relation="include">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>rc/harps/include/harps/instrument.hpp</label>
+        <link refid="instrument_8hpp-source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classharps_1_1DynamicModuleSocket" prot="public">harps::DynamicModuleSocket</innerclass>
+    <innerclass refid="classharps_1_1DynamicModuleSlot" prot="public">harps::DynamicModuleSlot</innerclass>
+    <innernamespace refid="namespaceharps">harps</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dynamic__module_8hpp_1c782edfbad4fed94dfa300a9847feecc" prot="public" static="no">
+        <name>HARPS_DYNAMIC_MODULE_SOCKET</name>
+        <param><defname>module</defname></param>
+        <initializer>typedef <ref refid="classharps_1_1DynamicModuleSocket" kindref="compound">harps::DynamicModuleSocket</ref>&lt; module &gt; Socket; \
+  extern &quot;C&quot; \
+    Socket *harpsDynamicModuleCreate() { \
+      Socket *temp = new Socket; \
+      return temp; \
+    } \
+  extern &quot;C&quot; \
+    void harpsDynamicModuleDestroy( Socket *_module ) { \
+      delete _module; \
+    } \
+  extern &quot;C&quot; \
+    void BOOST_PP_CAT( harpsDynamicModuleRun, BOOST_PP_CAT( SAMPLE_COUNT, float ) ) ( \
+      Socket *_module, \
+      <ref refid="classharps_1_1Buffer" kindref="compound">harps::Buffer</ref>&lt; float &gt; &amp;_buffer, \
+      <ref refid="classharps_1_1CurrentTime" kindref="compound">harps::CurrentTime</ref> &amp;_clock, \
+      <ref refid="classharps_1_1Note" kindref="compound">harps::Note</ref> &amp;_note \
+    ) { \
+      ( *_module )( _buffer, _clock, _note ); \
+    } \
+  extern &quot;C&quot; \
+    void BOOST_PP_CAT( harpsDynamicModuleRun, BOOST_PP_CAT( SAMPLE_COUNT, double ) ) ( \
+      Socket *_module, \
+      <ref refid="classharps_1_1Buffer" kindref="compound">harps::Buffer</ref>&lt; double &gt; &amp;_buffer, \
+      <ref refid="classharps_1_1CurrentTime" kindref="compound">harps::CurrentTime</ref> &amp;_clock, \
+      <ref refid="classharps_1_1Note" kindref="compound">harps::Note</ref> &amp;_note \
+    ) { \
+      ( *_module )( _buffer, _clock, _note ); \
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="79" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dynamic__module_8hpp_10cbff2222e1bab96f7f16877124f459b" prot="public" static="no">
+        <name>HARPS_DYNAMIC_MODULE_SLOT_LOAD_FUNCTION</name>
+        <param><defname>z</defname></param>
+        <param><defname>index</defname></param>
+        <param><defname>type</defname></param>
+        <initializer>BOOST_PP_CAT( run, BOOST_PP_CAT( BOOST_PP_ADD( index, 1 ), type ) ) = \
+    reinterpret_cast&lt; void (*)( Dummy*, Buffer&lt; type, 16 * BOOST_PP_ADD( index, 1 ) &gt;&amp;, CurrentTime&amp;, Note&amp; ) &gt;( \
+    dlsym( handle.get(), BOOST_PP_STRINGIZE( BOOST_PP_CAT( harpsDynamicModuleRun, BOOST_PP_CAT( BOOST_PP_ADD( index, 1 ), type ) ) ) ) \
+    );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="85" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dynamic__module_8hpp_16aead9a5cf9760de129e24a9f89bdc18" prot="public" static="no">
+        <name>HARPS_DYNAMIC_MODULE_SLOT_RUN</name>
+        <param><defname>z</defname></param>
+        <param><defname>index</defname></param>
+        <param><defname>type</defname></param>
+        <initializer>inline void operator()( Buffer&lt; type, 16 * BOOST_PP_ADD( index, 1 ) &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note ) { \
+    ( BOOST_PP_CAT( *run, BOOST_PP_CAT( BOOST_PP_ADD( index, 1 ), type ) ) )( instance.get(), _buffer, _clock, _note ); \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="90" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dynamic__module_8hpp_18975f43a16e910cac9cd62d9d2e86569" prot="public" static="no">
+        <name>HARPS_DYNAMIC_MODULE_SLOT_FUNCTION_POINTER</name>
+        <param><defname>z</defname></param>
+        <param><defname>index</defname></param>
+        <param><defname>type</defname></param>
+        <initializer>void ( BOOST_PP_CAT( *run, BOOST_PP_CAT( BOOST_PP_ADD( index, 1 ), type ) ) )( Dummy*, Buffer&lt; type, 16 * BOOST_PP_ADD( index, 1 ) &gt;&amp;, CurrentTime&amp;, Note&amp; );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="93" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>by<sp/>Naomasa<sp/>Matsubayashi<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>harps@quaternion.sakura.ne.jp<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/>are<sp/>met:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>distribution.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>&lt;ORGANIZATION&gt;<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/>OWNER<sp/>OR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/><sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/><sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>*</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/><sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.<sp/><sp/>*</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HARPS_COMPORNENT_DYNAMIC_MODULE</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HARPS_COMPORNENT_DYNAMIC_MODULE</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;harps/clock.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;harps/buffer.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;harps/note.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;harps/dummy.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;harps/exceptions.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;harps/config.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/preprocessor.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/shared_ptr.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dlfcn.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HARPS_DYNAMIC_MODULE_SOCKET(<sp/>module<sp/>)<sp/>\</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"><sp/><sp/>typedef<sp/>harps::DynamicModuleSocket&lt;<sp/>module<sp/>&gt;<sp/>Socket;<sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/>extern<sp/>&quot;C&quot;<sp/>\</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>Socket<sp/>*harpsDynamicModuleCreate()<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>Socket<sp/>*temp<sp/>=<sp/>new<sp/>Socket;<sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>temp;<sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"><sp/><sp/>extern<sp/>&quot;C&quot;<sp/>\</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>void<sp/>harpsDynamicModuleDestroy(<sp/>Socket<sp/>*_module<sp/>)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>delete<sp/>_module;<sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/>extern<sp/>&quot;C&quot;<sp/>\</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>void<sp/>BOOST_PP_CAT(<sp/>harpsDynamicModuleRun,<sp/>BOOST_PP_CAT(<sp/>SAMPLE_COUNT,<sp/>float<sp/>)<sp/>)<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>Socket<sp/>*_module,<sp/>\</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>harps::Buffer&lt;<sp/>float<sp/>&gt;<sp/>&amp;_buffer,<sp/>\</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>harps::CurrentTime<sp/>&amp;_clock,<sp/>\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>harps::Note<sp/>&amp;_note<sp/>\</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>*_module<sp/>)(<sp/>_buffer,<sp/>_clock,<sp/>_note<sp/>);<sp/>\</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"><sp/><sp/>extern<sp/>&quot;C&quot;<sp/>\</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>void<sp/>BOOST_PP_CAT(<sp/>harpsDynamicModuleRun,<sp/>BOOST_PP_CAT(<sp/>SAMPLE_COUNT,<sp/>double<sp/>)<sp/>)<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>Socket<sp/>*_module,<sp/>\</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>harps::Buffer&lt;<sp/>double<sp/>&gt;<sp/>&amp;_buffer,<sp/>\</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>harps::CurrentTime<sp/>&amp;_clock,<sp/>\</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>harps::Note<sp/>&amp;_note<sp/>\</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>*_module<sp/>)(<sp/>_buffer,<sp/>_clock,<sp/>_note<sp/>);<sp/>\</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HARPS_DYNAMIC_MODULE_SLOT_LOAD_FUNCTION(<sp/>z,<sp/>index,<sp/>type<sp/>)<sp/>\</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"><sp/><sp/>BOOST_PP_CAT(<sp/>run,<sp/>BOOST_PP_CAT(<sp/>BOOST_PP_ADD(<sp/>index,<sp/>1<sp/>),<sp/>type<sp/>)<sp/>)<sp/>=<sp/>\</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>reinterpret_cast&lt;<sp/>void<sp/>(*)(<sp/>Dummy*,<sp/>Buffer&lt;<sp/>type,<sp/>16<sp/>*<sp/>BOOST_PP_ADD(<sp/>index,<sp/>1<sp/>)<sp/>&gt;&amp;,<sp/>CurrentTime&amp;,<sp/>Note&amp;<sp/>)<sp/>&gt;(<sp/>\</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>dlsym(<sp/>handle.get(),<sp/>BOOST_PP_STRINGIZE(<sp/>BOOST_PP_CAT(<sp/>harpsDynamicModuleRun,<sp/>BOOST_PP_CAT(<sp/>BOOST_PP_ADD(<sp/>index,<sp/>1<sp/>),<sp/>type<sp/>)<sp/>)<sp/>)<sp/>)<sp/>\</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HARPS_DYNAMIC_MODULE_SLOT_RUN(<sp/>z,<sp/>index,<sp/>type<sp/>)<sp/>\</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"><sp/><sp/>inline<sp/>void<sp/>operator()(<sp/>Buffer&lt;<sp/>type,<sp/>16<sp/>*<sp/>BOOST_PP_ADD(<sp/>index,<sp/>1<sp/>)<sp/>&gt;<sp/>&amp;_buffer,<sp/>CurrentTime<sp/>&amp;_clock,<sp/>Note<sp/>&amp;_note<sp/>)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(<sp/>BOOST_PP_CAT(<sp/>*run,<sp/>BOOST_PP_CAT(<sp/>BOOST_PP_ADD(<sp/>index,<sp/>1<sp/>),<sp/>type<sp/>)<sp/>)<sp/>)(<sp/>instance.get(),<sp/>_buffer,<sp/>_clock,<sp/>_note<sp/>);<sp/>\</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HARPS_DYNAMIC_MODULE_SLOT_FUNCTION_POINTER(<sp/>z,<sp/>index,<sp/>type<sp/>)<sp/>\</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"><sp/><sp/>void<sp/>(<sp/>BOOST_PP_CAT(<sp/>*run,<sp/>BOOST_PP_CAT(<sp/>BOOST_PP_ADD(<sp/>index,<sp/>1<sp/>),<sp/>type<sp/>)<sp/>)<sp/>)(<sp/>Dummy*,<sp/>Buffer&lt;<sp/>type,<sp/>16<sp/>*<sp/>BOOST_PP_ADD(<sp/>index,<sp/>1<sp/>)<sp/>&gt;&amp;,<sp/>CurrentTime&amp;,<sp/>Note&amp;<sp/>);</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">harps<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ModuleType<sp/>&gt;</highlight></codeline>
+<codeline lineno="100" refid="classharps_1_1DynamicModuleSocket" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classharps_1_1DynamicModuleSocket" kindref="compound">DynamicModuleSocket</ref><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator()<sp/>(</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classharps_1_1Buffer" kindref="compound">Buffer&lt; float &gt;</ref><sp/>&amp;_buffer,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref><sp/>&amp;_clock,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classharps_1_1Note" kindref="compound">Note</ref><sp/>&amp;_note</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>source_module(<sp/>_buffer,<sp/>_clock,<sp/>_note<sp/>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator()<sp/>(</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classharps_1_1Buffer" kindref="compound">Buffer&lt; double &gt;</ref><sp/>&amp;_buffer,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref><sp/>&amp;_clock,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classharps_1_1Note" kindref="compound">Note</ref><sp/>&amp;_note</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>source_module(<sp/>_buffer,<sp/>_clock,<sp/>_note<sp/>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ModuleType<sp/>source_module;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="namespaceharps_139a98007c1da8f7aedcfe13c51760124" kindref="member">getModulePath</ref>();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="classharps_1_1DynamicModuleSlot" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classharps_1_1DynamicModuleSlot" kindref="compound">DynamicModuleSlot</ref><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="135" refid="classharps_1_1DynamicModuleSlot_1ae856e3f338981e6016c9834433bfeff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classharps_1_1DynamicModuleSlot_1ae856e3f338981e6016c9834433bfeff" kindref="member">DynamicModuleSlot</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*_filename<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>filename<sp/>=<sp/><ref refid="namespaceharps_139a98007c1da8f7aedcfe13c51760124" kindref="member">getModulePath</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filename<sp/>+=<sp/>_filename;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handle.reset(<sp/>reinterpret_cast&lt;<sp/>Dummy*<sp/>&gt;(<sp/>dlopen(<sp/>filename.c_str(),<sp/>RTLD_LAZY<sp/>)<sp/>),<sp/>&amp;dlclose<sp/>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!handle<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classharps_1_1ModuleNotFound" kindref="compound">ModuleNotFound</ref>();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>create<sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/>Dummy<sp/>*(*)()<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/>dlsym(<sp/>handle.get(),<sp/></highlight><highlight class="stringliteral">&quot;harpsDynamicModuleCreate&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>destroy<sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*)(<sp/>Dummy*<sp/>)<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/>dlsym(<sp/>handle.get(),<sp/></highlight><highlight class="stringliteral">&quot;harpsDynamicModuleDestroy&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_PP_CAT(<sp/>run,<sp/>BOOST_PP_CAT(<sp/>SAMPLE_COUNT,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>)<sp/>)<sp/>=</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*)(<sp/>Dummy*,<sp/><ref refid="classharps_1_1Buffer" kindref="compound">Buffer&lt; float &gt;</ref>&amp;,<sp/><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref>&amp;,<sp/><ref refid="classharps_1_1Note" kindref="compound">Note</ref>&amp;<sp/>)<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dlsym(</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handle.get(),</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_PP_STRINGIZE(<sp/>BOOST_PP_CAT(<sp/>harpsDynamicModuleRun,<sp/>BOOST_PP_CAT(<sp/>SAMPLE_COUNT,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>)<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_PP_CAT(<sp/>run,<sp/>BOOST_PP_CAT(<sp/>SAMPLE_COUNT,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>)<sp/>)<sp/>=</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*)(<sp/>Dummy*,<sp/><ref refid="classharps_1_1Buffer" kindref="compound">Buffer&lt; double &gt;</ref>&amp;,<sp/><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref>&amp;,<sp/><ref refid="classharps_1_1Note" kindref="compound">Note</ref>&amp;<sp/>)<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dlsym(</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handle.get(),</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_PP_STRINGIZE(<sp/>BOOST_PP_CAT(<sp/>harpsDynamicModuleRun,<sp/>BOOST_PP_CAT(<sp/>SAMPLE_COUNT,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>)<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>instance.reset(<sp/>create(),<sp/>destroy<sp/>);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!instance<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="classharps_1_1UnableToCreateInstance" kindref="compound">UnableToCreateInstance</ref>();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator()(<sp/><ref refid="classharps_1_1Buffer" kindref="compound">Buffer&lt; float &gt;</ref><sp/>&amp;_buffer,<sp/><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref><sp/>&amp;_clock,<sp/><ref refid="classharps_1_1Note" kindref="compound">Note</ref><sp/>&amp;_note<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_PP_CAT(<sp/>run,<sp/>BOOST_PP_CAT(<sp/>SAMPLE_COUNT,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>)<sp/>)(<sp/>instance.get(),<sp/>_buffer,<sp/>_clock,<sp/>_note<sp/>);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator()(<sp/>Buffer&lt;<sp/>double<sp/>&gt;<sp/>&amp;_buffer,<sp/>CurrentTime<sp/>&amp;_clock,<sp/>Note<sp/>&amp;_note<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_PP_CAT(<sp/>run,<sp/>BOOST_PP_CAT(<sp/>SAMPLE_COUNT,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>)<sp/>)(<sp/>instance.get(),<sp/>_buffer,<sp/>_clock,<sp/>_note<sp/>);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>boost::shared_ptr&lt;<sp/>Dummy<sp/>&gt;<sp/>handle;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>boost::shared_ptr&lt;<sp/>Dummy<sp/>&gt;<sp/>instance;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Dummy<sp/>*(*create)();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*destroy)(<sp/>Dummy*<sp/>);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(<sp/>BOOST_PP_CAT(<sp/>*run,<sp/>BOOST_PP_CAT(<sp/>SAMPLE_COUNT,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>)<sp/>)<sp/>)(<sp/>Dummy*,<sp/>Buffer&lt;<sp/>float<sp/>&gt;&amp;,<sp/>CurrentTime&amp;,<sp/>Note&amp;<sp/>);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(<sp/>BOOST_PP_CAT(<sp/>*run,<sp/>BOOST_PP_CAT(<sp/>SAMPLE_COUNT,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>)<sp/>)<sp/>)(<sp/>Dummy*,<sp/>Buffer&lt;<sp/>double<sp/>&gt;&amp;,<sp/>CurrentTime&amp;,<sp/>Note&amp;<sp/>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1compornent_1_1Scale" kind="class" prot="public">
+    <compoundname>harps::compornent::Scale</compoundname>
+    <includes refid="scale_8hpp" local="no">scale.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>ModuleType</declname>
+        <defname>ModuleType</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>_scale</declname>
+        <defname>_scale</defname>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>_shift</declname>
+        <defname>_shift</defname>
+        <defval>0</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1compornent_1_1Scale_1a8a8da1bfb6ca48e646c1ee1a30368fa" prot="private" static="no" mutable="no">
+        <type>ModuleType</type>
+        <definition>ModuleType harps::compornent::Scale&lt; ModuleType, _scale, _shift &gt;::source_module</definition>
+        <argsstring></argsstring>
+        <name>source_module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/scale.hpp" line="66" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/scale.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1compornent_1_1Scale_18a7d50f85ca482a39fb3920eece71e29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>SampleType</declname>
+            <defname>SampleType</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void harps::compornent::Scale&lt; ModuleType, _scale, _shift &gt;::operator()</definition>
+        <argsstring>(Buffer&lt; SampleType &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; SampleType &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/scale.hpp" line="54" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/scale.hpp" bodystart="54" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>クロックの速さを調節します。 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="117">
+        <label>harps::compornent::Scale&lt; ModuleType, _scale, _shift &gt;</label>
+        <link refid="classharps_1_1compornent_1_1Scale"/>
+        <childnode refid="118" relation="usage">
+          <edgelabel>source_module</edgelabel>
+        </childnode>
+      </node>
+      <node id="118">
+        <label>ModuleType</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/scale.hpp" line="51" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/scale.hpp" bodystart="51" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classharps_1_1compornent_1_1Scale_18a7d50f85ca482a39fb3920eece71e29" prot="public" virt="non-virtual"><scope>harps::compornent::Scale</scope><name>operator()</name></member>
+      <member refid="classharps_1_1compornent_1_1Scale_1a8a8da1bfb6ca48e646c1ee1a30368fa" prot="private" virt="non-virtual"><scope>harps::compornent::Scale</scope><name>source_module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1DynamicModuleSocket" kind="class" prot="public">
+    <compoundname>harps::DynamicModuleSocket</compoundname>
+    <includes refid="dynamic__module_8hpp" local="no">dynamic_module.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>ModuleType</declname>
+        <defname>ModuleType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1DynamicModuleSocket_189d1cbb9a15fd3eda43ba704e8c4e5fd" prot="private" static="no" mutable="no">
+        <type>ModuleType</type>
+        <definition>ModuleType harps::DynamicModuleSocket&lt; ModuleType &gt;::source_module</definition>
+        <argsstring></argsstring>
+        <name>source_module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="117" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1DynamicModuleSocket_1a127ba795c508bf5981cb2d6fab79f07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::DynamicModuleSocket&lt; ModuleType &gt;::operator()</definition>
+        <argsstring>(Buffer&lt; float &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; float &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="106" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" bodystart="102" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicModuleSocket_187cba2d094ec5fc6b6d1f20502158829" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::DynamicModuleSocket&lt; ModuleType &gt;::operator()</definition>
+        <argsstring>(Buffer&lt; double &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; double &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="113" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" bodystart="109" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>動的ロードされるモジュールはモジュールのルートがこのクラスになっていなければなりません。 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="40">
+        <label>harps::DynamicModuleSocket&lt; ModuleType &gt;</label>
+        <link refid="classharps_1_1DynamicModuleSocket"/>
+        <childnode refid="41" relation="usage">
+          <edgelabel>source_module</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>ModuleType</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" line="100" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" bodystart="100" bodyend="118"/>
+    <listofallmembers>
+      <member refid="classharps_1_1DynamicModuleSocket_1a127ba795c508bf5981cb2d6fab79f07" prot="public" virt="non-virtual"><scope>harps::DynamicModuleSocket</scope><name>operator()</name></member>
+      <member refid="classharps_1_1DynamicModuleSocket_187cba2d094ec5fc6b6d1f20502158829" prot="public" virt="non-virtual"><scope>harps::DynamicModuleSocket</scope><name>operator()</name></member>
+      <member refid="classharps_1_1DynamicModuleSocket_189d1cbb9a15fd3eda43ba704e8c4e5fd" prot="private" virt="non-virtual"><scope>harps::DynamicModuleSocket</scope><name>source_module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

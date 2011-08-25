@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1DynamicMonophony" kind="class" prot="public">
+    <compoundname>harps::DynamicMonophony</compoundname>
+    <includes refid="instrument_8hpp" local="no">instrument.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1DynamicMonophony_19c86a86363b675a48b15b9ec8e3d9efc" prot="private" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; <ref refid="classharps_1_1DynamicModuleSlot" kindref="compound">DynamicModuleSlot</ref> &gt;</type>
+        <definition>boost::shared_ptr&lt; DynamicModuleSlot &gt; harps::DynamicMonophony::module</definition>
+        <argsstring></argsstring>
+        <name>module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="140" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1DynamicMonophony_14bdcabc60c940b51259249b2aa2f7d65" prot="private" static="no" mutable="no">
+        <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref></type>
+        <definition>CurrentTime harps::DynamicMonophony::clock</definition>
+        <argsstring></argsstring>
+        <name>clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="141" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1DynamicMonophony_11bb2a2645256a1b60d6183f066c4aa41" prot="private" static="no" mutable="no">
+        <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref></type>
+        <definition>Note harps::DynamicMonophony::note</definition>
+        <argsstring></argsstring>
+        <name>note</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="142" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1DynamicMonophony_11aa6282a44718f26647c48aa627a80f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::DynamicMonophony::DynamicMonophony</definition>
+        <argsstring>()</argsstring>
+        <name>DynamicMonophony</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>コンストラクタ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="65" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicMonophony_1c48c12ff80ee6f9088979fa13509e148" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual harps::DynamicMonophony::~DynamicMonophony</definition>
+        <argsstring>()</argsstring>
+        <name>~DynamicMonophony</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>デストラクタ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="69" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicMonophony_1034e8a8eb8d8fafd8df36379fb1647dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>SampleType</declname>
+            <defname>SampleType</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void harps::DynamicMonophony::operator()</definition>
+        <argsstring>(Buffer&lt; SampleType &gt; &amp;_buffer)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; SampleType &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>モジュールを実行し、クロックを1ブロック分進めます。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>実行結果を出力するバッファブロック </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="75" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicMonophony_1183d62c092e5903c0e60b5ded5670290" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int harps::DynamicMonophony::noteOn</definition>
+        <argsstring>(int _note, float _touch)</argsstring>
+        <name>noteOn</name>
+        <param>
+          <type>int</type>
+          <declname>_note</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_touch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>指定した鍵盤を押された状態にします。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_note</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>鍵盤(MIDIノートナンバーで指定) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_touch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>鍵盤を押す強さ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ノートID(モノフォニーは1音しか発音しないため、ノートIDは必ず0になります) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="85" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="85" bodyend="89"/>
+        <references refid="classharps_1_1Note_1f589da8cf6f57aa65d484909bb1eb61b" compoundref="note_8hpp" startline="61" endline="64">harps::Note::noteOn</references>
+        <references refid="classharps_1_1CurrentTime_117506ab95e4f9dd773489478751f39d4" compoundref="clock_8hpp" startline="175" endline="185">harps::CurrentTime::noteOn</references>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicMonophony_146144634cfb0eefe21660fdf5ac3baef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::DynamicMonophony::noteOff</definition>
+        <argsstring>(int _dummy=0)</argsstring>
+        <name>noteOff</name>
+        <param>
+          <type>int</type>
+          <declname>_dummy</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>現在押している鍵盤から指を離します。モジュールによっては鍵盤から指を離してもすぐに音は止まりません。音を完全に止めてインスツルメントを待機状態にするにはnoteWaitを呼び出す必要があります。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_dummy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ノートID(ポリフォニーとインターフェースを揃えるために用意されています。この値は無視されます) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="94" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="94" bodyend="97"/>
+        <references refid="classharps_1_1Note_199f66a9ff92dd3ad30199816c455fa78" compoundref="note_8hpp" startline="68" endline="70">harps::Note::noteOff</references>
+        <references refid="classharps_1_1CurrentTime_1d4ba06019a3066b8aa29bb3a789d9e5d" compoundref="clock_8hpp" startline="190" endline="194">harps::CurrentTime::noteOff</references>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicMonophony_125728aacf3836d4e1fe4e401b02021df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::DynamicMonophony::noteWait</definition>
+        <argsstring>(int _dummy=0)</argsstring>
+        <name>noteWait</name>
+        <param>
+          <type>int</type>
+          <declname>_dummy</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>発音処理を終了します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_dummy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ノートID(ポリフォニーとインターフェースを揃えるために用意されています。この値は無視されます) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="102" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="102" bodyend="104"/>
+        <references refid="classharps_1_1Note_1ae555fa8b846740ece16309eeb3aed89" compoundref="note_8hpp" startline="74" endline="76">harps::Note::noteWait</references>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicMonophony_14d304ca1400cb443cdb57a17cdedb3db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::DynamicMonophony::setPitchBend</definition>
+        <argsstring>(float _pitch)</argsstring>
+        <name>setPitchBend</name>
+        <param>
+          <type>float</type>
+          <declname>_pitch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ピッチベンドします。設定したピッチベンド値はresetされるまで引き継がれます。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_pitch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ピッチ(1.0で音階が1上がり、12.0で1オクターブ上がります) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="109" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="109" bodyend="111"/>
+        <references refid="classharps_1_1CurrentTime_11cf8a7b0fb4fde33e472acf9d086816d" compoundref="clock_8hpp" startline="199" endline="208">harps::CurrentTime::setPitchBend</references>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicMonophony_19293fc3cfa3044994c65a06c0e5709dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::DynamicMonophony::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>インスツルメントをリセットします。設定されたピッチベンドは0に戻ります。 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="115" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="115" bodyend="117"/>
+        <references refid="classharps_1_1CurrentTime_174647316ea9eed4d83fe899b18d110a2" compoundref="clock_8hpp" startline="145" endline="153">harps::CurrentTime::reset</references>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicMonophony_17691d2caaed5a624a33541a6c89f62a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Note::NoteState</type>
+        <definition>Note::NoteState harps::DynamicMonophony::getStatus</definition>
+        <argsstring>() const </argsstring>
+        <name>getStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>現在のノートの状態を取得します。 <simplesect kind="return"><para>ノートの状態 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="122" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="122" bodyend="124"/>
+        <references refid="classharps_1_1Note_12e242ce9707561f3ff22f9d61ecf332a" compoundref="note_8hpp" startline="81" endline="83">harps::Note::getStatus</references>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicMonophony_15891615a1418f7d7636469594c216f62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double harps::DynamicMonophony::getGlobalTime</definition>
+        <argsstring>()</argsstring>
+        <name>getGlobalTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>現在の処理中の箇所の時刻を返します。 <simplesect kind="return"><para>現在時刻 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="129" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="129" bodyend="131"/>
+        <references refid="classharps_1_1CurrentTime_1b4e5c08585a7599b89db2dac14b9c4d1" compoundref="clock_8hpp" startline="137" endline="141">harps::CurrentTime::getTime</references>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1DynamicMonophony_11906e8848e676602585df3f896166dca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::DynamicMonophony::programChange</definition>
+        <argsstring>(const char *_filename)</argsstring>
+        <name>programChange</name>
+        <param>
+          <type>const char *</type>
+          <declname>_filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>モジュールを変更します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>新しいモジュールのファイル名 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="136" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="136" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>モジュールの発音とクロックを管理するインスツルメントクラスです。 ダイナミックモノフォニーは外部トーンモジュールを読み込んで同時に1音を鳴らすことが出来ます。 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="45">
+        <label>harps::Note</label>
+        <link refid="classharps_1_1Note"/>
+      </node>
+      <node id="43">
+        <label>harps::DynamicMonophony</label>
+        <link refid="classharps_1_1DynamicMonophony"/>
+        <childnode refid="44" relation="usage">
+          <edgelabel>clock</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>note</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>harps::CurrentTime</label>
+        <link refid="classharps_1_1CurrentTime"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/instrument.hpp" line="60" bodyfile="/home/users/fadis/rc/harps/include/harps/instrument.hpp" bodystart="60" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classharps_1_1DynamicMonophony_14bdcabc60c940b51259249b2aa2f7d65" prot="private" virt="non-virtual"><scope>harps::DynamicMonophony</scope><name>clock</name></member>
+      <member refid="classharps_1_1DynamicMonophony_11aa6282a44718f26647c48aa627a80f5" prot="public" virt="non-virtual"><scope>harps::DynamicMonophony</scope><name>DynamicMonophony</name></member>
+      <member refid="classharps_1_1DynamicMonophony_15891615a1418f7d7636469594c216f62" prot="public" virt="non-virtual"><scope>harps::DynamicMonophony</scope><name>getGlobalTime</name></member>
+      <member refid="classharps_1_1DynamicMonophony_17691d2caaed5a624a33541a6c89f62a1" prot="public" virt="non-virtual"><scope>harps::DynamicMonophony</scope><name>getStatus</name></member>
+      <member refid="classharps_1_1DynamicMonophony_19c86a86363b675a48b15b9ec8e3d9efc" prot="private" virt="non-virtual"><scope>harps::DynamicMonophony</scope><name>module</name></member>
+      <member refid="classharps_1_1DynamicMonophony_11bb2a2645256a1b60d6183f066c4aa41" prot="private" virt="non-virtual"><scope>harps::DynamicMonophony</scope><name>note</name></member>
+      <member refid="classharps_1_1DynamicMonophony_146144634cfb0eefe21660fdf5ac3baef" prot="public" virt="non-virtual"><scope>harps::DynamicMonophony</scope><name>noteOff</name></member>
+      <member refid="classharps_1_1DynamicMonophony_1183d62c092e5903c0e60b5ded5670290" prot="public" virt="non-virtual"><scope>harps::DynamicMonophony</scope><name>noteOn</name></member>
+      <member refid="classharps_1_1DynamicMonophony_125728aacf3836d4e1fe4e401b02021df" prot="public" virt="non-virtual"><scope>harps::DynamicMonophony</scope><name>noteWait</name></member>
+      <member refid="classharps_1_1DynamicMonophony_1034e8a8eb8d8fafd8df36379fb1647dc" prot="public" virt="non-virtual"><scope>harps::DynamicMonophony</scope><name>operator()</name></member>
+      <member refid="classharps_1_1DynamicMonophony_11906e8848e676602585df3f896166dca" prot="public" virt="non-virtual"><scope>harps::DynamicMonophony</scope><name>programChange</name></member>
+      <member refid="classharps_1_1DynamicMonophony_19293fc3cfa3044994c65a06c0e5709dc" prot="public" virt="non-virtual"><scope>harps::DynamicMonophony</scope><name>reset</name></member>
+      <member refid="classharps_1_1DynamicMonophony_14d304ca1400cb443cdb57a17cdedb3db" prot="public" virt="non-virtual"><scope>harps::DynamicMonophony</scope><name>setPitchBend</name></member>
+      <member refid="classharps_1_1DynamicMonophony_1c48c12ff80ee6f9088979fa13509e148" prot="public" virt="virtual"><scope>harps::DynamicMonophony</scope><name>~DynamicMonophony</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="note_8hpp" kind="file">
+    <compoundname>note.hpp</compoundname>
+    <includedby refid="add_8hpp" local="no">rc/harps/include/harps/compornent/add.hpp</includedby>
+    <includedby refid="branchbynote_8hpp" local="no">rc/harps/include/harps/compornent/branchbynote.hpp</includedby>
+    <includedby refid="constant_8hpp" local="no">rc/harps/include/harps/compornent/constant.hpp</includedby>
+    <includedby refid="constant__mul_8hpp" local="no">rc/harps/include/harps/compornent/constant_mul.hpp</includedby>
+    <includedby refid="distotion_8hpp" local="no">rc/harps/include/harps/compornent/distotion.hpp</includedby>
+    <includedby refid="dynamic__module_8hpp" local="no">rc/harps/include/harps/compornent/dynamic_module.hpp</includedby>
+    <includedby refid="envelope_8hpp" local="no">rc/harps/include/harps/compornent/envelope.hpp</includedby>
+    <includedby refid="envelope2_8hpp" local="no">rc/harps/include/harps/compornent/envelope2.hpp</includedby>
+    <includedby refid="fm_8hpp" local="no">rc/harps/include/harps/compornent/fm.hpp</includedby>
+    <includedby refid="generator_8hpp" local="no">rc/harps/include/harps/compornent/generator.hpp</includedby>
+    <includedby refid="mix_8hpp" local="no">rc/harps/include/harps/compornent/mix.hpp</includedby>
+    <includedby refid="mul_8hpp" local="no">rc/harps/include/harps/compornent/mul.hpp</includedby>
+    <includedby refid="noize_8hpp" local="no">rc/harps/include/harps/compornent/noize.hpp</includedby>
+    <includedby refid="compornent_2normalize_8hpp" local="no">rc/harps/include/harps/compornent/normalize.hpp</includedby>
+    <includedby refid="rectangle_8hpp" local="no">rc/harps/include/harps/compornent/rectangle.hpp</includedby>
+    <includedby refid="scale_8hpp" local="no">rc/harps/include/harps/compornent/scale.hpp</includedby>
+    <includedby refid="shift_8hpp" local="no">rc/harps/include/harps/compornent/shift.hpp</includedby>
+    <includedby refid="compornent_2sine_8hpp" local="no">rc/harps/include/harps/compornent/sine.hpp</includedby>
+    <includedby refid="switching__envelope_8hpp" local="no">rc/harps/include/harps/compornent/switching_envelope.hpp</includedby>
+    <includedby refid="touch_8hpp" local="no">rc/harps/include/harps/compornent/touch.hpp</includedby>
+    <includedby refid="triangle_8hpp" local="no">rc/harps/include/harps/compornent/triangle.hpp</includedby>
+    <includedby refid="vector_8hpp" local="no">rc/harps/include/harps/compornent/vector.hpp</includedby>
+    <includedby refid="volume_8hpp" local="no">rc/harps/include/harps/compornent/volume.hpp</includedby>
+    <includedby refid="envelope_8cpp" local="no">rc/harps/src/envelope.cpp</includedby>
+    <invincdepgraph>
+      <node id="594">
+        <label>rc/harps/include/harps/compornent/rectangle.hpp</label>
+        <link refid="rectangle_8hpp-source"/>
+      </node>
+      <node id="587">
+        <label>rc/harps/include/harps/compornent/envelope.hpp</label>
+        <link refid="envelope_8hpp-source"/>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="592">
+        <label>rc/harps/include/harps/compornent/noize.hpp</label>
+        <link refid="noize_8hpp-source"/>
+      </node>
+      <node id="599">
+        <label>rc/harps/include/harps/compornent/touch.hpp</label>
+        <link refid="touch_8hpp-source"/>
+      </node>
+      <node id="593">
+        <label>rc/harps/include/harps/compornent/normalize.hpp</label>
+        <link refid="compornent_2normalize_8hpp-source"/>
+      </node>
+      <node id="591">
+        <label>rc/harps/include/harps/compornent/mul.hpp</label>
+        <link refid="mul_8hpp-source"/>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="585">
+        <label>rc/harps/include/harps/compornent/dynamic_module.hpp</label>
+        <link refid="dynamic__module_8hpp-source"/>
+        <childnode refid="586" relation="include">
+        </childnode>
+      </node>
+      <node id="584">
+        <label>rc/harps/include/harps/compornent/distotion.hpp</label>
+        <link refid="distotion_8hpp-source"/>
+      </node>
+      <node id="597">
+        <label>rc/harps/include/harps/compornent/sine.hpp</label>
+        <link refid="compornent_2sine_8hpp-source"/>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="595">
+        <label>rc/harps/include/harps/compornent/scale.hpp</label>
+        <link refid="scale_8hpp-source"/>
+      </node>
+      <node id="583">
+        <label>rc/harps/include/harps/compornent/constant_mul.hpp</label>
+        <link refid="constant__mul_8hpp-source"/>
+      </node>
+      <node id="601">
+        <label>rc/harps/include/harps/compornent/vector.hpp</label>
+        <link refid="vector_8hpp-source"/>
+      </node>
+      <node id="579">
+        <label>rc/harps/include/harps/compornent/add.hpp</label>
+        <link refid="add_8hpp-source"/>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="582">
+        <label>rc/harps/include/harps/compornent/constant.hpp</label>
+        <link refid="constant_8hpp-source"/>
+      </node>
+      <node id="598">
+        <label>rc/harps/include/harps/compornent/switching_envelope.hpp</label>
+        <link refid="switching__envelope_8hpp-source"/>
+      </node>
+      <node id="588">
+        <label>rc/harps/include/harps/compornent/envelope2.hpp</label>
+        <link refid="envelope2_8hpp-source"/>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="589">
+        <label>rc/harps/include/harps/compornent/generator.hpp</label>
+        <link refid="generator_8hpp-source"/>
+      </node>
+      <node id="600">
+        <label>rc/harps/include/harps/compornent/triangle.hpp</label>
+        <link refid="triangle_8hpp-source"/>
+      </node>
+      <node id="596">
+        <label>rc/harps/include/harps/compornent/shift.hpp</label>
+        <link refid="shift_8hpp-source"/>
+      </node>
+      <node id="602">
+        <label>rc/harps/include/harps/compornent/volume.hpp</label>
+        <link refid="volume_8hpp-source"/>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="580">
+        <label>rc/harps/include/harps/compornent/fm.hpp</label>
+        <link refid="fm_8hpp-source"/>
+      </node>
+      <node id="586">
+        <label>rc/harps/include/harps/instrument.hpp</label>
+        <link refid="instrument_8hpp-source"/>
+      </node>
+      <node id="581">
+        <label>rc/harps/include/harps/compornent/branchbynote.hpp</label>
+        <link refid="branchbynote_8hpp-source"/>
+      </node>
+      <node id="590">
+        <label>rc/harps/include/harps/compornent/mix.hpp</label>
+        <link refid="mix_8hpp-source"/>
+      </node>
+      <node id="578">
+        <label>rc/harps/include/harps/note.hpp</label>
+        <link refid="note.hpp"/>
+        <childnode refid="579" relation="include">
+        </childnode>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="583" relation="include">
+        </childnode>
+        <childnode refid="584" relation="include">
+        </childnode>
+        <childnode refid="585" relation="include">
+        </childnode>
+        <childnode refid="587" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="580" relation="include">
+        </childnode>
+        <childnode refid="589" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="591" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="593" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="596" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+        <childnode refid="598" relation="include">
+        </childnode>
+        <childnode refid="599" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+        <childnode refid="601" relation="include">
+        </childnode>
+        <childnode refid="602" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classharps_1_1Note" prot="public">harps::Note</innerclass>
+    <innernamespace refid="namespaceharps">harps</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2009<sp/>by<sp/>Naomasa<sp/>Matsubayashi<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>harps@quaternion.sakura.ne.jp<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/>are<sp/>met:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>distribution.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>&lt;ORGANIZATION&gt;<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/>OWNER<sp/>OR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/><sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/><sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>*</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/><sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.<sp/><sp/>*</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HARPS_NOTE</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HARPS_NOTE</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">harps<sp/>{</highlight></codeline>
+<codeline lineno="42" refid="classharps_1_1Note" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classharps_1_1Note" kindref="compound">Note</ref><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>NoteState<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTE_ON<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTE_OFF<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTE_WAIT<sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="52" refid="classharps_1_1Note_1e30d3c03bff9e694ce939e0e5c62212b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classharps_1_1Note_1e30d3c03bff9e694ce939e0e5c62212b" kindref="member">Note</ref>()<sp/>:<sp/>status(<sp/>NOTE_WAIT<sp/>)<sp/>{}</highlight></codeline>
+<codeline lineno="56" refid="classharps_1_1Note_19a7a81b989b96e47da4f32e49db991ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classharps_1_1Note_19a7a81b989b96e47da4f32e49db991ba" kindref="member">~Note</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="61" refid="classharps_1_1Note_1f589da8cf6f57aa65d484909bb1eb61b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classharps_1_1Note_1f589da8cf6f57aa65d484909bb1eb61b" kindref="member">noteOn</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_touch<sp/>=<sp/>1.0f<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>NOTE_ON;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>touch<sp/>=<sp/>_touch;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68" refid="classharps_1_1Note_199f66a9ff92dd3ad30199816c455fa78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classharps_1_1Note_199f66a9ff92dd3ad30199816c455fa78" kindref="member">noteOff</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>NOTE_OFF;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74" refid="classharps_1_1Note_1ae555fa8b846740ece16309eeb3aed89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classharps_1_1Note_1ae555fa8b846740ece16309eeb3aed89" kindref="member">noteWait</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>NOTE_WAIT;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81" refid="classharps_1_1Note_12e242ce9707561f3ff22f9d61ecf332a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>NoteState<sp/><ref refid="classharps_1_1Note_12e242ce9707561f3ff22f9d61ecf332a" kindref="member">getStatus</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88" refid="classharps_1_1Note_14c5924cbd850f3221114a24872be5f83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classharps_1_1Note_14c5924cbd850f3221114a24872be5f83" kindref="member">getTouch</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>touch;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>NoteState<sp/>status;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>touch;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/users/fadis/rc/harps/include/harps/note.hpp"/>
+  </compounddef>
+</doxygen>

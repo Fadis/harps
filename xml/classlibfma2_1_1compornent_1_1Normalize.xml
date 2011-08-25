@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classlibfma2_1_1compornent_1_1Normalize" kind="class" prot="public">
+    <compoundname>libfma2::compornent::Normalize</compoundname>
+    <includes refid="compornent_2normalize_8hpp" local="no">normalize.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>ModuleType</declname>
+        <defname>ModuleType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlibfma2_1_1compornent_1_1Normalize_150d6141343bf9e944834b6f8cae0f282" prot="private" static="no" mutable="no">
+        <type>Normalizer&lt; SAMPLING_RATE *10 &gt;</type>
+        <definition>Normalizer&lt; SAMPLING_RATE * 10 &gt; libfma2::compornent::Normalize&lt; ModuleType &gt;::normalizer</definition>
+        <argsstring></argsstring>
+        <name>normalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/normalize.hpp" line="70" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/normalize.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlibfma2_1_1compornent_1_1Normalize_19c557ad9ef9acba53abf7af44cf48905" prot="private" static="no" mutable="no">
+        <type>ModuleType</type>
+        <definition>ModuleType libfma2::compornent::Normalize&lt; ModuleType &gt;::module</definition>
+        <argsstring></argsstring>
+        <name>module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/normalize.hpp" line="71" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/normalize.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlibfma2_1_1compornent_1_1Normalize_1c278dffefdffa31889a316004d35e0a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>SampleType</declname>
+            <defname>SampleType</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void libfma2::compornent::Normalize&lt; ModuleType &gt;::operator()</definition>
+        <argsstring>(Buffer&lt; SampleType &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>Buffer&lt; SampleType &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type>CurrentTime &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type>Note &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/normalize.hpp" line="55" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/normalize.hpp" bodystart="55" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>入力の音量を正規化します。 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="105">
+        <label>libfma2::compornent::Normalize&lt; ModuleType &gt;</label>
+        <link refid="classlibfma2_1_1compornent_1_1Normalize"/>
+        <childnode refid="106" relation="usage">
+          <edgelabel>module</edgelabel>
+        </childnode>
+      </node>
+      <node id="106">
+        <label>ModuleType</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/normalize.hpp" line="52" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/normalize.hpp" bodystart="52" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classlibfma2_1_1compornent_1_1Normalize_19c557ad9ef9acba53abf7af44cf48905" prot="private" virt="non-virtual"><scope>libfma2::compornent::Normalize</scope><name>module</name></member>
+      <member refid="classlibfma2_1_1compornent_1_1Normalize_150d6141343bf9e944834b6f8cae0f282" prot="private" virt="non-virtual"><scope>libfma2::compornent::Normalize</scope><name>normalizer</name></member>
+      <member refid="classlibfma2_1_1compornent_1_1Normalize_1c278dffefdffa31889a316004d35e0a0" prot="public" virt="non-virtual"><scope>libfma2::compornent::Normalize</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KDevPrjSession>
+<KDevPrjSession>
+ <DocsAndViews NumberOfDocuments="27" >
+  <Doc0 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/src/envelope.cpp" >
+   <View0 Encoding="" line="49" Type="Source" />
+  </Doc0>
+  <Doc1 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/add.hpp" >
+   <View0 Encoding="" line="104" Type="Source" />
+  </Doc1>
+  <Doc2 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" >
+   <View0 Encoding="" line="72" Type="Source" />
+  </Doc2>
+  <Doc3 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/constant.hpp" >
+   <View0 Encoding="" line="46" Type="Source" />
+  </Doc3>
+  <Doc4 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/constant_mul.hpp" >
+   <View0 Encoding="" line="46" Type="Source" />
+  </Doc4>
+  <Doc5 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/distotion.hpp" >
+   <View0 Encoding="" line="47" Type="Source" />
+  </Doc5>
+  <Doc6 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/dynamic_module.hpp" >
+   <View0 Encoding="" line="128" Type="Source" />
+  </Doc6>
+  <Doc7 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/envelope.hpp" >
+   <View0 Encoding="" line="137" Type="Source" />
+  </Doc7>
+  <Doc8 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/envelope2.hpp" >
+   <View0 Encoding="" line="218" Type="Source" />
+  </Doc8>
+  <Doc9 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/fm.hpp" >
+   <View0 Encoding="" line="63" Type="Source" />
+  </Doc9>
+  <Doc10 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/generator.hpp" >
+   <View0 Encoding="" line="47" Type="Source" />
+  </Doc10>
+  <Doc11 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/mix.hpp" >
+   <View0 Encoding="" line="106" Type="Source" />
+  </Doc11>
+  <Doc12 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/mul.hpp" >
+   <View0 Encoding="" line="77" Type="Source" />
+  </Doc12>
+  <Doc13 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/noize.hpp" >
+   <View0 Encoding="" line="142" Type="Source" />
+  </Doc13>
+  <Doc14 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/normalize.hpp" >
+   <View0 Encoding="" line="44" Type="Source" />
+  </Doc14>
+  <Doc15 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/rectangle.hpp" >
+   <View0 Encoding="" line="47" Type="Source" />
+  </Doc15>
+  <Doc16 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/scale.hpp" >
+   <View0 Encoding="" line="68" Type="Source" />
+  </Doc16>
+  <Doc17 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/shift.hpp" >
+   <View0 Encoding="" line="47" Type="Source" />
+  </Doc17>
+  <Doc18 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/sine.hpp" >
+   <View0 Encoding="" line="47" Type="Source" />
+  </Doc18>
+  <Doc19 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/switching_envelope.hpp" >
+   <View0 Encoding="" line="47" Type="Source" />
+  </Doc19>
+  <Doc20 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/touch.hpp" >
+   <View0 Encoding="" line="46" Type="Source" />
+  </Doc20>
+  <Doc21 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/triangle.hpp" >
+   <View0 Encoding="" line="63" Type="Source" />
+  </Doc21>
+  <Doc22 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/vector.hpp" >
+   <View0 Encoding="" line="84" Type="Source" />
+  </Doc22>
+  <Doc23 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/volume.hpp" >
+   <View0 Encoding="" line="45" Type="Source" />
+  </Doc23>
+  <Doc24 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/include/harps/compornent/wave.hpp" >
+   <View0 Encoding="" line="42" Type="Source" />
+  </Doc24>
+  <Doc25 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/configure.in" >
+   <View0 Encoding="" line="0" Type="Source" />
+  </Doc25>
+  <Doc26 NumberOfViews="1" URL="file:///home/users/fadis/rc/harps/Doxyfile" >
+   <View0 Encoding="" line="236" Type="Source" />
+  </Doc26>
+ </DocsAndViews>
+ <pluginList>
+  <kdevdebugger>
+   <breakpointList/>
+   <showInternalCommands value="0" />
+  </kdevdebugger>
+  <kdevastyle>
+   <Extensions ext="*.cpp *.hpp,*.c *.h,*.cxx *.hxx,*.c++ *.h++,*.cc *.hh,*.C *.H,*.diff,*.inl,*.java,*.moc,*.patch,*.tlh,*.xpm" />
+   <AStyle IndentPreprocessors="1" FillCount="2" PadParenthesesOut="1" IndentNamespaces="1" IndentLabels="1" Fill="Spaces" MaxStatement="40" Brackets="Attach" MinConditional="2" IndentBrackets="0" PadParenthesesUn="1" BlockBreak="0" KeepStatements="0" KeepBlocks="0" BlockIfElse="0" IndentSwitches="1" PadOperators="1" FStyle="UserDefined" IndentCases="0" FillEmptyLines="1" BracketsCloseHeaders="1" BlockBreakAll="0" PadParenthesesIn="1" IndentClasses="1" IndentBlocks="0" FillForce="0" />
+  </kdevastyle>
+  <kdevbookmarks>
+   <bookmarks/>
+  </kdevbookmarks>
+  <kdevvalgrind>
+   <executable path="" params="" />
+   <valgrind path="" params="" />
+   <calltree path="" params="" />
+   <kcachegrind path="" />
+  </kdevvalgrind>
+ </pluginList>
+</KDevPrjSession>

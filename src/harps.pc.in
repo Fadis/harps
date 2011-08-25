@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: @PACKAGE@
+Description: Harps is A Realtime Programmable Synthesizer
+Version: @VERSION@
+Libs: -L${libdir} -lharps @BOOST_LDFLAGS@ @BOOST_THREAD_LIB@ @BOOST_LDFLAGS@ @BOOST_FILESYSTEM_LIB@ @BOOST_THREAD_LIB@ @ALSA_LIBS@ @TBB_LIBS@
+Cflags: -I${includedir}  @ALSA_CFLAGS@  @BOOST_CPPFLAGS@ @TBB_CPPFLAGS@

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="dir_71b55a396bf8882821d68309049ea6a8" kind="dir">
+    <compoundname>rc/harps/include/harps/output/</compoundname>
+    <innerfile refid="alsa_8hpp">alsa.hpp</innerfile>
+    <innerfile refid="output_2wave_8hpp">wave.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/output/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,54 @@
+\section{harps::input::Score Struct Reference}
+\label{structharps_1_1input_1_1Score}\index{harps::input::Score@{harps::input::Score}}
+{\tt \#include $<$simple.hpp$>$}
+
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+double {\bf pos}
+\item 
+float {\bf length}
+\item 
+unsigned int {\bf note}
+\item 
+float {\bf touch}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+SimpleReaderが読む楽譜データの要素です。 
+
+\subsection{Member Data Documentation}
+\index{harps::input::Score@{harps::input::Score}!pos@{pos}}
+\index{pos@{pos}!harps::input::Score@{harps::input::Score}}
+\subsubsection[pos]{\setlength{\rightskip}{0pt plus 5cm}double {\bf harps::input::Score::pos}}\label{structharps_1_1input_1_1Score_e17864694bc7d1f6c4842919867ad53f}
+
+
+この音を発音する時刻です。前の音より後でなければなりません。 
+
+Referenced by harps::input::SimpleReader$<$ InstrumentType $>$::operator()().\index{harps::input::Score@{harps::input::Score}!length@{length}}
+\index{length@{length}!harps::input::Score@{harps::input::Score}}
+\subsubsection[length]{\setlength{\rightskip}{0pt plus 5cm}float {\bf harps::input::Score::length}}\label{structharps_1_1input_1_1Score_3f9a1a8c50a874834877751a8d1dabe5}
+
+
+この音の長さです。長さ0のノートは曲の終了を意味します。 
+
+Referenced by harps::input::SimpleReader$<$ InstrumentType $>$::operator()().\index{harps::input::Score@{harps::input::Score}!note@{note}}
+\index{note@{note}!harps::input::Score@{harps::input::Score}}
+\subsubsection[note]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf harps::input::Score::note}}\label{structharps_1_1input_1_1Score_b73ecfe496a3e90669081a968044b78c}
+
+
+この音の音階です。 
+
+Referenced by harps::input::SimpleReader$<$ InstrumentType $>$::operator()().\index{harps::input::Score@{harps::input::Score}!touch@{touch}}
+\index{touch@{touch}!harps::input::Score@{harps::input::Score}}
+\subsubsection[touch]{\setlength{\rightskip}{0pt plus 5cm}float {\bf harps::input::Score::touch}}\label{structharps_1_1input_1_1Score_49d93f1ba67f1504e5d87e5658a6aad3}
+
+
+この音を発音する時の鍵盤を叩く強さです。 
+
+Referenced by harps::input::SimpleReader$<$ InstrumentType $>$::operator()().
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+rc/harps/include/harps/input/simple.hpp\end{CompactItemize}

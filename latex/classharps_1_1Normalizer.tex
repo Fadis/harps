@@ -1,0 +1,62 @@
+\section{harps::Normalizer$<$ tail $>$ Class Template Reference}
+\label{classharps_1_1Normalizer}\index{harps::Normalizer@{harps::Normalizer}}
+{\tt \#include $<$normalize.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Normalizer} ()
+\item 
+virtual {\bf $\sim$Normalizer} ()
+\item 
+void {\bf setValue} (float \_\-arg\_\-value)
+\item 
+float {\bf getAmp} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int tail$>$ class harps::Normalizer$<$ tail $>$}
+
+ノーマライザは波形が出力可能な振幅を越えてしまう場合にどのくらい音量を絞れば良いかを計算します。 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{harps::Normalizer@{harps::Normalizer}!Normalizer@{Normalizer}}
+\index{Normalizer@{Normalizer}!harps::Normalizer@{harps::Normalizer}}
+\subsubsection[Normalizer]{\setlength{\rightskip}{0pt plus 5cm}template$<$int tail$>$ {\bf harps::Normalizer}$<$ tail $>$::{\bf Normalizer} ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Normalizer_fa7525284211f02baf449163696400b2}
+
+
+コンストラクタ \index{harps::Normalizer@{harps::Normalizer}!$\sim$Normalizer@{$\sim$Normalizer}}
+\index{$\sim$Normalizer@{$\sim$Normalizer}!harps::Normalizer@{harps::Normalizer}}
+\subsubsection[$\sim$Normalizer]{\setlength{\rightskip}{0pt plus 5cm}template$<$int tail$>$ virtual {\bf harps::Normalizer}$<$ tail $>$::$\sim${\bf Normalizer} ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classharps_1_1Normalizer_fb364666ac8e946a921ff2f923f71fcf}
+
+
+デストラクタ 
+
+\subsection{Member Function Documentation}
+\index{harps::Normalizer@{harps::Normalizer}!setValue@{setValue}}
+\index{setValue@{setValue}!harps::Normalizer@{harps::Normalizer}}
+\subsubsection[setValue]{\setlength{\rightskip}{0pt plus 5cm}template$<$int tail$>$ void {\bf harps::Normalizer}$<$ tail $>$::setValue (float {\em \_\-arg\_\-value})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Normalizer_719c26a532ee603de347033951b9e7ba}
+
+
+波形データを供給します \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-arg\_\-value}]サンプル値 \end{description}
+\end{Desc}
+
+
+Referenced by harps::DynamicPolyphony$<$ MonophonyType, max\_\-polyphony $>$::operator()(), and harps::input::Tracks$<$ OutputType, ReaderType, BufferType, track\_\-count $>$::operator()().\index{harps::Normalizer@{harps::Normalizer}!getAmp@{getAmp}}
+\index{getAmp@{getAmp}!harps::Normalizer@{harps::Normalizer}}
+\subsubsection[getAmp]{\setlength{\rightskip}{0pt plus 5cm}template$<$int tail$>$ float {\bf harps::Normalizer}$<$ tail $>$::getAmp ()\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1Normalizer_b4d4314f348404d2e96d2d22b3f1ced7}
+
+
+適切な音量を取得します \begin{Desc}
+\item[Returns:]スケール値 \end{Desc}
+
+
+Referenced by harps::DynamicPolyphony$<$ MonophonyType, max\_\-polyphony $>$::operator()(), and harps::input::Tracks$<$ OutputType, ReaderType, BufferType, track\_\-count $>$::operator()().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+rc/harps/include/harps/normalize.hpp\end{CompactItemize}

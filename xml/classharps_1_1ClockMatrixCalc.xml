@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1ClockMatrixCalc" kind="class" prot="public">
+    <compoundname>harps::ClockMatrixCalc</compoundname>
+    <includes refid="clock_8hpp" local="no">clock.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>unsigned int</type>
+        <declname>_which</declname>
+        <defname>_which</defname>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>時刻変換行列の計算をコンパイル時に分岐するためのクラス </para>    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/clock.hpp" line="65" bodyfile="/home/users/fadis/rc/harps/include/harps/clock.hpp" bodystart="65" bodyend="66"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

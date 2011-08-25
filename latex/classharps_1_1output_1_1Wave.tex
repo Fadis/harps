@@ -1,0 +1,56 @@
+\section{harps::output::Wave$<$ is\_\-stereo, bytes\_\-per\_\-sample $>$ Class Template Reference}
+\label{classharps_1_1output_1_1Wave}\index{harps::output::Wave@{harps::output::Wave}}
+{\tt \#include $<$wave.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Wave} (const char $\ast$\_\-filename)
+\item 
+virtual {\bf $\sim$Wave} ()
+\item 
+{\footnotesize template$<$typename SampleType$>$ }\\void {\bf operator()} ({\bf Buffer}$<$ SampleType $>$ \&\_\-buffer)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$bool is\_\-stereo, unsigned int bytes\_\-per\_\-sample$>$ class harps::output::Wave$<$ is\_\-stereo, bytes\_\-per\_\-sample $>$}
+
+RIFF Wave形式でファイルに書き出します。 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{harps::output::Wave@{harps::output::Wave}!Wave@{Wave}}
+\index{Wave@{Wave}!harps::output::Wave@{harps::output::Wave}}
+\subsubsection[Wave]{\setlength{\rightskip}{0pt plus 5cm}template$<$bool is\_\-stereo, unsigned int bytes\_\-per\_\-sample$>$ {\bf harps::output::Wave}$<$ is\_\-stereo, bytes\_\-per\_\-sample $>$::{\bf Wave} (const char $\ast$ {\em \_\-filename})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1output_1_1Wave_220425fb4828faccdc2c6f3be63f498c}
+
+
+コンストラクタ \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-filename}]出力ファイル名 \end{description}
+\end{Desc}
+\index{harps::output::Wave@{harps::output::Wave}!$\sim$Wave@{$\sim$Wave}}
+\index{$\sim$Wave@{$\sim$Wave}!harps::output::Wave@{harps::output::Wave}}
+\subsubsection[$\sim$Wave]{\setlength{\rightskip}{0pt plus 5cm}template$<$bool is\_\-stereo, unsigned int bytes\_\-per\_\-sample$>$ virtual {\bf harps::output::Wave}$<$ is\_\-stereo, bytes\_\-per\_\-sample $>$::$\sim${\bf Wave} ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classharps_1_1output_1_1Wave_05c145cb74ff699e183a516a76f9a50a}
+
+
+デストラクタ 
+
+\subsection{Member Function Documentation}
+\index{harps::output::Wave@{harps::output::Wave}!operator()@{operator()}}
+\index{operator()@{operator()}!harps::output::Wave@{harps::output::Wave}}
+\subsubsection[operator()]{\setlength{\rightskip}{0pt plus 5cm}template$<$bool is\_\-stereo, unsigned int bytes\_\-per\_\-sample$>$ template$<$typename SampleType$>$ void {\bf harps::output::Wave}$<$ is\_\-stereo, bytes\_\-per\_\-sample $>$::operator() ({\bf Buffer}$<$ SampleType $>$ \& {\em \_\-buffer})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1output_1_1Wave_88399ca38037a5aa11bd8daa73d91cfa}
+
+
+バッファを書き出します \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-buffer}]バッファ \end{description}
+\end{Desc}
+
+
+References harps::Buffer$<$ \_\-SampleType $>$::getLeft(), and harps::Buffer$<$ \_\-SampleType $>$::getRight().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+rc/harps/include/harps/output/wave.hpp\end{CompactItemize}

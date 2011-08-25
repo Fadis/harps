@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1ModuleNotFound" kind="class" prot="public">
+    <compoundname>harps::ModuleNotFound</compoundname>
+    <basecompoundref refid="classharps_1_1HarpsException" prot="public" virt="non-virtual">harps::HarpsException</basecompoundref>
+    <includes refid="exceptions_8hpp" local="no">exceptions.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1ModuleNotFound_1f00f82c8a8b7b13ab7ce26b91b6a366b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::ModuleNotFound::ModuleNotFound</definition>
+        <argsstring>()</argsstring>
+        <name>ModuleNotFound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/exceptions.hpp" line="49" bodyfile="/home/users/fadis/rc/harps/include/harps/exceptions.hpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>外部モジュールが見つからない場合この例外が投げられます。 </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="91">
+        <label>harps::ModuleNotFound</label>
+        <link refid="classharps_1_1ModuleNotFound"/>
+        <childnode refid="92" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>harps::HarpsException</label>
+        <link refid="classharps_1_1HarpsException"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="93">
+        <label>harps::ModuleNotFound</label>
+        <link refid="classharps_1_1ModuleNotFound"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>harps::HarpsException</label>
+        <link refid="classharps_1_1HarpsException"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/exceptions.hpp" line="47" bodyfile="/home/users/fadis/rc/harps/include/harps/exceptions.hpp" bodystart="47" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classharps_1_1HarpsException_11c1c3000d2e0184cbeedb07d13c80eb4" prot="public" virt="non-virtual"><scope>harps::ModuleNotFound</scope><name>HarpsException</name></member>
+      <member refid="classharps_1_1ModuleNotFound_1f00f82c8a8b7b13ab7ce26b91b6a366b" prot="public" virt="non-virtual"><scope>harps::ModuleNotFound</scope><name>ModuleNotFound</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

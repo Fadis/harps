@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1SharedBuffer" kind="class" prot="public">
+    <compoundname>harps::SharedBuffer</compoundname>
+    <includes refid="shared__buffer_8hpp" local="no">shared_buffer.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Tag</declname>
+        <defname>Tag</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>SampleType</declname>
+        <defname>SampleType</defname>
+      </param>
+      <param>
+        <type>unsigned int</type>
+        <declname>count</declname>
+        <defname>count</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1SharedBuffer_1d64883f9f1edeb56261dec18f2e5457e" prot="private" static="no" mutable="no">
+        <type>boost::array&lt; SampleType, count &gt;</type>
+        <definition>boost::array&lt; SampleType, count &gt; harps::SharedBuffer&lt; Tag, SampleType, count &gt;::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/shared_buffer.hpp" line="70" bodyfile="/home/users/fadis/rc/harps/include/harps/shared_buffer.hpp" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classharps_1_1SharedBuffer_1ca645777b94d527a7e340aba24b2c104" compoundref="shared__buffer_8hpp" startline="53" endline="62">harps::SharedBuffer&lt; Tag, SampleType, count &gt;::init</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classharps_1_1SharedBuffer_1ca645777b94d527a7e340aba24b2c104" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::array&lt; SampleType, count &gt; &amp;</type>
+        <definition>static boost::array&lt; SampleType, count &gt;&amp; harps::SharedBuffer&lt; Tag, SampleType, count &gt;::init</definition>
+        <argsstring>(boost::function&lt; void(boost::array&lt; SampleType, count &gt; &amp;) &gt; _initializer)</argsstring>
+        <name>init</name>
+        <param>
+          <type>boost::function&lt; void(boost::array&lt; SampleType, count &gt; &amp;) &gt;</type>
+          <declname>_initializer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>バッファを取得します <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_initializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>バッファの初期化に用いる関数 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/shared_buffer.hpp" line="53" bodyfile="/home/users/fadis/rc/harps/include/harps/shared_buffer.hpp" bodystart="53" bodyend="62"/>
+        <references refid="classharps_1_1SharedBuffer_1d64883f9f1edeb56261dec18f2e5457e" compoundref="shared__buffer_8hpp" startline="70">harps::SharedBuffer&lt; Tag, SampleType, count &gt;::buffer</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classharps_1_1SharedBuffer_170ed7c4dee0788767901aab160a9cdda" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classharps_1_1SharedBuffer" kindref="compound">SharedBuffer</ref>&lt; Tag, SampleType, count &gt; *</type>
+        <definition>static SharedBuffer&lt; Tag, SampleType, count &gt;* harps::SharedBuffer&lt; Tag, SampleType, count &gt;::getNonThreadSafe</definition>
+        <argsstring>()</argsstring>
+        <name>getNonThreadSafe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/shared_buffer.hpp" line="64" bodyfile="/home/users/fadis/rc/harps/include/harps/shared_buffer.hpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classharps_1_1SharedBuffer_1cc609d8b23357e7d27a658b7b184eb6e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::SharedBuffer&lt; Tag, SampleType, count &gt;::SharedBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>SharedBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/shared_buffer.hpp" line="68" bodyfile="/home/users/fadis/rc/harps/include/harps/shared_buffer.hpp" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1SharedBuffer_143575ea0213013b050506ba4d2f01805" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual harps::SharedBuffer&lt; Tag, SampleType, count &gt;::~SharedBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>~SharedBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/shared_buffer.hpp" line="69" bodyfile="/home/users/fadis/rc/harps/include/harps/shared_buffer.hpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>モジュール内の複数の箇所で共有されるバッファ </para>    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/shared_buffer.hpp" line="47" bodyfile="/home/users/fadis/rc/harps/include/harps/shared_buffer.hpp" bodystart="47" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classharps_1_1SharedBuffer_1d64883f9f1edeb56261dec18f2e5457e" prot="private" virt="non-virtual"><scope>harps::SharedBuffer</scope><name>buffer</name></member>
+      <member refid="classharps_1_1SharedBuffer_170ed7c4dee0788767901aab160a9cdda" prot="private" virt="non-virtual"><scope>harps::SharedBuffer</scope><name>getNonThreadSafe</name></member>
+      <member refid="classharps_1_1SharedBuffer_1ca645777b94d527a7e340aba24b2c104" prot="public" virt="non-virtual"><scope>harps::SharedBuffer</scope><name>init</name></member>
+      <member refid="classharps_1_1SharedBuffer_1cc609d8b23357e7d27a658b7b184eb6e" prot="private" virt="non-virtual"><scope>harps::SharedBuffer</scope><name>SharedBuffer</name></member>
+      <member refid="classharps_1_1SharedBuffer_143575ea0213013b050506ba4d2f01805" prot="private" virt="virtual"><scope>harps::SharedBuffer</scope><name>~SharedBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

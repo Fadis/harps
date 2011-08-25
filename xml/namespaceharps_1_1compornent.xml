@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="namespaceharps_1_1compornent" kind="namespace">
+    <compoundname>harps::compornent</compoundname>
+    <innerclass refid="classharps_1_1compornent_1_1Add" prot="public">harps::compornent::Add</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Add_3_01_01_4" prot="public">harps::compornent::Add&lt;  &gt;</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1BranchByNote" prot="public">harps::compornent::BranchByNote</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Constant" prot="public">harps::compornent::Constant</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1ConstantMul" prot="public">harps::compornent::ConstantMul</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Distotion" prot="public">harps::compornent::Distotion</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Envelope" prot="public">harps::compornent::Envelope</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Envelope_3_01__clock__select_00_01__delay_00_01__attack_00_01__hold_396210224e615d03f376f3377e02eb68" prot="public">harps::compornent::Envelope&lt; _clock_select, _delay, _attack, _hold, _decay, 0, _release &gt;</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Envelope2" prot="public">harps::compornent::Envelope2</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Envelope2_3_01__clock__select_00_01__delay_00_01__attack_00_01__atta211bf396f5638f048319b2d4e63e7d8c" prot="public">harps::compornent::Envelope2&lt; _clock_select, _delay, _attack, _attack_middle, _attack_middle_level, _hold, _hold_level, _decay1, _decay1_middle, _decay1_middle_level, _decay1_end_level, _decay2, _decay2_middle, _decay2_middle_level, 0, _release, _release_middle, _release_middle_level &gt;</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1FM" prot="public">harps::compornent::FM</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1FM_3_01ModuleType0_00_01ModuleType1_00_010_00_010_00_010_00_010_00_010_00_010_00_010_01_4" prot="public">harps::compornent::FM&lt; ModuleType0, ModuleType1, 0, 0, 0, 0, 0, 0, 0 &gt;</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1FM2" prot="public">harps::compornent::FM2</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Generator" prot="public">harps::compornent::Generator</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Mix" prot="public">harps::compornent::Mix</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Mix_3_01_01_4" prot="public">harps::compornent::Mix&lt;  &gt;</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Mul" prot="public">harps::compornent::Mul</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Mul_3_01_01_4" prot="public">harps::compornent::Mul&lt;  &gt;</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1FFT" prot="public">harps::compornent::FFT</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Noize" prot="public">harps::compornent::Noize</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Normalize" prot="public">harps::compornent::Normalize</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Rectangle" prot="public">harps::compornent::Rectangle</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Scale" prot="public">harps::compornent::Scale</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Scale_3_01ModuleType_00_011000_00_010_01_4" prot="public">harps::compornent::Scale&lt; ModuleType, 1000, 0 &gt;</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Shift" prot="public">harps::compornent::Shift</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Sine" prot="public">harps::compornent::Sine</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1SwitchingEnvelope" prot="public">harps::compornent::SwitchingEnvelope</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Touch" prot="public">harps::compornent::Touch</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Triangle" prot="public">harps::compornent::Triangle</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1NES" prot="public">harps::compornent::NES</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Vector" prot="public">harps::compornent::Vector</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Volume" prot="public">harps::compornent::Volume</innerclass>
+    <innerclass refid="classharps_1_1compornent_1_1Wave" prot="public">harps::compornent::Wave</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceharps_1_1compornent_152686693ee6e21316ae152459d1263eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool harps::compornent::lu</definition>
+        <argsstring>(float *_lu, unsigned int *_index)</argsstring>
+        <name>lu</name>
+        <param>
+          <type>float *</type>
+          <declname>_lu</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>行列をLU分解します。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_lu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>行列 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_lu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ピボット </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LU分解が成功したらtrue 失敗したらfalse </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/envelope2.hpp" line="50" bodyfile="/home/users/fadis/rc/harps/src/envelope.cpp" bodystart="53" bodyend="123"/>
+        <referencedby refid="namespaceharps_1_1compornent_1b660c352783a5da8d91b8751fc64291b" compoundref="envelope_8cpp" startline="131" endline="165">inverse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_1_1compornent_1b660c352783a5da8d91b8751fc64291b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool harps::compornent::inverse</definition>
+        <argsstring>(float *_dest, const float *_source_orig)</argsstring>
+        <name>inverse</name>
+        <param>
+          <type>float *</type>
+          <declname>_dest</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>_source_orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>逆行列を求めます。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>逆行列 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_source_orig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>もとの行列 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>逆行列が存在するならtrue 存在しないならfalse </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/envelope2.hpp" line="51" bodyfile="/home/users/fadis/rc/harps/src/envelope.cpp" bodystart="131" bodyend="165"/>
+        <references refid="namespaceharps_1_1compornent_152686693ee6e21316ae152459d1263eb" compoundref="envelope_8cpp" startline="53" endline="123">lu</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_1_1compornent_17e2f00e77c2c4b3cab75ccc616740f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::compornent::calcCoef</definition>
+        <argsstring>(float &amp;_a, float &amp;_b, float _x0, float _y0, float _x1, float _y1)</argsstring>
+        <name>calcCoef</name>
+        <param>
+          <type>float &amp;</type>
+          <declname>_a</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>_b</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_x0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_y0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_y1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/envelope2.hpp" line="58" bodyfile="/home/users/fadis/rc/harps/src/envelope.cpp" bodystart="168" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceharps_1_1compornent_1011aade3968e39a9e933c9bdeb0dac45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::compornent::calcCoef</definition>
+        <argsstring>(float &amp;_a, float &amp;_b, float &amp;_c, float _x0, float _y0, float _x1, float _y1, float _x2, float _y2)</argsstring>
+        <name>calcCoef</name>
+        <param>
+          <type>float &amp;</type>
+          <declname>_a</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>_b</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>_c</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_x0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_y0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_y2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/envelope2.hpp" line="66" bodyfile="/home/users/fadis/rc/harps/src/envelope.cpp" bodystart="178" bodyend="212"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>この名前空間にはモジュールを構成する演算が置かれています。 </para>    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/add.hpp" line="85"/>
+  </compounddef>
+</doxygen>

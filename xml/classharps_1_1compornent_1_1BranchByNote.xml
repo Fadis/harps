@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1compornent_1_1BranchByNote" kind="class" prot="public">
+    <compoundname>harps::compornent::BranchByNote</compoundname>
+    <includes refid="branchbynote_8hpp" local="no">branchbynote.hpp</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1compornent_1_1BranchByNote_1dd52de2582256e6f119a49e3953b532d" prot="private" static="no" mutable="no">
+        <type>boost::array&lt; boost::function&lt; void(<ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; float &gt; &amp;, <ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;, <ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;) &gt; 128 &gt;</type>
+        <definition>boost::array&lt; boost::function&lt; void ( Buffer&lt; float &gt;&amp;, CurrentTime&amp;, Note&amp; ) &gt; 128 &gt; harps::compornent::BranchByNote&lt;&gt;::float_modules</definition>
+        <argsstring></argsstring>
+        <name>float_modules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" line="105" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1compornent_1_1BranchByNote_186271912611771fe3e6e31fdf5f21af1" prot="private" static="no" mutable="no">
+        <type>boost::array&lt; boost::function&lt; void(<ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; double &gt; &amp;, <ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;, <ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;) &gt; 128 &gt;</type>
+        <definition>boost::array&lt; boost::function&lt; void ( Buffer&lt; double &gt;&amp;, CurrentTime&amp;, Note&amp; ) &gt; 128 &gt; harps::compornent::BranchByNote&lt;&gt;::double_modules</definition>
+        <argsstring></argsstring>
+        <name>double_modules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" line="106" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1compornent_1_1BranchByNote_1d5d123fa92986dba62ae82c402feaba7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::compornent::BranchByNote&lt;&gt;::BranchByNote</definition>
+        <argsstring>()</argsstring>
+        <name>BranchByNote</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" line="80" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1compornent_1_1BranchByNote_1e542c236dad37cefaa100c942a3ceae4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>SampleType</declname>
+            <defname>SampleType</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void harps::compornent::BranchByNote&lt;&gt;::operator()</definition>
+        <argsstring>(Buffer&lt; SampleType &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; SampleType &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" line="85" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" bodystart="85" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1compornent_1_1BranchByNote_1ac29b30924a4371c5923c3cdc19f9664" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void harps::compornent::BranchByNote&lt;&gt;::operator()</definition>
+        <argsstring>(Buffer&lt; float &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; float &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" line="96" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1compornent_1_1BranchByNote_133a993b8ef0143be5c2a281596a74122" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void harps::compornent::BranchByNote&lt;&gt;::operator()</definition>
+        <argsstring>(Buffer&lt; double &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; double &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" line="100" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" bodystart="100" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>現在のノートの音階によって選ばれたモジュールの出力を返します </para>    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" line="78" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/branchbynote.hpp" bodystart="78" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classharps_1_1compornent_1_1BranchByNote_1d5d123fa92986dba62ae82c402feaba7" prot="public" virt="non-virtual"><scope>harps::compornent::BranchByNote</scope><name>BranchByNote</name></member>
+      <member refid="classharps_1_1compornent_1_1BranchByNote_186271912611771fe3e6e31fdf5f21af1" prot="private" virt="non-virtual"><scope>harps::compornent::BranchByNote</scope><name>double_modules</name></member>
+      <member refid="classharps_1_1compornent_1_1BranchByNote_1dd52de2582256e6f119a49e3953b532d" prot="private" virt="non-virtual"><scope>harps::compornent::BranchByNote</scope><name>float_modules</name></member>
+      <member refid="classharps_1_1compornent_1_1BranchByNote_1e542c236dad37cefaa100c942a3ceae4" prot="public" virt="non-virtual"><scope>harps::compornent::BranchByNote</scope><name>operator()</name></member>
+      <member refid="classharps_1_1compornent_1_1BranchByNote_1ac29b30924a4371c5923c3cdc19f9664" prot="public" virt="non-virtual"><scope>harps::compornent::BranchByNote</scope><name>operator()</name></member>
+      <member refid="classharps_1_1compornent_1_1BranchByNote_133a993b8ef0143be5c2a281596a74122" prot="public" virt="non-virtual"><scope>harps::compornent::BranchByNote</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1input_1_1Tracks_1_1TrackRunner" kind="class" prot="private">
+    <compoundname>harps::input::Tracks::TrackRunner</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1input_1_1Tracks_1_1TrackRunner_18d6a65976aabc5f7f93054ab694e96be" prot="private" static="no" mutable="no">
+        <type>boost::array&lt; boost::shared_ptr&lt; ReaderType &gt;, track_count &gt; &amp;</type>
+        <definition>boost::array&lt; boost::shared_ptr&lt; ReaderType &gt;, track_count &gt;&amp; harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::TrackRunner::readers</definition>
+        <argsstring></argsstring>
+        <name>readers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="238" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1input_1_1Tracks_1_1TrackRunner_1e7e73fa6a7d51d543529f515f4e4a2b7" prot="private" static="no" mutable="no">
+        <type>boost::array&lt; boost::shared_ptr&lt; BufferType &gt;, track_count &gt; &amp;</type>
+        <definition>boost::array&lt; boost::shared_ptr&lt; BufferType &gt;, track_count &gt;&amp; harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::TrackRunner::buffers</definition>
+        <argsstring></argsstring>
+        <name>buffers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="239" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1input_1_1Tracks_1_1TrackRunner_188d7ade24ef49ae5ccd1e6372474ff8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::TrackRunner::TrackRunner</definition>
+        <argsstring>(boost::array&lt; boost::shared_ptr&lt; ReaderType &gt;, track_count &gt; &amp;_readers, boost::array&lt; boost::shared_ptr&lt; BufferType &gt;, track_count &gt; &amp;_buffers)</argsstring>
+        <name>TrackRunner</name>
+        <param>
+          <type>boost::array&lt; boost::shared_ptr&lt; ReaderType &gt;, track_count &gt; &amp;</type>
+          <declname>_readers</declname>
+        </param>
+        <param>
+          <type>boost::array&lt; boost::shared_ptr&lt; BufferType &gt;, track_count &gt; &amp;</type>
+          <declname>_buffers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="229" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="227" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1input_1_1Tracks_1_1TrackRunner_1d2cff703f1260208cbb56d562010192f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::TrackRunner::operator()</definition>
+        <argsstring>(const tbb::blocked_range&lt; unsigned int &gt; &amp;_r) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const tbb::blocked_range&lt; unsigned int &gt; &amp;</type>
+          <declname>_r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="230" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="230" bodyend="236"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="225" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="225" bodyend="240"/>
+    <listofallmembers>
+      <member refid="classharps_1_1input_1_1Tracks_1_1TrackRunner_1e7e73fa6a7d51d543529f515f4e4a2b7" prot="private" virt="non-virtual"><scope>harps::input::Tracks::TrackRunner</scope><name>buffers</name></member>
+      <member refid="classharps_1_1input_1_1Tracks_1_1TrackRunner_1d2cff703f1260208cbb56d562010192f" prot="public" virt="non-virtual"><scope>harps::input::Tracks::TrackRunner</scope><name>operator()</name></member>
+      <member refid="classharps_1_1input_1_1Tracks_1_1TrackRunner_18d6a65976aabc5f7f93054ab694e96be" prot="private" virt="non-virtual"><scope>harps::input::Tracks::TrackRunner</scope><name>readers</name></member>
+      <member refid="classharps_1_1input_1_1Tracks_1_1TrackRunner_188d7ade24ef49ae5ccd1e6372474ff8b" prot="public" virt="non-virtual"><scope>harps::input::Tracks::TrackRunner</scope><name>TrackRunner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

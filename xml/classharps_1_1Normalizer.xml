@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1Normalizer" kind="class" prot="public">
+    <compoundname>harps::Normalizer</compoundname>
+    <includes refid="normalize_8hpp" local="no">normalize.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>tail</declname>
+        <defname>tail</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1Normalizer_1d3c84d139cef720493dba16c0aa31ca8" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float harps::Normalizer&lt; tail &gt;::top_level</definition>
+        <argsstring></argsstring>
+        <name>top_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/normalize.hpp" line="108" bodyfile="/home/users/fadis/rc/harps/include/harps/normalize.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classharps_1_1Normalizer_169a28283169f285bf0640ba8284d2597" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int harps::Normalizer&lt; tail &gt;::top_time</definition>
+        <argsstring></argsstring>
+        <name>top_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/normalize.hpp" line="109" bodyfile="/home/users/fadis/rc/harps/include/harps/normalize.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1Normalizer_1fa7525284211f02baf449163696400b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>harps::Normalizer&lt; tail &gt;::Normalizer</definition>
+        <argsstring>()</argsstring>
+        <name>Normalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>コンストラクタ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/normalize.hpp" line="79" bodyfile="/home/users/fadis/rc/harps/include/harps/normalize.hpp" bodystart="78" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Normalizer_1fb364666ac8e946a921ff2f923f71fcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual harps::Normalizer&lt; tail &gt;::~Normalizer</definition>
+        <argsstring>()</argsstring>
+        <name>~Normalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>デストラクタ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/normalize.hpp" line="83" bodyfile="/home/users/fadis/rc/harps/include/harps/normalize.hpp" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Normalizer_1719c26a532ee603de347033951b9e7ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void harps::Normalizer&lt; tail &gt;::setValue</definition>
+        <argsstring>(float _arg_value)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>float</type>
+          <declname>_arg_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>波形データを供給します <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_arg_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>サンプル値 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/normalize.hpp" line="88" bodyfile="/home/users/fadis/rc/harps/include/harps/normalize.hpp" bodystart="88" bodyend="95"/>
+        <referencedby refid="classharps_1_1DynamicPolyphony_13a2597029685d470e88e32a2ce3db94a" compoundref="instrument_8hpp" startline="169" endline="197">harps::DynamicPolyphony&lt; MonophonyType, max_polyphony &gt;::operator()</referencedby>
+        <referencedby refid="classharps_1_1input_1_1Tracks_139bfd26b91c4f04a0c6d9c7fdb01e1d9" compoundref="simple_8hpp" startline="187" endline="213">harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classharps_1_1Normalizer_1b4d4314f348404d2e96d2d22b3f1ced7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float harps::Normalizer&lt; tail &gt;::getAmp</definition>
+        <argsstring>()</argsstring>
+        <name>getAmp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>適切な音量を取得します <simplesect kind="return"><para>スケール値 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/normalize.hpp" line="100" bodyfile="/home/users/fadis/rc/harps/include/harps/normalize.hpp" bodystart="100" bodyend="106"/>
+        <referencedby refid="classharps_1_1DynamicPolyphony_13a2597029685d470e88e32a2ce3db94a" compoundref="instrument_8hpp" startline="169" endline="197">harps::DynamicPolyphony&lt; MonophonyType, max_polyphony &gt;::operator()</referencedby>
+        <referencedby refid="classharps_1_1input_1_1Tracks_139bfd26b91c4f04a0c6d9c7fdb01e1d9" compoundref="simple_8hpp" startline="187" endline="213">harps::input::Tracks&lt; OutputType, ReaderType, BufferType, track_count &gt;::operator()</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>ノーマライザは波形が出力可能な振幅を越えてしまう場合にどのくらい音量を絞れば良いかを計算します。 </para>    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/normalize.hpp" line="73" bodyfile="/home/users/fadis/rc/harps/include/harps/normalize.hpp" bodystart="73" bodyend="110"/>
+    <listofallmembers>
+      <member refid="classharps_1_1Normalizer_1b4d4314f348404d2e96d2d22b3f1ced7" prot="public" virt="non-virtual"><scope>harps::Normalizer</scope><name>getAmp</name></member>
+      <member refid="classharps_1_1Normalizer_1fa7525284211f02baf449163696400b2" prot="public" virt="non-virtual"><scope>harps::Normalizer</scope><name>Normalizer</name></member>
+      <member refid="classharps_1_1Normalizer_1719c26a532ee603de347033951b9e7ba" prot="public" virt="non-virtual"><scope>harps::Normalizer</scope><name>setValue</name></member>
+      <member refid="classharps_1_1Normalizer_1d3c84d139cef720493dba16c0aa31ca8" prot="private" virt="non-virtual"><scope>harps::Normalizer</scope><name>top_level</name></member>
+      <member refid="classharps_1_1Normalizer_169a28283169f285bf0640ba8284d2597" prot="private" virt="non-virtual"><scope>harps::Normalizer</scope><name>top_time</name></member>
+      <member refid="classharps_1_1Normalizer_1fb364666ac8e946a921ff2f923f71fcf" prot="public" virt="virtual"><scope>harps::Normalizer</scope><name>~Normalizer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

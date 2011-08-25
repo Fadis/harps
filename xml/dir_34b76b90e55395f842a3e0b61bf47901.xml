@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="dir_34b76b90e55395f842a3e0b61bf47901" kind="dir">
+    <compoundname>rc/harps/include/harps/</compoundname>
+    <innerdir refid="dir_1ea6c7e21f922c9b2add6c98fa8a02d0">rc/harps/include/harps/compornent/</innerdir>
+    <innerdir refid="dir_97f30611a5d23740e673732e99070efe">rc/harps/include/harps/input/</innerdir>
+    <innerdir refid="dir_71b55a396bf8882821d68309049ea6a8">rc/harps/include/harps/output/</innerdir>
+    <innerdir refid="dir_e792caa1eca5ce854299b413ebcd909d">rc/harps/include/harps/table/</innerdir>
+    <innerfile refid="buffer_8hpp">buffer.hpp</innerfile>
+    <innerfile refid="clock_8hpp">clock.hpp</innerfile>
+    <innerfile refid="dummy_8hpp">dummy.hpp</innerfile>
+    <innerfile refid="exceptions_8hpp">exceptions.hpp</innerfile>
+    <innerfile refid="instrument_8hpp">instrument.hpp</innerfile>
+    <innerfile refid="normalize_8hpp">normalize.hpp</innerfile>
+    <innerfile refid="note_8hpp">note.hpp</innerfile>
+    <innerfile refid="shared__buffer_8hpp">shared_buffer.hpp</innerfile>
+    <innerfile refid="time_8hpp">time.hpp</innerfile>
+    <innerfile refid="utils_8hpp">utils.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/"/>
+  </compounddef>
+</doxygen>

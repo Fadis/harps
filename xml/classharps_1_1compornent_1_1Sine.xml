@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1compornent_1_1Sine" kind="class" prot="public">
+    <compoundname>harps::compornent::Sine</compoundname>
+    <includes refid="compornent_2sine_8hpp" local="no">sine.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>ModuleType</declname>
+        <defname>ModuleType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1compornent_1_1Sine_1fbd0e17c53cabce6333c1d3a3784f8bc" prot="private" static="no" mutable="no">
+        <type>ModuleType</type>
+        <definition>ModuleType harps::compornent::Sine&lt; ModuleType &gt;::source_module</definition>
+        <argsstring></argsstring>
+        <name>source_module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/sine.hpp" line="62" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/sine.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1compornent_1_1Sine_19faa8a1827d599007c30037e7f15b56b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>SampleType</declname>
+            <defname>SampleType</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void harps::compornent::Sine&lt; ModuleType &gt;::operator()</definition>
+        <argsstring>(Buffer&lt; SampleType &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; SampleType &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/sine.hpp" line="54" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/sine.hpp" bodystart="54" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>正弦波を出力します。 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="134">
+        <label>harps::compornent::Sine&lt; ModuleType &gt;</label>
+        <link refid="classharps_1_1compornent_1_1Sine"/>
+        <childnode refid="135" relation="usage">
+          <edgelabel>source_module</edgelabel>
+        </childnode>
+      </node>
+      <node id="135">
+        <label>ModuleType</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/sine.hpp" line="51" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/sine.hpp" bodystart="51" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classharps_1_1compornent_1_1Sine_19faa8a1827d599007c30037e7f15b56b" prot="public" virt="non-virtual"><scope>harps::compornent::Sine</scope><name>operator()</name></member>
+      <member refid="classharps_1_1compornent_1_1Sine_1fbd0e17c53cabce6333c1d3a3784f8bc" prot="private" virt="non-virtual"><scope>harps::compornent::Sine</scope><name>source_module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

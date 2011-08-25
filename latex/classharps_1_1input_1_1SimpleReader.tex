@@ -1,0 +1,77 @@
+\section{harps::input::SimpleReader$<$ InstrumentType $>$ Class Template Reference}
+\label{classharps_1_1input_1_1SimpleReader}\index{harps::input::SimpleReader@{harps::input::SimpleReader}}
+{\tt \#include $<$simple.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf SimpleReader} (const {\bf Score} $\ast$const \_\-score)
+\item 
+virtual {\bf $\sim$SimpleReader} ()
+\item 
+{\footnotesize template$<$typename SampleType$>$ }\\void {\bf operator()} ({\bf Buffer}$<$ SampleType $>$ \&\_\-buffer)
+\item 
+bool {\bf isEnd} () const 
+\item 
+void {\bf programChange} (const char $\ast$\_\-filename)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename InstrumentType$>$ class harps::input::SimpleReader$<$ InstrumentType $>$}
+
+配列から楽譜データを読み出すシンプルな入力クラスです。 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{harps::input::SimpleReader@{harps::input::SimpleReader}!SimpleReader@{SimpleReader}}
+\index{SimpleReader@{SimpleReader}!harps::input::SimpleReader@{harps::input::SimpleReader}}
+\subsubsection[SimpleReader]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename InstrumentType$>$ {\bf harps::input::SimpleReader}$<$ InstrumentType $>$::{\bf SimpleReader} (const {\bf Score} $\ast$const  {\em \_\-score})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1input_1_1SimpleReader_329c834a56b19251d39d127a78f45750}
+
+
+コンストラクタ \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-score}]楽譜データ \end{description}
+\end{Desc}
+\index{harps::input::SimpleReader@{harps::input::SimpleReader}!$\sim$SimpleReader@{$\sim$SimpleReader}}
+\index{$\sim$SimpleReader@{$\sim$SimpleReader}!harps::input::SimpleReader@{harps::input::SimpleReader}}
+\subsubsection[$\sim$SimpleReader]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename InstrumentType$>$ virtual {\bf harps::input::SimpleReader}$<$ InstrumentType $>$::$\sim${\bf SimpleReader} ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classharps_1_1input_1_1SimpleReader_ccb001bb398b3b4d647c9f18116d4714}
+
+
+デストラクタ 
+
+\subsection{Member Function Documentation}
+\index{harps::input::SimpleReader@{harps::input::SimpleReader}!operator()@{operator()}}
+\index{operator()@{operator()}!harps::input::SimpleReader@{harps::input::SimpleReader}}
+\subsubsection[operator()]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename InstrumentType$>$ template$<$typename SampleType$>$ void {\bf harps::input::SimpleReader}$<$ InstrumentType $>$::operator() ({\bf Buffer}$<$ SampleType $>$ \& {\em \_\-buffer})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1input_1_1SimpleReader_73abaf1fdf42bcdaa8b2c6ffe0fb5cb7}
+
+
+楽譜を読んでオーディオデータを出力します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-buffer}]出力バッファ \end{description}
+\end{Desc}
+
+
+References harps::input::Score::length, harps::input::Score::note, harps::input::Score::pos, and harps::input::Score::touch.\index{harps::input::SimpleReader@{harps::input::SimpleReader}!isEnd@{isEnd}}
+\index{isEnd@{isEnd}!harps::input::SimpleReader@{harps::input::SimpleReader}}
+\subsubsection[isEnd]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename InstrumentType$>$ bool {\bf harps::input::SimpleReader}$<$ InstrumentType $>$::isEnd () const\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1input_1_1SimpleReader_9a4e0775e2fdc12d8ff97352d7e83cce}
+
+
+楽譜が終端に達しているかどうかを調べます \begin{Desc}
+\item[Returns:]終端ならtrue そうでなければfalse \end{Desc}
+\index{harps::input::SimpleReader@{harps::input::SimpleReader}!programChange@{programChange}}
+\index{programChange@{programChange}!harps::input::SimpleReader@{harps::input::SimpleReader}}
+\subsubsection[programChange]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename InstrumentType$>$ void {\bf harps::input::SimpleReader}$<$ InstrumentType $>$::programChange (const char $\ast$ {\em \_\-filename})\hspace{0.3cm}{\tt  [inline]}}\label{classharps_1_1input_1_1SimpleReader_6223220966d8abe9ecca4a104a02b9a6}
+
+
+モジュールを変更します。 \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \_\-filename}]新しいモジュールのファイル名 \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+rc/harps/include/harps/input/simple.hpp\end{CompactItemize}

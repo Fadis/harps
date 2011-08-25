@@ -1,0 +1,622 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.5.6">
+  <compound refid="classharps_1_1compornent_1_1Add" kind="class"><name>harps::compornent::Add</name>
+    <member refid="classharps_1_1compornent_1_1Add_1bd88ad5da1df02fc04751308c81401a9" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Add_3_01_01_4" kind="class"><name>harps::compornent::Add&lt;  &gt;</name>
+    <member refid="classharps_1_1compornent_1_1Add_3_01_01_4_1567dd3eabdc98493836079278d6065f9" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1output_1_1ALSA" kind="class"><name>harps::output::ALSA</name>
+    <member refid="classharps_1_1output_1_1ALSA_1616e74a8f749e5ef1526d88a60426689" kind="variable"><name>pcm_raw</name></member>
+    <member refid="classharps_1_1output_1_1ALSA_1c5eb3417f438ca15dea009ef3f1c5dce" kind="variable"><name>pcm</name></member>
+    <member refid="classharps_1_1output_1_1ALSA_1508ccf78b31f66dab7374f209966cd9f" kind="variable"><name>system_time</name></member>
+    <member refid="classharps_1_1output_1_1ALSA_1bd7c14ca3341300700f2f326da1d5395" kind="function"><name>ALSA</name></member>
+    <member refid="classharps_1_1output_1_1ALSA_16559af972d3a35b4716dde115e154a12" kind="function"><name>~ALSA</name></member>
+    <member refid="classharps_1_1output_1_1ALSA_1721e00562d78f619502336705231c930" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1BranchByNote" kind="class"><name>harps::compornent::BranchByNote</name>
+    <member refid="classharps_1_1compornent_1_1BranchByNote_1dd52de2582256e6f119a49e3953b532d" kind="variable"><name>float_modules</name></member>
+    <member refid="classharps_1_1compornent_1_1BranchByNote_186271912611771fe3e6e31fdf5f21af1" kind="variable"><name>double_modules</name></member>
+    <member refid="classharps_1_1compornent_1_1BranchByNote_1d5d123fa92986dba62ae82c402feaba7" kind="function"><name>BranchByNote</name></member>
+    <member refid="classharps_1_1compornent_1_1BranchByNote_1e542c236dad37cefaa100c942a3ceae4" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1compornent_1_1BranchByNote_1ac29b30924a4371c5923c3cdc19f9664" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1compornent_1_1BranchByNote_133a993b8ef0143be5c2a281596a74122" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1Buffer" kind="class"><name>harps::Buffer</name>
+    <member refid="classharps_1_1Buffer_1f7833b35eca516673a6673a2e3891de9" kind="typedef"><name>SampleType</name></member>
+    <member refid="classharps_1_1Buffer_1f4ed5f5a9c3baa581255057e560dbad0" kind="variable"><name>used</name></member>
+    <member refid="classharps_1_1Buffer_1bbdb01b8f0bece723f6b72f37d3e1ff9" kind="variable"><name>is_stereo</name></member>
+    <member refid="classharps_1_1Buffer_119f83804e8e0b9e195397c704a3213ca" kind="variable"><name>buffer</name></member>
+    <member refid="classharps_1_1Buffer_13eb2b383d9bde8e8b9dcb60b11901346" kind="variable"><name>continue_request</name></member>
+    <member refid="classharps_1_1Buffer_1011f56515e753e1c7b28b8b4847b0567" kind="variable"><name>end_request</name></member>
+    <member refid="classharps_1_1Buffer_1efec369ca2232f71a3846085fee8eb93" kind="function"><name>Buffer</name></member>
+    <member refid="classharps_1_1Buffer_131d11f5c708d11688b49bee7e9af84fd" kind="function"><name>~Buffer</name></member>
+    <member refid="classharps_1_1Buffer_12a7f5913399484eec854689812ea0bb9" kind="function"><name>get</name></member>
+    <member refid="classharps_1_1Buffer_16050133c6cd1ab3db1c7a169633dddf4" kind="function"><name>getLeft</name></member>
+    <member refid="classharps_1_1Buffer_1668b1ac5c2af479da54a29cbec5a55c7" kind="function"><name>getRight</name></member>
+    <member refid="classharps_1_1Buffer_197753c5714688c1be48ab451be12da34" kind="function"><name>get</name></member>
+    <member refid="classharps_1_1Buffer_11172c500abe58b618a8a765cef5b9189" kind="function"><name>getLeft</name></member>
+    <member refid="classharps_1_1Buffer_117f18647a15e3ec85c4e6e497e2639f2" kind="function"><name>getRight</name></member>
+    <member refid="classharps_1_1Buffer_15b03fbc0c2d1a6cede5a3c8a6d08aff9" kind="function"><name>setStereo</name></member>
+    <member refid="classharps_1_1Buffer_1d64ce748ee70aaf027e30bc4ac23a641" kind="function"><name>setMonoral</name></member>
+    <member refid="classharps_1_1Buffer_1aed1f9feac43f2110bc0345847259a2f" kind="function"><name>isStereo</name></member>
+    <member refid="classharps_1_1Buffer_1c8c59a4b9026ae0db6029846305dfdb9" kind="function"><name>requestContinue</name></member>
+    <member refid="classharps_1_1Buffer_10975021873c9957e22944e210d0a6de9" kind="function"><name>requestEnd</name></member>
+    <member refid="classharps_1_1Buffer_15c9522a1c6d2f36bfb387fc4ee1832fb" kind="function"><name>reset</name></member>
+    <member refid="classharps_1_1Buffer_1559084a4b5a2932f04a00aefe3cb7e37" kind="function"><name>shouldEnd</name></member>
+    <member refid="classharps_1_1Buffer_1a42515d3024bfe66b2aea07e21e09e01" kind="function"><name>mergeVote</name></member>
+    <member refid="classharps_1_1Buffer_1f102d36b2f325b5d22fa91b7dfb6d7ba" kind="function"><name>getContinueRequestCount</name></member>
+    <member refid="classharps_1_1Buffer_1588439f2fb486c1ceef8f3e2700e1110" kind="function"><name>getEndRequestCount</name></member>
+    <member refid="classharps_1_1Buffer_1cb84b61718acf55369f9d896db08649b" kind="function"><name>setUsed</name></member>
+    <member refid="classharps_1_1Buffer_17d71d808b95592e23858926cc6fec561" kind="function"><name>getUsed</name></member>
+  </compound>
+  <compound refid="classharps_1_1Clock" kind="class"><name>harps::Clock</name>
+    <member refid="classharps_1_1Clock_1234200fc5aa6a0cdee214f5d86f33b94" kind="function"><name>Clock</name></member>
+    <member refid="classharps_1_1Clock_1c5c9a2eea4b8ce861211d14b81deb99a" kind="function"><name>~Clock</name></member>
+    <member refid="classharps_1_1Clock_139971acf3b3d864c1e3484ee055d93ef" kind="function"><name>tick</name></member>
+  </compound>
+  <compound refid="classharps_1_1ClockMatrixCalc" kind="class"><name>harps::ClockMatrixCalc</name>
+  </compound>
+  <compound refid="classharps_1_1ClockMatrixCalc_3_01KEY_01_4" kind="class"><name>harps::ClockMatrixCalc&lt; KEY &gt;</name>
+    <member refid="classharps_1_1ClockMatrixCalc_3_01KEY_01_4_1e156e5b3173bbeab94687aa4a4262bac" kind="function"><name>updateCache</name></member>
+  </compound>
+  <compound refid="classharps_1_1ClockMatrixCalc_3_01LOCAL_01_4" kind="class"><name>harps::ClockMatrixCalc&lt; LOCAL &gt;</name>
+    <member refid="classharps_1_1ClockMatrixCalc_3_01LOCAL_01_4_15af09ed3058237c047d95665d3cc40f2" kind="function"><name>updateCache</name></member>
+  </compound>
+  <compound refid="classharps_1_1ClockMatrixCalc_3_01TONE_01_4" kind="class"><name>harps::ClockMatrixCalc&lt; TONE &gt;</name>
+    <member refid="classharps_1_1ClockMatrixCalc_3_01TONE_01_4_11cf69a43c67340a4dace57cf6e15a7e4" kind="function"><name>updateCache</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Constant" kind="class"><name>harps::compornent::Constant</name>
+    <member refid="classharps_1_1compornent_1_1Constant_1e4dc4a7527ab078f42ada763db689fd5" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1ConstantMul" kind="class"><name>harps::compornent::ConstantMul</name>
+    <member refid="classharps_1_1compornent_1_1ConstantMul_1d17665d2d216b4faea61416ee494e4e3" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1compornent_1_1ConstantMul_19b7d2a43d400cb3e9378d3c3a661cc69" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1CurrentTime" kind="class"><name>harps::CurrentTime</name>
+    <member refid="classharps_1_1CurrentTime_1995f736f4296b0c7e318bebfe7cf0c78" kind="variable"><name>global_time</name></member>
+    <member refid="classharps_1_1CurrentTime_1f735241e435361d96afe59f9dbde1ed1" kind="variable"><name>tick_length</name></member>
+    <member refid="classharps_1_1CurrentTime_175272a04ce8d782545c036ec4227e3e5" kind="variable"><name>time_matrix</name></member>
+    <member refid="classharps_1_1CurrentTime_10a98e8fc9798d25bb3b4bea2fca96baf" kind="variable"><name>matrix_cache</name></member>
+    <member refid="classharps_1_1CurrentTime_129cc784338e3309ebdce62b3ee4f6f95" kind="variable"><name>clock_cache</name></member>
+    <member refid="classharps_1_1CurrentTime_1180c61e352326a8e6342f6057661b748" kind="variable"><name>note</name></member>
+    <member refid="classharps_1_1CurrentTime_1c56ec210e008d47039d2b3b1ae0b512e" kind="variable"><name>pitch</name></member>
+    <member refid="classharps_1_1CurrentTime_139f6d6159eb923cfdf5d92b9095d538b" kind="variable"><name>freq</name></member>
+    <member refid="classharps_1_1CurrentTime_16a58e37c3b82280888f7d39e9387fda9" kind="function"><name>CurrentTime</name></member>
+    <member refid="classharps_1_1CurrentTime_102901d4094d29badc64b00c1d428e34b" kind="function"><name>~CurrentTime</name></member>
+    <member refid="classharps_1_1CurrentTime_1b4e5c08585a7599b89db2dac14b9c4d1" kind="function"><name>getTime</name></member>
+    <member refid="classharps_1_1CurrentTime_174647316ea9eed4d83fe899b18d110a2" kind="function"><name>reset</name></member>
+    <member refid="classharps_1_1CurrentTime_128f0470f31805494343847286d69694e" kind="function"><name>swapMatrix</name></member>
+    <member refid="classharps_1_1CurrentTime_1b7d1435e1b3d59c6a71b6d85c3743d3c" kind="function"><name>getMatrix</name></member>
+    <member refid="classharps_1_1CurrentTime_117506ab95e4f9dd773489478751f39d4" kind="function"><name>noteOn</name></member>
+    <member refid="classharps_1_1CurrentTime_1d4ba06019a3066b8aa29bb3a789d9e5d" kind="function"><name>noteOff</name></member>
+    <member refid="classharps_1_1CurrentTime_11cf8a7b0fb4fde33e472acf9d086816d" kind="function"><name>setPitchBend</name></member>
+    <member refid="classharps_1_1CurrentTime_13fbbd98cbd3c4517bbf49e62d86f2cc5" kind="function"><name>getToneFrequency</name></member>
+    <member refid="classharps_1_1CurrentTime_13f08fd579a5b04db6ceb2497984d237b" kind="function"><name>getTone</name></member>
+    <member refid="classharps_1_1CurrentTime_14843be872283108748b222eebefec0c2" kind="function"><name>getPitchBend</name></member>
+    <member refid="classharps_1_1CurrentTime_14997fde13ba0065725222565dedc6321" kind="function"><name>tick</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Distotion" kind="class"><name>harps::compornent::Distotion</name>
+    <member refid="classharps_1_1compornent_1_1Distotion_1c2df34c9a91c4c78817e2f9530902306" kind="variable"><name>cache_array</name></member>
+    <member refid="classharps_1_1compornent_1_1Distotion_126172120f25db0e5dc4c2e985b4f0590" kind="variable"><name>cache</name></member>
+    <member refid="classharps_1_1compornent_1_1Distotion_102df8251159e824d44b1a3526b1cfa16" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1compornent_1_1Distotion_1d79c5ca4fec27b9f7ccfe03d29aef571" kind="function"><name>Distotion</name></member>
+    <member refid="classharps_1_1compornent_1_1Distotion_1a77b7866fa3aa4951f0c3841bcb26655" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1Dummy" kind="class"><name>harps::Dummy</name>
+  </compound>
+  <compound refid="classharps_1_1DynamicModuleSlot" kind="class"><name>harps::DynamicModuleSlot</name>
+    <member refid="classharps_1_1DynamicModuleSlot_162d3efeaf21082c740be44d6db005ae6" kind="variable"><name>handle</name></member>
+    <member refid="classharps_1_1DynamicModuleSlot_1a40405d4746607de1b5e13aa7fa5c05a" kind="variable"><name>instance</name></member>
+    <member refid="classharps_1_1DynamicModuleSlot_1026538c3582e101677cebc394537c3aa" kind="variable"><name>create</name></member>
+    <member refid="classharps_1_1DynamicModuleSlot_1a0411ab7f4a99aebc86b78cba1ff4db2" kind="variable"><name>destroy</name></member>
+    <member refid="classharps_1_1DynamicModuleSlot_1ae856e3f338981e6016c9834433bfeff" kind="function"><name>DynamicModuleSlot</name></member>
+    <member refid="classharps_1_1DynamicModuleSlot_10bb30450af88f9a6bfe7b796d6533a05" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1DynamicModuleSlot_1d8a9c601e21e7daf79992b65e6babb36" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1DynamicModuleSlot_1f752ce00af94134b8dcca37709ed6b8c" kind="function"><name>void</name></member>
+    <member refid="classharps_1_1DynamicModuleSlot_1a676f21fc1bdcfc70b834727846be904" kind="function"><name>void</name></member>
+  </compound>
+  <compound refid="classharps_1_1DynamicModuleSocket" kind="class"><name>harps::DynamicModuleSocket</name>
+    <member refid="classharps_1_1DynamicModuleSocket_189d1cbb9a15fd3eda43ba704e8c4e5fd" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1DynamicModuleSocket_1a127ba795c508bf5981cb2d6fab79f07" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1DynamicModuleSocket_187cba2d094ec5fc6b6d1f20502158829" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1DynamicMonophony" kind="class"><name>harps::DynamicMonophony</name>
+    <member refid="classharps_1_1DynamicMonophony_19c86a86363b675a48b15b9ec8e3d9efc" kind="variable"><name>module</name></member>
+    <member refid="classharps_1_1DynamicMonophony_14bdcabc60c940b51259249b2aa2f7d65" kind="variable"><name>clock</name></member>
+    <member refid="classharps_1_1DynamicMonophony_11bb2a2645256a1b60d6183f066c4aa41" kind="variable"><name>note</name></member>
+    <member refid="classharps_1_1DynamicMonophony_11aa6282a44718f26647c48aa627a80f5" kind="function"><name>DynamicMonophony</name></member>
+    <member refid="classharps_1_1DynamicMonophony_1c48c12ff80ee6f9088979fa13509e148" kind="function"><name>~DynamicMonophony</name></member>
+    <member refid="classharps_1_1DynamicMonophony_1034e8a8eb8d8fafd8df36379fb1647dc" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1DynamicMonophony_1183d62c092e5903c0e60b5ded5670290" kind="function"><name>noteOn</name></member>
+    <member refid="classharps_1_1DynamicMonophony_146144634cfb0eefe21660fdf5ac3baef" kind="function"><name>noteOff</name></member>
+    <member refid="classharps_1_1DynamicMonophony_125728aacf3836d4e1fe4e401b02021df" kind="function"><name>noteWait</name></member>
+    <member refid="classharps_1_1DynamicMonophony_14d304ca1400cb443cdb57a17cdedb3db" kind="function"><name>setPitchBend</name></member>
+    <member refid="classharps_1_1DynamicMonophony_19293fc3cfa3044994c65a06c0e5709dc" kind="function"><name>reset</name></member>
+    <member refid="classharps_1_1DynamicMonophony_17691d2caaed5a624a33541a6c89f62a1" kind="function"><name>getStatus</name></member>
+    <member refid="classharps_1_1DynamicMonophony_15891615a1418f7d7636469594c216f62" kind="function"><name>getGlobalTime</name></member>
+    <member refid="classharps_1_1DynamicMonophony_11906e8848e676602585df3f896166dca" kind="function"><name>programChange</name></member>
+  </compound>
+  <compound refid="classharps_1_1DynamicPolyphony" kind="class"><name>harps::DynamicPolyphony</name>
+    <member refid="classharps_1_1DynamicPolyphony_16ee7ed57d8fe080b539a0ab6244a8cec" kind="variable"><name>normalizer</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_1d02caf17f0aa47a2e901ddf906e90b48" kind="variable"><name>monophony</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_169c92c6df9310eb243d79acd5ab9de9e" kind="variable"><name>current_note_id</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_137c0321ab9ae16d62d75c3bbb42b3ff7" kind="variable"><name>default_pitch</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_14172f5c3b75f0e1f3f50ccdf017928f4" kind="variable"><name>active_since</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_1a5255f6d159d2f3c42e0895c9942e6f5" kind="variable"><name>clock</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_1c15bc693840c9fee92b45a46c61db43d" kind="function"><name>DynamicPolyphony</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_1ca69bdfdc3a1629b7abbea24b6444ac9" kind="function"><name>~DynamicPolyphony</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_13a2597029685d470e88e32a2ce3db94a" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_1664216adf59bb943e5e399c43309888c" kind="function"><name>noteOn</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_17accc347e968a411ecaf81b377a5e50f" kind="function"><name>noteOff</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_1d150e720cad12009a12982f0b467a707" kind="function"><name>setPitchBend</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_1c6e407d71432eec1425e56a5e5461f86" kind="function"><name>setPitchBend</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_1a719ce61a5f7c106a8bcc896b9a5c167" kind="function"><name>reset</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_10db5c94c16f5babf60c2e47d02cb6f36" kind="function"><name>findMonophony</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_104c6b1c548270bc160e7a96e6ecc034d" kind="function"><name>getGlobalTime</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_11223aecd5a7ee1bcbf22904cb555ab50" kind="function"><name>programChange</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_19b25c9b63fa695a5261ad816716d91a6" kind="function"><name>getNewMonophony</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_1438f009ebb2e02f5e2ff0e5149b4c42a" kind="function"><name>killOldMonophony</name></member>
+  </compound>
+  <compound refid="classharps_1_1DynamicPolyphony_1_1Renderer" kind="class"><name>harps::DynamicPolyphony::Renderer</name>
+    <member refid="classharps_1_1DynamicPolyphony_1_1Renderer_11ff90a65ea479bbb5c7d3333dece36dd" kind="variable"><name>monophony</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_1_1Renderer_1408906bb5ea463f10311d357a72a48b8" kind="variable"><name>buffer</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_1_1Renderer_13e108dce2751d4aa462a55ebbc161347" kind="function"><name>Renderer</name></member>
+    <member refid="classharps_1_1DynamicPolyphony_1_1Renderer_1de5aa5fc499a7d3739c9b7f4ee127234" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Envelope" kind="class"><name>harps::compornent::Envelope</name>
+    <member refid="classharps_1_1compornent_1_1Envelope_16aad553f8482a408d6ac8a1c15aa47db" kind="variable"><name>last_level</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope_1482ae20a6cfa3ab833793164a50c800d" kind="variable"><name>cache</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope_1458b9bfc1936dafc0ab9b492f73957dc" kind="function"><name>Envelope</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope_1b0f272cb8a1268f8b81979d6b48ce46e" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Envelope2" kind="class"><name>harps::compornent::Envelope2</name>
+    <member refid="classharps_1_1compornent_1_1Envelope2_11826d375d377d25e54fdb8a24a519f64" kind="typedef"><name>ThisType</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope2_1a6c75c16bb55ff064acda58903a17c71" kind="variable"><name>last_level</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope2_1fc0bbbe92dac7c5e08bd00623ecbf67a" kind="variable"><name>noteon_cache</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope2_1256a9d31b343dd596a8d3e37612feb41" kind="variable"><name>noteoff_cache</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope2_17c6ec05c6c2c5fc7bd24c188a5d2230f" kind="function"><name>Envelope2</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope2_1991902e280a18e0d87744d959259f3cc" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope2_1f0251b560de2e3a263cd8d0c768293b6" kind="function"><name>initNoteOnEnvelope</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope2_1e9d3a4889ad359b68b5df6e285626c1e" kind="function"><name>initNoteOffEnvelope</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Envelope2_1_1NoteOff" kind="class"><name>harps::compornent::Envelope2::NoteOff</name>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Envelope2_1_1NoteOn" kind="class"><name>harps::compornent::Envelope2::NoteOn</name>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Envelope2_3_01__clock__select_00_01__delay_00_01__attack_00_01__atta211bf396f5638f048319b2d4e63e7d8c" kind="class"><name>harps::compornent::Envelope2&lt; _clock_select, _delay, _attack, _attack_middle, _attack_middle_level, _hold, _hold_level, _decay1, _decay1_middle, _decay1_middle_level, _decay1_end_level, _decay2, _decay2_middle, _decay2_middle_level, 0, _release, _release_middle, _release_middle_level &gt;</name>
+    <member refid="classharps_1_1compornent_1_1Envelope2_3_01__clock__select_00_01__delay_00_01__attack_00_01__atta211bf396f5638f048319b2d4e63e7d8c_137d98f73a2a68ca59058bc1aa81d5bb8" kind="typedef"><name>ThisType</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope2_3_01__clock__select_00_01__delay_00_01__attack_00_01__atta211bf396f5638f048319b2d4e63e7d8c_1718c2457acf33240bf654bf6ebc7b411" kind="variable"><name>last_level</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope2_3_01__clock__select_00_01__delay_00_01__attack_00_01__atta211bf396f5638f048319b2d4e63e7d8c_1e298192965b845c97a11916228968818" kind="variable"><name>noteon_cache</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope2_3_01__clock__select_00_01__delay_00_01__attack_00_01__atta211bf396f5638f048319b2d4e63e7d8c_10c01daf711d689a6ae3334e29fe07f52" kind="variable"><name>noteoff_cache</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope2_3_01__clock__select_00_01__delay_00_01__attack_00_01__atta211bf396f5638f048319b2d4e63e7d8c_19370c42b1e25b8d9d58f867ddcb277fe" kind="function"><name>Envelope2</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope2_3_01__clock__select_00_01__delay_00_01__attack_00_01__atta211bf396f5638f048319b2d4e63e7d8c_1410b50ff864375740f3b19cbcc12e624" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope2_3_01__clock__select_00_01__delay_00_01__attack_00_01__atta211bf396f5638f048319b2d4e63e7d8c_12ea5c57e470eef5a9e9f2a56c905d51a" kind="function"><name>initNoteOnEnvelope</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope2_3_01__clock__select_00_01__delay_00_01__attack_00_01__atta211bf396f5638f048319b2d4e63e7d8c_1f828999e08175f44767a7a907f1c6e9e" kind="function"><name>initNoteOffEnvelope</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Envelope2_3_01__clock__select_00_01__delay_00_01__attack_00_01__atta773b038a0ff6b555e6fe6e6727ad0ed0" kind="class"><name>harps::compornent::Envelope2&lt; _clock_select, _delay, _attack, _attack_middle, _attack_middle_level, _hold, _hold_level, _decay1, _decay1_middle, _decay1_middle_level, _decay1_end_level, _decay2, _decay2_middle, _decay2_middle_level, 0, _release, _release_middle, _release_middle_level &gt;::NoteOff</name>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Envelope2_3_01__clock__select_00_01__delay_00_01__attack_00_01__atta32a13feb5922480d7ed1c64ed47d0874" kind="class"><name>harps::compornent::Envelope2&lt; _clock_select, _delay, _attack, _attack_middle, _attack_middle_level, _hold, _hold_level, _decay1, _decay1_middle, _decay1_middle_level, _decay1_end_level, _decay2, _decay2_middle, _decay2_middle_level, 0, _release, _release_middle, _release_middle_level &gt;::NoteOn</name>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Envelope_3_01__clock__select_00_01__delay_00_01__attack_00_01__hold_396210224e615d03f376f3377e02eb68" kind="class"><name>harps::compornent::Envelope&lt; _clock_select, _delay, _attack, _hold, _decay, 0, _release &gt;</name>
+    <member refid="classharps_1_1compornent_1_1Envelope_3_01__clock__select_00_01__delay_00_01__attack_00_01__hold_396210224e615d03f376f3377e02eb68_19611d5ca6cde92168a99ff23164c000e" kind="variable"><name>last_level</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope_3_01__clock__select_00_01__delay_00_01__attack_00_01__hold_396210224e615d03f376f3377e02eb68_13cc6ad6fa86d17f07fbfd2a151a6d745" kind="variable"><name>cache</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope_3_01__clock__select_00_01__delay_00_01__attack_00_01__hold_396210224e615d03f376f3377e02eb68_1d537818593c1eca2bc140cc9f49626d1" kind="function"><name>Envelope</name></member>
+    <member refid="classharps_1_1compornent_1_1Envelope_3_01__clock__select_00_01__delay_00_01__attack_00_01__hold_396210224e615d03f376f3377e02eb68_150dec6a5f4ad7e503e6a31c57dbe6539" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1FFT" kind="class"><name>harps::compornent::FFT</name>
+    <member refid="classharps_1_1compornent_1_1FFT_1dc4db580af8a20c0622bfc9dc7cb9534" kind="variable"><name>w</name></member>
+    <member refid="classharps_1_1compornent_1_1FFT_1a4d4ce607deaa4982d382ee98ffebeec" kind="variable"><name>inverse</name></member>
+    <member refid="classharps_1_1compornent_1_1FFT_1f9e163248a4a1effeb45be7aacf18824" kind="function"><name>FFT</name></member>
+    <member refid="classharps_1_1compornent_1_1FFT_1ead57ca53e62bf176a43f9b4c2b356e7" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1compornent_1_1FFT_1138cf479685812d1d792d91ab0f40e01" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1compornent_1_1FFT_1dc2aeef5b010a13811af33d2b7fceabf" kind="function"><name>process</name></member>
+    <member refid="classharps_1_1compornent_1_1FFT_1100b698ed9ffd2d8d5663a9a61ee457a" kind="function"><name>flipBit</name></member>
+    <member refid="classharps_1_1compornent_1_1FFT_189d87ab40fe43ca878e2172b07ec90ce" kind="function"><name>swap</name></member>
+    <member refid="classharps_1_1compornent_1_1FFT_17c3cd96070e0aa609610ef378a5b20e6" kind="function"><name>div</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1FM" kind="class"><name>harps::compornent::FM</name>
+    <member refid="classharps_1_1compornent_1_1FM_1886c27da348512aaa4f524a23b57990b" kind="typedef"><name>OperatorType</name></member>
+    <member refid="classharps_1_1compornent_1_1FM_18ed0de99ba079b49d4139470994ed1ad" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1compornent_1_1FM_16705ad0ccfaf5d3f69ebe71f779e3e5f" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1FM2" kind="class"><name>harps::compornent::FM2</name>
+    <member refid="classharps_1_1compornent_1_1FM2_12435f01d3a078c2bfea1019d9014e9dc" kind="typedef"><name>OperatorType</name></member>
+    <member refid="classharps_1_1compornent_1_1FM2_1b4353e086ddac5baed785b7304db51b3" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1compornent_1_1FM2_13b0e94c69fc8176384827c41fa901ef7" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1FM_3_01ModuleType0_00_01ModuleType1_00_010_00_010_00_010_00_010_00_010_00_010_00_010_01_4" kind="class"><name>harps::compornent::FM&lt; ModuleType0, ModuleType1, 0, 0, 0, 0, 0, 0, 0 &gt;</name>
+    <member refid="classharps_1_1compornent_1_1FM_3_01ModuleType0_00_01ModuleType1_00_010_00_010_00_010_00_010_00_010_00_010_00_010_01_4_1f3ba3681fb3c1359e998c28cceca9474" kind="typedef"><name>OperatorType</name></member>
+    <member refid="classharps_1_1compornent_1_1FM_3_01ModuleType0_00_01ModuleType1_00_010_00_010_00_010_00_010_00_010_00_010_00_010_01_4_1ffaa171966f5d2b6ed0d001dfb39ab6f" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1compornent_1_1FM_3_01ModuleType0_00_01ModuleType1_00_010_00_010_00_010_00_010_00_010_00_010_00_010_01_4_1537f9c217e51240cf7b5215e6b4dbb55" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Generator" kind="class"><name>harps::compornent::Generator</name>
+    <member refid="classharps_1_1compornent_1_1Generator_14d3f29a1db7b951848d118dcc34af58d" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1HarpsException" kind="class"><name>harps::HarpsException</name>
+    <member refid="classharps_1_1HarpsException_11c1c3000d2e0184cbeedb07d13c80eb4" kind="function"><name>HarpsException</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Mix" kind="class"><name>harps::compornent::Mix</name>
+    <member refid="classharps_1_1compornent_1_1Mix_138faa35f85087729005efa8af7ec0d70" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Mix_3_01_01_4" kind="class"><name>harps::compornent::Mix&lt;  &gt;</name>
+    <member refid="classharps_1_1compornent_1_1Mix_3_01_01_4_1def174a51cea11929e3c7896e4ccc999" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1ModuleNotFound" kind="class"><name>harps::ModuleNotFound</name>
+    <member refid="classharps_1_1ModuleNotFound_1f00f82c8a8b7b13ab7ce26b91b6a366b" kind="function"><name>ModuleNotFound</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Mul" kind="class"><name>harps::compornent::Mul</name>
+    <member refid="classharps_1_1compornent_1_1Mul_106a25a0fc7e6c36c83ecde2c4bf957dc" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Mul_3_01_01_4" kind="class"><name>harps::compornent::Mul&lt;  &gt;</name>
+    <member refid="classharps_1_1compornent_1_1Mul_3_01_01_4_1f6a127fc62e00d7436705697f5d15c4a" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1NES" kind="class"><name>harps::compornent::NES</name>
+    <member refid="classharps_1_1compornent_1_1NES_1c3e0f68adb1174b0ab0a3ed752d6689c" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1compornent_1_1NES_133a4c1c50b22d100ce08925a616058e6" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Noize" kind="class"><name>harps::compornent::Noize</name>
+    <member refid="classharps_1_1compornent_1_1Noize_1983305b2a7cf921fb09adc50ec44196f" kind="variable"><name>current_position</name></member>
+    <member refid="classharps_1_1compornent_1_1Noize_1d43480677c00479ecf073650ba1699ce" kind="variable"><name>cache</name></member>
+    <member refid="classharps_1_1compornent_1_1Noize_13d416caf138f399de32b04983e6f5cd5" kind="function"><name>Noize</name></member>
+    <member refid="classharps_1_1compornent_1_1Noize_12e28864237d665c259a1e411dd5d7082" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1compornent_1_1Noize_1d833603ed1b8e5fec60aa27d8b585160" kind="function"><name>initCache</name></member>
+    <member refid="classharps_1_1compornent_1_1Noize_1c80dadfcd1116aa04227c6441a5a93d7" kind="function"><name>fft</name></member>
+    <member refid="classharps_1_1compornent_1_1Noize_1a6062c8cbe5c39c6dad6a19c8dff2db5" kind="function"><name>ifft</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Normalize" kind="class"><name>harps::compornent::Normalize</name>
+    <member refid="classharps_1_1compornent_1_1Normalize_140caa37686a7826b5942774bd928aa95" kind="variable"><name>normalizer</name></member>
+    <member refid="classharps_1_1compornent_1_1Normalize_1495cc77892be0666ad289436e672fee7" kind="variable"><name>module</name></member>
+    <member refid="classharps_1_1compornent_1_1Normalize_119a3130399cf04518ad0be3e987d4bdb" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1Normalizer" kind="class"><name>harps::Normalizer</name>
+    <member refid="classharps_1_1Normalizer_1d3c84d139cef720493dba16c0aa31ca8" kind="variable"><name>top_level</name></member>
+    <member refid="classharps_1_1Normalizer_169a28283169f285bf0640ba8284d2597" kind="variable"><name>top_time</name></member>
+    <member refid="classharps_1_1Normalizer_1fa7525284211f02baf449163696400b2" kind="function"><name>Normalizer</name></member>
+    <member refid="classharps_1_1Normalizer_1fb364666ac8e946a921ff2f923f71fcf" kind="function"><name>~Normalizer</name></member>
+    <member refid="classharps_1_1Normalizer_1719c26a532ee603de347033951b9e7ba" kind="function"><name>setValue</name></member>
+    <member refid="classharps_1_1Normalizer_1b4d4314f348404d2e96d2d22b3f1ced7" kind="function"><name>getAmp</name></member>
+  </compound>
+  <compound refid="classharps_1_1Note" kind="class"><name>harps::Note</name>
+    <member refid="classharps_1_1Note_12897da17f37e518a4422859968a20fc1" kind="enum"><name>NoteState</name></member>
+    <member refid="classharps_1_1Note_12897da17f37e518a4422859968a20fc1fd7ce3b34cb478db7e787a4f8764f22b" kind="enumvalue"><name>NOTE_ON</name></member>
+    <member refid="classharps_1_1Note_12897da17f37e518a4422859968a20fc11dec05adf5f267429854b48920e2c042" kind="enumvalue"><name>NOTE_OFF</name></member>
+    <member refid="classharps_1_1Note_12897da17f37e518a4422859968a20fc1306ac192c8517c8af2f6009d03b53a50" kind="enumvalue"><name>NOTE_WAIT</name></member>
+    <member refid="classharps_1_1Note_1334203c55e80984f8057e2416f0ab5e2" kind="variable"><name>status</name></member>
+    <member refid="classharps_1_1Note_1fb7ec7862cfbf8892951258ca0ee48cd" kind="variable"><name>touch</name></member>
+    <member refid="classharps_1_1Note_1e30d3c03bff9e694ce939e0e5c62212b" kind="function"><name>Note</name></member>
+    <member refid="classharps_1_1Note_19a7a81b989b96e47da4f32e49db991ba" kind="function"><name>~Note</name></member>
+    <member refid="classharps_1_1Note_1f589da8cf6f57aa65d484909bb1eb61b" kind="function"><name>noteOn</name></member>
+    <member refid="classharps_1_1Note_199f66a9ff92dd3ad30199816c455fa78" kind="function"><name>noteOff</name></member>
+    <member refid="classharps_1_1Note_1ae555fa8b846740ece16309eeb3aed89" kind="function"><name>noteWait</name></member>
+    <member refid="classharps_1_1Note_12e242ce9707561f3ff22f9d61ecf332a" kind="function"><name>getStatus</name></member>
+    <member refid="classharps_1_1Note_14c5924cbd850f3221114a24872be5f83" kind="function"><name>getTouch</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Rectangle" kind="class"><name>harps::compornent::Rectangle</name>
+    <member refid="classharps_1_1compornent_1_1Rectangle_11b765a63497b653c6d3ac33d47c57515" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1compornent_1_1Rectangle_1b0a00020e48e2711e01837452d728aeb" kind="variable"><name>duty_module</name></member>
+    <member refid="classharps_1_1compornent_1_1Rectangle_1c3c3ccda9f7cb778b24f8038590141f2" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Scale" kind="class"><name>harps::compornent::Scale</name>
+    <member refid="classharps_1_1compornent_1_1Scale_1a8a8da1bfb6ca48e646c1ee1a30368fa" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1compornent_1_1Scale_18a7d50f85ca482a39fb3920eece71e29" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Scale_3_01ModuleType_00_011000_00_010_01_4" kind="class"><name>harps::compornent::Scale&lt; ModuleType, 1000, 0 &gt;</name>
+    <member refid="classharps_1_1compornent_1_1Scale_3_01ModuleType_00_011000_00_010_01_4_1b055a4d19ba29f6fa91ed4cd0860917c" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1compornent_1_1Scale_3_01ModuleType_00_011000_00_010_01_4_15769102734f8ea7c355336550c599220" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structharps_1_1input_1_1Score" kind="struct"><name>harps::input::Score</name>
+    <member refid="structharps_1_1input_1_1Score_1e17864694bc7d1f6c4842919867ad53f" kind="variable"><name>pos</name></member>
+    <member refid="structharps_1_1input_1_1Score_13f9a1a8c50a874834877751a8d1dabe5" kind="variable"><name>length</name></member>
+    <member refid="structharps_1_1input_1_1Score_1b73ecfe496a3e90669081a968044b78c" kind="variable"><name>note</name></member>
+    <member refid="structharps_1_1input_1_1Score_149d93f1ba67f1504e5d87e5658a6aad3" kind="variable"><name>touch</name></member>
+  </compound>
+  <compound refid="classharps_1_1SharedBuffer" kind="class"><name>harps::SharedBuffer</name>
+    <member refid="classharps_1_1SharedBuffer_1d64883f9f1edeb56261dec18f2e5457e" kind="variable"><name>buffer</name></member>
+    <member refid="classharps_1_1SharedBuffer_1ca645777b94d527a7e340aba24b2c104" kind="function"><name>init</name></member>
+    <member refid="classharps_1_1SharedBuffer_170ed7c4dee0788767901aab160a9cdda" kind="function"><name>getNonThreadSafe</name></member>
+    <member refid="classharps_1_1SharedBuffer_1cc609d8b23357e7d27a658b7b184eb6e" kind="function"><name>SharedBuffer</name></member>
+    <member refid="classharps_1_1SharedBuffer_143575ea0213013b050506ba4d2f01805" kind="function"><name>~SharedBuffer</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Shift" kind="class"><name>harps::compornent::Shift</name>
+    <member refid="classharps_1_1compornent_1_1Shift_166f5750bb5bee7625d028b03d96c02de" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1compornent_1_1Shift_10593f851fbfe75035df973052f7b4868" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1input_1_1SimpleReader" kind="class"><name>harps::input::SimpleReader</name>
+    <member refid="classharps_1_1input_1_1SimpleReader_142e856ef1419f3a068fdddf1dc1a9c75" kind="variable"><name>instrument</name></member>
+    <member refid="classharps_1_1input_1_1SimpleReader_1e964d643d9b324bccc9b296571c7fb14" kind="variable"><name>release_stack</name></member>
+    <member refid="classharps_1_1input_1_1SimpleReader_134f11c98cff39ce7959f1117cc594dc1" kind="variable"><name>current_score</name></member>
+    <member refid="classharps_1_1input_1_1SimpleReader_1dbe154c0ac3ccec45750adc80d307eae" kind="variable"><name>score</name></member>
+    <member refid="classharps_1_1input_1_1SimpleReader_124201530dc27abb775deaa312c9c7f11" kind="variable"><name>is_end</name></member>
+    <member refid="classharps_1_1input_1_1SimpleReader_1329c834a56b19251d39d127a78f45750" kind="function"><name>SimpleReader</name></member>
+    <member refid="classharps_1_1input_1_1SimpleReader_1ccb001bb398b3b4d647c9f18116d4714" kind="function"><name>~SimpleReader</name></member>
+    <member refid="classharps_1_1input_1_1SimpleReader_173abaf1fdf42bcdaa8b2c6ffe0fb5cb7" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1input_1_1SimpleReader_19a4e0775e2fdc12d8ff97352d7e83cce" kind="function"><name>isEnd</name></member>
+    <member refid="classharps_1_1input_1_1SimpleReader_16223220966d8abe9ecca4a104a02b9a6" kind="function"><name>programChange</name></member>
+    <member refid="classharps_1_1input_1_1SimpleReader_1b53e0c44e43f5f0aaeda082f9461cb52" kind="function"><name>fillZero</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Sine" kind="class"><name>harps::compornent::Sine</name>
+    <member refid="classharps_1_1compornent_1_1Sine_1fbd0e17c53cabce6333c1d3a3784f8bc" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1compornent_1_1Sine_19faa8a1827d599007c30037e7f15b56b" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1SinkConfigurationFailed" kind="class"><name>harps::SinkConfigurationFailed</name>
+    <member refid="classharps_1_1SinkConfigurationFailed_1fbfc46425031d1d949655c4409d81258" kind="function"><name>SinkConfigurationFailed</name></member>
+  </compound>
+  <compound refid="classharps_1_1SinkOutputFailed" kind="class"><name>harps::SinkOutputFailed</name>
+    <member refid="classharps_1_1SinkOutputFailed_1b62a683ac297116bb7403befffffde89" kind="function"><name>SinkOutputFailed</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1SwitchingEnvelope" kind="class"><name>harps::compornent::SwitchingEnvelope</name>
+    <member refid="classharps_1_1compornent_1_1SwitchingEnvelope_1f2a532ade1a9fe1c1f89fb5b37ac3d21" kind="variable"><name>attack_module</name></member>
+    <member refid="classharps_1_1compornent_1_1SwitchingEnvelope_1ddd03f14742b0da31e671a15fb8ce408" kind="variable"><name>sustain_module</name></member>
+    <member refid="classharps_1_1compornent_1_1SwitchingEnvelope_159e64f3724437c5a01c38a55fb3b9aeb" kind="variable"><name>release_module</name></member>
+    <member refid="classharps_1_1compornent_1_1SwitchingEnvelope_1a034bebbc5d41d710d14242499a84203" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Touch" kind="class"><name>harps::compornent::Touch</name>
+    <member refid="classharps_1_1compornent_1_1Touch_1fc0d0d6060cfeee6d16800cdf074a38f" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1compornent_1_1Touch_1706224afa2eecdfd994668640d5609c7" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1input_1_1Tracks" kind="class"><name>harps::input::Tracks</name>
+    <member refid="classharps_1_1input_1_1Tracks_18361008eb3175cef9c768e82ecd6458f" kind="variable"><name>output</name></member>
+    <member refid="classharps_1_1input_1_1Tracks_185941d24409b114d8f42d4a84f7341f6" kind="variable"><name>normalizer</name></member>
+    <member refid="classharps_1_1input_1_1Tracks_11ca5d3dc4d156577b7ef2ffe2c8ecba8" kind="variable"><name>readers</name></member>
+    <member refid="classharps_1_1input_1_1Tracks_1da8cd8360cd765f94e8ec8199d01b651" kind="variable"><name>buffers</name></member>
+    <member refid="classharps_1_1input_1_1Tracks_19f4150bcd3a5ac116d4759909ea9a9cd" kind="function"><name>Tracks</name></member>
+    <member refid="classharps_1_1input_1_1Tracks_1194d2399ae3cb04e0c8cf231f03a2265" kind="function"><name>setScore</name></member>
+    <member refid="classharps_1_1input_1_1Tracks_139bfd26b91c4f04a0c6d9c7fdb01e1d9" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1input_1_1Tracks_1acb1ba476857eeaa4baaaa3e04c549de" kind="function"><name>isEnd</name></member>
+  </compound>
+  <compound refid="classharps_1_1input_1_1Tracks_1_1TrackRunner" kind="class"><name>harps::input::Tracks::TrackRunner</name>
+    <member refid="classharps_1_1input_1_1Tracks_1_1TrackRunner_18d6a65976aabc5f7f93054ab694e96be" kind="variable"><name>readers</name></member>
+    <member refid="classharps_1_1input_1_1Tracks_1_1TrackRunner_1e7e73fa6a7d51d543529f515f4e4a2b7" kind="variable"><name>buffers</name></member>
+    <member refid="classharps_1_1input_1_1Tracks_1_1TrackRunner_188d7ade24ef49ae5ccd1e6372474ff8b" kind="function"><name>TrackRunner</name></member>
+    <member refid="classharps_1_1input_1_1Tracks_1_1TrackRunner_1d2cff703f1260208cbb56d562010192f" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Triangle" kind="class"><name>harps::compornent::Triangle</name>
+    <member refid="classharps_1_1compornent_1_1Triangle_1b65bc45c0b7985e37c9319fc93f318f5" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1compornent_1_1Triangle_148e13276ac76e05e17e3232064152865" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1UnableToCreateInstance" kind="class"><name>harps::UnableToCreateInstance</name>
+    <member refid="classharps_1_1UnableToCreateInstance_161a94eb0e78f3c08dde7e9849b4d9f97" kind="function"><name>UnableToCreateInstance</name></member>
+  </compound>
+  <compound refid="classharps_1_1UnableToOpenSink" kind="class"><name>harps::UnableToOpenSink</name>
+    <member refid="classharps_1_1UnableToOpenSink_1d29925c845782075c383d9c12437787f" kind="function"><name>UnableToOpenSink</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Vector" kind="class"><name>harps::compornent::Vector</name>
+    <member refid="classharps_1_1compornent_1_1Vector_1325e71d9852eaa99221009db1eee9fb3" kind="variable"><name>cache</name></member>
+    <member refid="classharps_1_1compornent_1_1Vector_113117e0b5a7e8a02a5d07811fc0ce243" kind="function"><name>Vector</name></member>
+    <member refid="classharps_1_1compornent_1_1Vector_1925e1aab1b9f8911a41abbd70b3f5a9a" kind="function"><name>~Vector</name></member>
+    <member refid="classharps_1_1compornent_1_1Vector_19dbabf08c6a0895140dfbdad20a871d6" kind="function"><name>init</name></member>
+    <member refid="classharps_1_1compornent_1_1Vector_1a0127ed9d3c9ab1f239da4fb86c06c5a" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1compornent_1_1Vector_1ee72a55bcc237bf936cda1e95088b8f1" kind="function"><name>initInternal</name></member>
+  </compound>
+  <compound refid="structharps_1_1compornent_1_1Vector_1_1Point" kind="struct"><name>harps::compornent::Vector::Point</name>
+    <member refid="structharps_1_1compornent_1_1Vector_1_1Point_1be5590b0478612c372ebaa8893252770" kind="variable"><name>x</name></member>
+    <member refid="structharps_1_1compornent_1_1Vector_1_1Point_1c40930a7bb732f5b70b71a766035be86" kind="variable"><name>y</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Volume" kind="class"><name>harps::compornent::Volume</name>
+    <member refid="classharps_1_1compornent_1_1Volume_18d92b6618968795f274c8e1f33c1770a" kind="variable"><name>module</name></member>
+    <member refid="classharps_1_1compornent_1_1Volume_1a24f72d37cea4b4068351e2b6eb483c3" kind="variable"><name>amp</name></member>
+    <member refid="classharps_1_1compornent_1_1Volume_17268469f57d241e7a8e0bedf98d7a0e8" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classharps_1_1compornent_1_1Wave" kind="class"><name>harps::compornent::Wave</name>
+    <member refid="classharps_1_1compornent_1_1Wave_12a60ec5e839121bde787f89143ec0b35" kind="variable"><name>source_module</name></member>
+    <member refid="classharps_1_1compornent_1_1Wave_168ffeef1ee9d0c47e0318f05b4a7089e" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1compornent_1_1Wave_1e43fbb17ad503cbf13ca2a956e148c60" kind="function"><name>getWave</name></member>
+  </compound>
+  <compound refid="classharps_1_1output_1_1Wave" kind="class"><name>harps::output::Wave</name>
+    <member refid="classharps_1_1output_1_1Wave_15ad0bfbdcb886f5c5809c765d0484821" kind="variable"><name>filepath</name></member>
+    <member refid="classharps_1_1output_1_1Wave_1e8bb2e01a097585241b816c80ef54ee3" kind="variable"><name>outfile</name></member>
+    <member refid="classharps_1_1output_1_1Wave_1220425fb4828faccdc2c6f3be63f498c" kind="function"><name>Wave</name></member>
+    <member refid="classharps_1_1output_1_1Wave_105c145cb74ff699e183a516a76f9a50a" kind="function"><name>~Wave</name></member>
+    <member refid="classharps_1_1output_1_1Wave_188399ca38037a5aa11bd8daa73d91cfa" kind="function"><name>operator()</name></member>
+    <member refid="classharps_1_1output_1_1Wave_19eae3b9664054cc582419cc0bbbc3938" kind="function"><name>writeValue</name></member>
+  </compound>
+  <compound refid="namespaceharps" kind="namespace"><name>harps</name>
+    <member refid="namespaceharps_1e436698398d387e2b89ecdc95171e7a7" kind="typedef"><name>Time</name></member>
+    <member refid="namespaceharps_1e9707f612d7e353030e63165bc8796fc" kind="typedef"><name>TimeMatrix</name></member>
+    <member refid="namespaceharps_14f7bddae87173a07222e7cd4b32519bb" kind="function"><name>noteToFrequency</name></member>
+    <member refid="namespaceharps_139a98007c1da8f7aedcfe13c51760124" kind="function"><name>getModulePath</name></member>
+    <member refid="namespaceharps_19f18f91c4acdcbfe42895fc812853066" kind="function"><name>reduceNormalizingNoize</name></member>
+    <member refid="namespaceharps_154146ea57c1846a470bf191f51516988" kind="function"><name>getTime</name></member>
+    <member refid="namespaceharps_17ddb3dd742346b37c7027671e7878792" kind="function"><name>sleep</name></member>
+    <member refid="namespaceharps_187cb95178359fc94fd9cf4b8c6bcefff" kind="function"><name>loop</name></member>
+    <member refid="namespaceharps_1cb6eb6b6be744624501519370f1973ed" kind="function"><name>loop</name></member>
+    <member refid="namespaceharps_114925ee15691035e1d0e8c9efbc73c0d" kind="function"><name>sin</name></member>
+    <member refid="namespaceharps_14286fc6aa658faf13aaa83d4d2402a4e" kind="function"><name>sin</name></member>
+    <member refid="namespaceharps_12d3449b08861e19e466414aed28d4f22" kind="function"><name>volume</name></member>
+    <member refid="namespaceharps_1561f42a6eddee3829c8e429b1209fc7e" kind="function"><name>volume</name></member>
+    <member refid="namespaceharps_1521c0226ca004e6f0942eebbcd706fb0" kind="function"><name>triangle</name></member>
+    <member refid="namespaceharps_159471afc6a4b9fda2abad9ef125c6245" kind="function"><name>triangle</name></member>
+    <member refid="namespaceharps_1ec41e89fe7065da3484b8e541bdd42a1" kind="function"><name>rectangle</name></member>
+    <member refid="namespaceharps_177bf2d30984c1216bd4809e722675683" kind="function"><name>rectangle</name></member>
+    <member refid="namespaceharps_199acf61c717498656a088ceb0c6d8e3e" kind="function"><name>nes</name></member>
+    <member refid="namespaceharps_1bebd9a61b530b183652b2d08e2e8ee23" kind="function"><name>nes</name></member>
+  </compound>
+  <compound refid="namespaceharps_1_1compornent" kind="namespace"><name>harps::compornent</name>
+    <member refid="namespaceharps_1_1compornent_152686693ee6e21316ae152459d1263eb" kind="function"><name>lu</name></member>
+    <member refid="namespaceharps_1_1compornent_1b660c352783a5da8d91b8751fc64291b" kind="function"><name>inverse</name></member>
+    <member refid="namespaceharps_1_1compornent_17e2f00e77c2c4b3cab75ccc616740f96" kind="function"><name>calcCoef</name></member>
+    <member refid="namespaceharps_1_1compornent_1011aade3968e39a9e933c9bdeb0dac45" kind="function"><name>calcCoef</name></member>
+  </compound>
+  <compound refid="namespaceharps_1_1input" kind="namespace"><name>harps::input</name>
+  </compound>
+  <compound refid="namespaceharps_1_1output" kind="namespace"><name>harps::output</name>
+  </compound>
+  <compound refid="namespaceharps_1_1table" kind="namespace"><name>harps::table</name>
+    <member refid="namespaceharps_1_1table_1a54eda42721d810c4c5da6e753670f78" kind="variable"><name>exp2</name></member>
+    <member refid="namespaceharps_1_1table_1c2c5e6053b635516d97ab6a6f6c47b00" kind="variable"><name>sine</name></member>
+  </compound>
+  <compound refid="config_8hpp" kind="file"><name>config.hpp</name>
+    <member refid="config_8hpp_1d9e05f737f9760bd7a9790d1ecefddec" kind="define"><name>HARPS_MAX_MODULES_PER_MIXER</name></member>
+    <member refid="config_8hpp_11644f282a4f84575a270f96b98d4f3c6" kind="define"><name>HAVE_BOOST</name></member>
+    <member refid="config_8hpp_1547dd280b4b8c381d9d69581ca861c87" kind="define"><name>HAVE_BOOST_FILESYSTEM</name></member>
+    <member refid="config_8hpp_18440ed88a386b99b76d65ae079a52356" kind="define"><name>HAVE_BOOST_THREAD</name></member>
+    <member refid="config_8hpp_10ee1617ff2f6885ef384a3dd46f9b9d7" kind="define"><name>HAVE_DLFCN_H</name></member>
+    <member refid="config_8hpp_1b90a030ff2790ebdc176660a6dd2a478" kind="define"><name>HAVE_INTTYPES_H</name></member>
+    <member refid="config_8hpp_19e223dce2bfd0b29689872dfd0e33d1c" kind="define"><name>HAVE_LIBASOUND</name></member>
+    <member refid="config_8hpp_1e93a78f9d076138897af441c9f86f285" kind="define"><name>HAVE_MEMORY_H</name></member>
+    <member refid="config_8hpp_1b6cd6d1c63c1e26ea2d4537b77148354" kind="define"><name>HAVE_STDINT_H</name></member>
+    <member refid="config_8hpp_19e0e434ec1a6ddbd97db12b5a32905e0" kind="define"><name>HAVE_STDLIB_H</name></member>
+    <member refid="config_8hpp_1405d10d46190bcb0320524c54eafc850" kind="define"><name>HAVE_STRINGS_H</name></member>
+    <member refid="config_8hpp_1d4c234dd1625255dc626a15886306e7d" kind="define"><name>HAVE_STRING_H</name></member>
+    <member refid="config_8hpp_1ce156430ba007d19b4348a950d0c692b" kind="define"><name>HAVE_SYS_STAT_H</name></member>
+    <member refid="config_8hpp_169dc70bea5d1f8bd2be9740e974fa666" kind="define"><name>HAVE_SYS_TYPES_H</name></member>
+    <member refid="config_8hpp_1219b06937831d0da94d801ab13987639" kind="define"><name>HAVE_UNISTD_H</name></member>
+    <member refid="config_8hpp_1c2d5925d76379847dd9fc4747b061659" kind="define"><name>LT_OBJDIR</name></member>
+    <member refid="config_8hpp_1ca8570fb706c81df371b7f9bc454ae03" kind="define"><name>PACKAGE</name></member>
+    <member refid="config_8hpp_11d1d2d7f8d2f95b376954d649ab03233" kind="define"><name>PACKAGE_BUGREPORT</name></member>
+    <member refid="config_8hpp_11c0439e4355794c09b64274849eb0279" kind="define"><name>PACKAGE_NAME</name></member>
+    <member refid="config_8hpp_1c73e6f903c16eca7710f92e36e1c6fbf" kind="define"><name>PACKAGE_STRING</name></member>
+    <member refid="config_8hpp_1f415af6bfede0e8d5453708afe68651c" kind="define"><name>PACKAGE_TARNAME</name></member>
+    <member refid="config_8hpp_1a326a05d5e30f9e9a4bb0b4469d5d0c0" kind="define"><name>PACKAGE_VERSION</name></member>
+    <member refid="config_8hpp_11682c770d91c5d167b621a782be940d4" kind="define"><name>SAMPLE_COUNT</name></member>
+    <member refid="config_8hpp_117889cf1cf83a54524c242fa5a353cf1" kind="define"><name>SAMPLING_RATE</name></member>
+    <member refid="config_8hpp_1550e5c272cc3cf3814651721167dcd23" kind="define"><name>STDC_HEADERS</name></member>
+    <member refid="config_8hpp_11c6d5de492ac61ad29aec7aa9a436bbf" kind="define"><name>VERSION</name></member>
+  </compound>
+  <compound refid="buffer_8hpp" kind="file"><name>buffer.hpp</name>
+  </compound>
+  <compound refid="clock_8hpp" kind="file"><name>clock.hpp</name>
+  </compound>
+  <compound refid="add_8hpp" kind="file"><name>add.hpp</name>
+    <member refid="add_8hpp_1f15eb4b905c97094ae67da1c834acfea" kind="define"><name>HARPS_PP_ADD_OPERATION_ONCE</name></member>
+    <member refid="add_8hpp_1e2f5fd592cc27b9ef9d116a60dcf0d45" kind="define"><name>HARPS_PP_ADD_OPERATION_LOOP</name></member>
+    <member refid="add_8hpp_196993216749e82fa142d681c0a1965af" kind="define"><name>HARPS_PP_ADD_SPECIALIZATION</name></member>
+  </compound>
+  <compound refid="branchbynote_8hpp" kind="file"><name>branchbynote.hpp</name>
+    <member refid="branchbynote_8hpp_11cf4e1ed4419aff46032475237abd353" kind="define"><name>HARPS_PP_BRANCHBYNOTE_TYPENAME</name></member>
+    <member refid="branchbynote_8hpp_1a008199d3679b208fa9afb831f3a89fb" kind="define"><name>HARPS_PP_BRANCHBYNOTE_MEMBER</name></member>
+    <member refid="branchbynote_8hpp_1a008199d3679b208fa9afb831f3a89fb" kind="define"><name>HARPS_PP_BRANCHBYNOTE_MEMBER</name></member>
+    <member refid="branchbynote_8hpp_1f9810235fb631b94b7e0faf0628efb4b" kind="define"><name>HARPS_PP_BRANCHBYNOTE_CASE</name></member>
+    <member refid="branchbynote_8hpp_177140db25c8a26bb379c2a6cb706732b" kind="define"><name>HARPS_PP_BRANCHBYNOTE_ARRAY</name></member>
+  </compound>
+  <compound refid="combiner_8hpp" kind="file"><name>combiner.hpp</name>
+    <member refid="combiner_8hpp_17e1fc081b2f5f66a8ce0c0bcc1caebbc" kind="define"><name>HARPS_PP_UNUSED</name></member>
+    <member refid="combiner_8hpp_1cba707b24ac95185f1a5f4ca2748d346" kind="define"><name>HARPS_PP_MODULE_TYPENAME_WITH_DEFAULT</name></member>
+    <member refid="combiner_8hpp_13a76d1cb1aee3c63b5e6d7d3ade5ff1f" kind="define"><name>HARPS_PP_MODULE_MEMBER</name></member>
+    <member refid="combiner_8hpp_11b14af71040f22fde614530d95251d42" kind="define"><name>HARPS_PP_MODULE_TYPENAME</name></member>
+    <member refid="combiner_8hpp_1435e356c851dcbbab45f4c02128c4ca0" kind="define"><name>HARPS_PP_MODULE_SPECIALIZATION_TYPENAMES</name></member>
+    <member refid="combiner_8hpp_1bb512f02e5882164b57f9ac765f637ee" kind="define"><name>HARPS_PP_MODULE_DUMMY</name></member>
+  </compound>
+  <compound refid="constant_8hpp" kind="file"><name>constant.hpp</name>
+  </compound>
+  <compound refid="constant__mul_8hpp" kind="file"><name>constant_mul.hpp</name>
+  </compound>
+  <compound refid="distotion_8hpp" kind="file"><name>distotion.hpp</name>
+  </compound>
+  <compound refid="dynamic__module_8hpp" kind="file"><name>dynamic_module.hpp</name>
+    <member refid="dynamic__module_8hpp_1c782edfbad4fed94dfa300a9847feecc" kind="define"><name>HARPS_DYNAMIC_MODULE_SOCKET</name></member>
+    <member refid="dynamic__module_8hpp_10cbff2222e1bab96f7f16877124f459b" kind="define"><name>HARPS_DYNAMIC_MODULE_SLOT_LOAD_FUNCTION</name></member>
+    <member refid="dynamic__module_8hpp_16aead9a5cf9760de129e24a9f89bdc18" kind="define"><name>HARPS_DYNAMIC_MODULE_SLOT_RUN</name></member>
+    <member refid="dynamic__module_8hpp_18975f43a16e910cac9cd62d9d2e86569" kind="define"><name>HARPS_DYNAMIC_MODULE_SLOT_FUNCTION_POINTER</name></member>
+  </compound>
+  <compound refid="envelope_8hpp" kind="file"><name>envelope.hpp</name>
+  </compound>
+  <compound refid="envelope2_8hpp" kind="file"><name>envelope2.hpp</name>
+  </compound>
+  <compound refid="fm_8hpp" kind="file"><name>fm.hpp</name>
+  </compound>
+  <compound refid="generator_8hpp" kind="file"><name>generator.hpp</name>
+  </compound>
+  <compound refid="mix_8hpp" kind="file"><name>mix.hpp</name>
+    <member refid="mix_8hpp_19db4c1f330c2662f7a5cc421ff5566b6" kind="define"><name>HARPS_PP_MIX_OPERATION_ONCE</name></member>
+    <member refid="mix_8hpp_1a9e33d6ab483fbe82e4bc57b3fe36385" kind="define"><name>HARPS_PP_MIX_OPERATION_LOOP</name></member>
+    <member refid="mix_8hpp_1e634ad4eb9ebf336b3929ae13d31ed6c" kind="define"><name>HARPS_PP_MIX_SPECIALIZATION</name></member>
+  </compound>
+  <compound refid="mul_8hpp" kind="file"><name>mul.hpp</name>
+    <member refid="mul_8hpp_145992ca1046a8d3c627918708569f312" kind="define"><name>HARPS_PP_MUL_OPERATION_ONCE</name></member>
+    <member refid="mul_8hpp_1345b769ba83a917d33b4b2ced8a44c7d" kind="define"><name>HARPS_PP_MUL_OPERATION_LOOP</name></member>
+    <member refid="mul_8hpp_1425fecd92f9d4a64ffcfc303e723bff6" kind="define"><name>HARPS_PP_MUL_SPECIALIZATION</name></member>
+  </compound>
+  <compound refid="noize_8hpp" kind="file"><name>noize.hpp</name>
+  </compound>
+  <compound refid="compornent_2normalize_8hpp" kind="file"><name>normalize.hpp</name>
+  </compound>
+  <compound refid="normalize_8hpp" kind="file"><name>normalize.hpp</name>
+  </compound>
+  <compound refid="rectangle_8hpp" kind="file"><name>rectangle.hpp</name>
+  </compound>
+  <compound refid="scale_8hpp" kind="file"><name>scale.hpp</name>
+  </compound>
+  <compound refid="shift_8hpp" kind="file"><name>shift.hpp</name>
+  </compound>
+  <compound refid="compornent_2sine_8hpp" kind="file"><name>sine.hpp</name>
+  </compound>
+  <compound refid="table_2sine_8hpp" kind="file"><name>sine.hpp</name>
+    <member refid="table_2sine_8hpp_1807f04d46c5b02ba98e113c80b2ab718" kind="define"><name>HARPS_SINE_TABLE_SIZE</name></member>
+  </compound>
+  <compound refid="switching__envelope_8hpp" kind="file"><name>switching_envelope.hpp</name>
+  </compound>
+  <compound refid="touch_8hpp" kind="file"><name>touch.hpp</name>
+  </compound>
+  <compound refid="triangle_8hpp" kind="file"><name>triangle.hpp</name>
+  </compound>
+  <compound refid="vector_8hpp" kind="file"><name>vector.hpp</name>
+  </compound>
+  <compound refid="volume_8hpp" kind="file"><name>volume.hpp</name>
+  </compound>
+  <compound refid="compornent_2wave_8hpp" kind="file"><name>wave.hpp</name>
+  </compound>
+  <compound refid="output_2wave_8hpp" kind="file"><name>wave.hpp</name>
+  </compound>
+  <compound refid="dummy_8hpp" kind="file"><name>dummy.hpp</name>
+  </compound>
+  <compound refid="exceptions_8hpp" kind="file"><name>exceptions.hpp</name>
+  </compound>
+  <compound refid="simple_8hpp" kind="file"><name>simple.hpp</name>
+    <member refid="simple_8hpp_1daa05f3a3bd948725e9771c617a39269" kind="define"><name>NL</name></member>
+    <member refid="simple_8hpp_17649c699fa17bfedf439f9b6a4906d75" kind="define"><name>N32</name></member>
+    <member refid="simple_8hpp_1b2a405c158f97af29f8b702d6a17a2a2" kind="define"><name>N16</name></member>
+    <member refid="simple_8hpp_1ae30e2de203d703d9ab68f0489f6b2d7" kind="define"><name>N8</name></member>
+    <member refid="simple_8hpp_1866f55e5470bf0c2c18aa6ce5da2c394" kind="define"><name>N4</name></member>
+    <member refid="simple_8hpp_1cd864640121c7df2c19f61f7baa507e4" kind="define"><name>N2</name></member>
+    <member refid="simple_8hpp_1bd7b39be02bc15d79b73e5cf2b531299" kind="define"><name>N1</name></member>
+  </compound>
+  <compound refid="instrument_8hpp" kind="file"><name>instrument.hpp</name>
+  </compound>
+  <compound refid="note_8hpp" kind="file"><name>note.hpp</name>
+  </compound>
+  <compound refid="alsa_8hpp" kind="file"><name>alsa.hpp</name>
+  </compound>
+  <compound refid="shared__buffer_8hpp" kind="file"><name>shared_buffer.hpp</name>
+  </compound>
+  <compound refid="exp2_8hpp" kind="file"><name>exp2.hpp</name>
+    <member refid="exp2_8hpp_126470177a7cd1c2f21f26db7aaf89318" kind="define"><name>HARPS_EXP2_TABLE_SIZE</name></member>
+  </compound>
+  <compound refid="time_8hpp" kind="file"><name>time.hpp</name>
+  </compound>
+  <compound refid="utils_8hpp" kind="file"><name>utils.hpp</name>
+  </compound>
+  <compound refid="envelope_8cpp" kind="file"><name>envelope.cpp</name>
+  </compound>
+  <compound refid="exp2__table_8cpp" kind="file"><name>exp2_table.cpp</name>
+  </compound>
+  <compound refid="module__dir_8cpp" kind="file"><name>module_dir.cpp</name>
+  </compound>
+  <compound refid="sin__table_8cpp" kind="file"><name>sin_table.cpp</name>
+  </compound>
+  <compound refid="dir_1ea6c7e21f922c9b2add6c98fa8a02d0" kind="dir"><name>rc/harps/include/harps/compornent/</name>
+  </compound>
+  <compound refid="dir_b53fa28ea2bd6e4e3251a4f2ed5de654" kind="dir"><name>rc/harps/default/</name>
+  </compound>
+  <compound refid="dir_34b76b90e55395f842a3e0b61bf47901" kind="dir"><name>rc/harps/include/harps/</name>
+  </compound>
+  <compound refid="dir_3641fb501b59b63bfb154b33749a2d63" kind="dir"><name>rc/harps/default/include/harps/</name>
+  </compound>
+  <compound refid="dir_fc6f6b32f408a17145006b2a4da999da" kind="dir"><name>rc/harps/</name>
+  </compound>
+  <compound refid="dir_ff147f2aed6d8d7425a65a2fdf370dbb" kind="dir"><name>rc/harps/include/</name>
+  </compound>
+  <compound refid="dir_4558ddc6652977a7d59e5cfc5bb2d311" kind="dir"><name>rc/harps/default/include/</name>
+  </compound>
+  <compound refid="dir_97f30611a5d23740e673732e99070efe" kind="dir"><name>rc/harps/include/harps/input/</name>
+  </compound>
+  <compound refid="dir_71b55a396bf8882821d68309049ea6a8" kind="dir"><name>rc/harps/include/harps/output/</name>
+  </compound>
+  <compound refid="dir_680e0893b01a0c45e2f0f0f46a6fda60" kind="dir"><name>rc/</name>
+  </compound>
+  <compound refid="dir_f10496207e389e817224b70318edbc6b" kind="dir"><name>rc/harps/src/</name>
+  </compound>
+  <compound refid="dir_e792caa1eca5ce854299b413ebcd909d" kind="dir"><name>rc/harps/include/harps/table/</name>
+  </compound>
+</doxygenindex>

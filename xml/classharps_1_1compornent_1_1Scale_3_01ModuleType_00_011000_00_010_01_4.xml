@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classharps_1_1compornent_1_1Scale_3_01ModuleType_00_011000_00_010_01_4" kind="class" prot="public">
+    <compoundname>harps::compornent::Scale&lt; ModuleType, 1000, 0 &gt;</compoundname>
+    <includes refid="scale_8hpp" local="no">scale.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>ModuleType</declname>
+        <defname>ModuleType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classharps_1_1compornent_1_1Scale_3_01ModuleType_00_011000_00_010_01_4_1b055a4d19ba29f6fa91ed4cd0860917c" prot="private" static="no" mutable="no">
+        <type>ModuleType</type>
+        <definition>ModuleType harps::compornent::Scale&lt; ModuleType, 1000, 0 &gt;::source_module</definition>
+        <argsstring></argsstring>
+        <name>source_module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/scale.hpp" line="79" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/scale.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classharps_1_1compornent_1_1Scale_3_01ModuleType_00_011000_00_010_01_4_15769102734f8ea7c355336550c599220" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>SampleType</declname>
+            <defname>SampleType</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void harps::compornent::Scale&lt; ModuleType, 1000, 0 &gt;::operator()</definition>
+        <argsstring>(Buffer&lt; SampleType &gt; &amp;_buffer, CurrentTime &amp;_clock, Note &amp;_note)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classharps_1_1Buffer" kindref="compound">Buffer</ref>&lt; SampleType &gt; &amp;</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1CurrentTime" kindref="compound">CurrentTime</ref> &amp;</type>
+          <declname>_clock</declname>
+        </param>
+        <param>
+          <type><ref refid="classharps_1_1Note" kindref="compound">Note</ref> &amp;</type>
+          <declname>_note</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/compornent/scale.hpp" line="75" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/scale.hpp" bodystart="75" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>クロックの速さを調節します。 </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="121">
+        <label>ModuleType</label>
+      </node>
+      <node id="120">
+        <label>harps::compornent::Scale&lt; ModuleType, 1000, 0 &gt;</label>
+        <link refid="classharps_1_1compornent_1_1Scale_3_01ModuleType_00_011000_00_010_01_4"/>
+        <childnode refid="121" relation="usage">
+          <edgelabel>source_module</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/users/fadis/rc/harps/include/harps/compornent/scale.hpp" line="72" bodyfile="/home/users/fadis/rc/harps/include/harps/compornent/scale.hpp" bodystart="72" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classharps_1_1compornent_1_1Scale_3_01ModuleType_00_011000_00_010_01_4_15769102734f8ea7c355336550c599220" prot="public" virt="non-virtual"><scope>harps::compornent::Scale&lt; ModuleType, 1000, 0 &gt;</scope><name>operator()</name></member>
+      <member refid="classharps_1_1compornent_1_1Scale_3_01ModuleType_00_011000_00_010_01_4_1b055a4d19ba29f6fa91ed4cd0860917c" prot="private" virt="non-virtual"><scope>harps::compornent::Scale&lt; ModuleType, 1000, 0 &gt;</scope><name>source_module</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

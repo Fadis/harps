@@ -1,0 +1,32 @@
+\section{harps::compornent::Noize$<$ \_\-lpf, \_\-hpf $>$ Class Template Reference}
+\label{classharps_1_1compornent_1_1Noize}\index{harps::compornent::Noize@{harps::compornent::Noize}}
+{\tt \#include $<$noize.hpp$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \{ \textbf{CACHE\_\-SIZE} =  8192
+ \}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\footnotesize template$<$typename SampleType$>$ }\\void \textbf{operator()} ({\bf Buffer}$<$ SampleType $>$ \&\_\-buffer, {\bf CurrentTime} \&\_\-clock, {\bf Note} \&\_\-note)\label{classharps_1_1compornent_1_1Noize_2e28864237d665c259a1e411dd5d7082}
+
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static void \textbf{initCache} (boost::array$<$ float, CACHE\_\-SIZE $>$ \&\_\-dest)\label{classharps_1_1compornent_1_1Noize_d833603ed1b8e5fec60aa27d8b585160}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$unsigned int \_\-lpf, unsigned int \_\-hpf$>$ class harps::compornent::Noize$<$ \_\-lpf, \_\-hpf $>$}
+
+指定された周波数分布をもつノイズを出力します。 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+rc/harps/include/harps/compornent/noize.hpp\end{CompactItemize}

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="dir_4558ddc6652977a7d59e5cfc5bb2d311" kind="dir">
+    <compoundname>rc/harps/default/include/</compoundname>
+    <innerdir refid="dir_3641fb501b59b63bfb154b33749a2d63">rc/harps/default/include/harps/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/default/include/"/>
+  </compounddef>
+</doxygen>

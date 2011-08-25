@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="structharps_1_1input_1_1Score" kind="struct" prot="public">
+    <compoundname>harps::input::Score</compoundname>
+    <includes refid="simple_8hpp" local="no">simple.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structharps_1_1input_1_1Score_1e17864694bc7d1f6c4842919867ad53f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double harps::input::Score::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>この音を発音する時刻です。前の音より後でなければなりません。 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="78" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="78" bodyend="-1"/>
+        <referencedby refid="classharps_1_1input_1_1SimpleReader_173abaf1fdf42bcdaa8b2c6ffe0fb5cb7" compoundref="simple_8hpp" startline="113" endline="138">harps::input::SimpleReader&lt; InstrumentType &gt;::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structharps_1_1input_1_1Score_13f9a1a8c50a874834877751a8d1dabe5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float harps::input::Score::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>この音の長さです。長さ0のノートは曲の終了を意味します。 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="82" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classharps_1_1input_1_1SimpleReader_173abaf1fdf42bcdaa8b2c6ffe0fb5cb7" compoundref="simple_8hpp" startline="113" endline="138">harps::input::SimpleReader&lt; InstrumentType &gt;::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structharps_1_1input_1_1Score_1b73ecfe496a3e90669081a968044b78c" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int harps::input::Score::note</definition>
+        <argsstring></argsstring>
+        <name>note</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>この音の音階です。 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="86" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="86" bodyend="-1"/>
+        <referencedby refid="classharps_1_1input_1_1SimpleReader_173abaf1fdf42bcdaa8b2c6ffe0fb5cb7" compoundref="simple_8hpp" startline="113" endline="138">harps::input::SimpleReader&lt; InstrumentType &gt;::operator()</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structharps_1_1input_1_1Score_149d93f1ba67f1504e5d87e5658a6aad3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float harps::input::Score::touch</definition>
+        <argsstring></argsstring>
+        <name>touch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>この音を発音する時の鍵盤を叩く強さです。 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="90" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="90" bodyend="-1"/>
+        <referencedby refid="classharps_1_1input_1_1SimpleReader_173abaf1fdf42bcdaa8b2c6ffe0fb5cb7" compoundref="simple_8hpp" startline="113" endline="138">harps::input::SimpleReader&lt; InstrumentType &gt;::operator()</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>SimpleReaderが読む楽譜データの要素です。 </para>    </detaileddescription>
+    <location file="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" line="74" bodyfile="/home/users/fadis/rc/harps/include/harps/input/simple.hpp" bodystart="74" bodyend="91"/>
+    <listofallmembers>
+      <member refid="structharps_1_1input_1_1Score_13f9a1a8c50a874834877751a8d1dabe5" prot="public" virt="non-virtual"><scope>harps::input::Score</scope><name>length</name></member>
+      <member refid="structharps_1_1input_1_1Score_1b73ecfe496a3e90669081a968044b78c" prot="public" virt="non-virtual"><scope>harps::input::Score</scope><name>note</name></member>
+      <member refid="structharps_1_1input_1_1Score_1e17864694bc7d1f6c4842919867ad53f" prot="public" virt="non-virtual"><scope>harps::input::Score</scope><name>pos</name></member>
+      <member refid="structharps_1_1input_1_1Score_149d93f1ba67f1504e5d87e5658a6aad3" prot="public" virt="non-virtual"><scope>harps::input::Score</scope><name>touch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
